@@ -1,3 +1,4 @@
+
 import {
   Droplets,
   Star,
@@ -30,7 +31,7 @@ import {
   Mail,
   Shield
 } from "lucide-react";
-
+ 
 // ── Navigation links ──
 export const navLinks = [
   { name: "Home", path: "/" },
@@ -41,149 +42,149 @@ export const navLinks = [
   { name: "Around Us", path: "/around" },
   { name: "Contact", path: "/contact" },
 ];
-
+ 
 // ── Home Page Data ──
 export const stats = [
-  { value: "48", label: "Overwater Villas" },
-  { value: "2", label: "Michelin Stars" },
-  { value: "63", label: "Spa Treatments" },
-  { value: "1.2km", label: "Private Beach" },
+  { value: "24", label: "Clean Rooms" },
+  { value: "200m", label: "From Jagannath Temple" },
+  { value: "4.7★", label: "Guest Rating" },
+  { value: "15+", label: "Years of Service" },
 ];
-
+ 
 export const awards = [
-  "Conde Nast Traveler #1",
-  "Forbes Five-Star",
-  "Travel + Leisure World's Best",
-  "Two Michelin Stars",
-  "Tatler Best Hotel",
-  "Virtuoso Sustainable Luxury",
+  "200m from Jagannath Temple",
+  "Rated 4.7 on Justdial",
+  "Family Friendly Stay",
+  "Trusted by Pilgrims",
+  "Budget Friendly Pricing",
+  "Highly Rated on MakeMyTrip",
 ];
-
+ 
 export const testimonials = [
-  { quote: "Aurelia is not merely a hotel — it is the gold standard against which every future stay will be measured. Perfection made tangible.", guest: "Sarah & James M.", origin: "London, UK", stars: 5 },
-  { quote: "In thirty years of diplomacy across sixty countries, no property has matched the quiet mastery of Aurelia's team. Extraordinary.", guest: "H.E. Ambassador Chen", origin: "Singapore", stars: 5 },
-  { quote: "We returned for our fifth anniversary. We will return for our tenth, twentieth, and every one after. There is nowhere else.", guest: "Isabella R.", origin: "New York, USA", stars: 5 },
+  { quote: "Sabitri Guest House is a gem for pilgrims. Clean rooms, warm staff, and just a short walk to the temple. We felt at home instantly.", guest: "Ramesh & Sunita P.", origin: "Bhubaneswar, Odisha", stars: 5 },
+  { quote: "Best budget stay in Puri. The location is unbeatable — you can hear the temple bells from your room. Staff is very helpful and kind.", guest: "Anjali Mohanty", origin: "Cuttack, Odisha", stars: 5 },
+  { quote: "We visit Puri every year for Rath Yatra and always stay at Sabitri. The cleanliness and hospitality keep bringing us back.", guest: "Suresh Kumar", origin: "Kolkata, West Bengal", stars: 5 },
 ];
-
+ 
 export const galleryImages = [
-  { src: "/images/home-hero.png", alt: "Overwater villas at golden hour", span: "col-span-2 row-span-2" },
-  { src: "/images/rooms-hero.png", alt: "Tropical villa architecture", span: "col-span-1 row-span-1" },
-  { src: "/images/dining-saltwater.png", alt: "Beachfront dining", span: "col-span-1 row-span-1" },
-  { src: "/images/experiences-hero.png", alt: "Oceanfront overwater pavilion at golden hour", span: "col-span-1 row-span-2" },
-  { src: "/images/about-hero.png", alt: "Aurelia architecture", span: "col-span-1 row-span-1" },
-  { src: "/images/dining-ember.png", alt: "Fire dining experience", span: "col-span-1 row-span-1" },
+  { src: "/images/home-hero.png", alt: "Sabitri Guest House exterior near Jagannath Temple", span: "col-span-2 row-span-2" },
+  { src: "/images/rooms-hero.png", alt: "Clean and comfortable guest room", span: "col-span-1 row-span-1" },
+  { src: "/images/dining-saltwater.png", alt: "Breakfast dining area", span: "col-span-1 row-span-1" },
+  { src: "/images/experiences-hero.png", alt: "View of Jagannath Temple from nearby", span: "col-span-1 row-span-2" },
+  { src: "/images/about-hero.png", alt: "Sabitri Guest House lobby", span: "col-span-1 row-span-1" },
+  { src: "/images/dining-ember.png", alt: "Local Odia food served at the guest house", span: "col-span-1 row-span-1" },
 ];
-
+ 
 // ── Rooms Page Data ──
 export const rooms = [
-  { id: "overwater", name: "Overwater Villa", price: 1500, size: "1,200 sq ft", guests: "2 Guests", description: "Suspended above the turquoise lagoon with a private infinity plunge pool, glass floor panels, and direct ocean access. Wake to the sound of the sea.", image: "/images/home-hero.png" },
-  { id: "ocean-suite", name: "Ocean Suite", price: 2200, size: "1,800 sq ft", guests: "2–4 Guests", description: "Expansive multi-level suite with panoramic ocean views, private butler service, and a sprawling outdoor deck with sun loungers and a hot tub.", image: "/images/rooms-hero.png" },
-  { id: "garden", name: "Garden Pool Villa", price: 1200, size: "1,500 sq ft", guests: "2 Guests", description: "Nestled in lush tropical foliage, featuring a private courtyard, outdoor rain shower, and a heated pool surrounded by native flowering plants.", image: "/images/rooms-hero.png" },
-  { id: "penthouse", name: "Penthouse Residence", price: 5500, size: "4,000 sq ft", guests: "6 Guests", description: "The pinnacle of luxury. Three bedrooms, private spa treatment room, rooftop dining terrace with 360° views, and a dedicated full-time staff.", image: "/images/about-hero.png" },
+  { id: "standard-non-ac", name: "Standard Non-AC Room", price: 600, size: "180 sq ft", guests: "2 Guests", description: "A clean and comfortable non-AC room with a ceiling fan, attached bathroom, and all basic amenities. Ideal for budget-conscious pilgrims and travellers.", image: "/images/rooms-hero.png" },
+  { id: "standard-ac", name: "Standard AC Room", price: 900, size: "200 sq ft", guests: "2 Guests", description: "A well-maintained air-conditioned room with a comfortable bed, hot water facility, and a calm environment — perfect for a peaceful night after temple darshan.", image: "/images/home-hero.png" },
+  { id: "deluxe-ac", name: "Deluxe AC Room", price: 1200, size: "250 sq ft", guests: "2–3 Guests", description: "Spacious deluxe room with AC, TV, wardrobe, and an attached bathroom with hot and cold water. A comfortable choice for families visiting for pilgrimage or leisure.", image: "/images/rooms-hero.png" },
+  { id: "family-room", name: "Family Room", price: 1600, size: "380 sq ft", guests: "4–5 Guests", description: "Our largest room, ideal for families. Features multiple beds, ample storage, a large attached bathroom, and all the comforts needed for an extended stay in Puri.", image: "/images/about-hero.png" },
 ];
-
+ 
 export const amenities = [
-  { icon: Droplets, label: "Private Plunge Pool" },
-  { icon: Star, label: "Butler Service" },
-  { icon: Waves, label: "Direct Ocean Access" },
-  { icon: UtensilsCrossed, label: "In-Villa Dining" },
-  { icon: Sparkles, label: "Spa Minibar" },
-  { icon: Wifi, label: "High-Speed WiFi" },
-  { icon: Coffee, label: "Nespresso & Minibar" },
-  { icon: Moon, label: "Nightly Turndown" },
+  { icon: Droplets, label: "Hot & Cold Water" },
+  { icon: Star, label: "Daily Housekeeping" },
+  { icon: Waves, label: "Near Puri Beach" },
+  { icon: UtensilsCrossed, label: "Complimentary Breakfast" },
+  { icon: Sparkles, label: "Clean Bathrooms" },
+  { icon: Wifi, label: "Free WiFi" },
+  { icon: Coffee, label: "Morning Tea/Coffee" },
+  { icon: Moon, label: "24-Hour Reception" },
 ];
-
+ 
 export const villas = [
-  { name: "Overwater", pool: true, butler: true, size: "1,200", from: 1500, sea: true, beds: 1 },
-  { name: "Ocean Suite", pool: true, butler: true, size: "1,800", from: 2200, sea: true, beds: 2 },
-  { name: "Garden Pool", pool: true, butler: false, size: "1,500", from: 1200, sea: false, beds: 1 },
-  { name: "Penthouse", pool: true, butler: true, size: "4,000", from: 5500, sea: true, beds: 3 },
+  { name: "Standard Non-AC", pool: false, butler: false, size: "180", from: 600, sea: false, beds: 1 },
+  { name: "Standard AC", pool: false, butler: false, size: "200", from: 900, sea: false, beds: 1 },
+  { name: "Deluxe AC", pool: false, butler: false, size: "250", from: 1200, sea: false, beds: 1 },
+  { name: "Family Room", pool: false, butler: false, size: "380", from: 1600, sea: false, beds: 2 },
 ];
-
+ 
 // ── Dining Page Data ──
 export const restaurants = [
-  { id: "saltwater", name: "Saltwater", concept: "Beachfront Seafood", hours: "18:00 – 23:00", description: "Dine on pristine white sands with the ocean lapping gently at the shore. Saltwater offers the day's freshest catch, prepared with elegant simplicity and paired with an extensive champagne collection.", image: "/images/dining-saltwater.png", align: "left" },
-  { id: "ember", name: "Ember", concept: "Fire-Roasted Al Fresco", hours: "19:00 – 00:00", description: "Deep in the jungle canopy, Ember harnesses the primal element of fire. Experience dramatic open-flame cooking, premium aged wagyu, and bold smoky flavours in an unforgettable architectural setting.", image: "/images/dining-ember.png", align: "right" },
-  { id: "soleil", name: "Soleil", concept: "Rooftop Champagne Bar", hours: "17:00 – 01:00", description: "Suspended between the ocean and the stars. Soleil is the ultimate destination for sunset cocktails, rare vintages, and delicate canapés with uninterrupted panoramic views of the horizon.", image: "/images/home-hero.png", align: "left" },
+  { id: "sabitri-kitchen", name: "Sabitri Kitchen", concept: "Home-Style Odia Meals", hours: "07:00 – 10:00 & 12:00 – 21:00", description: "Start your day with a wholesome Odia breakfast and enjoy simple, freshly cooked vegetarian meals throughout the day. Our kitchen serves authentic local flavours using fresh, seasonal ingredients sourced from nearby markets.", image: "/images/dining-saltwater.png", align: "left" },
+  { id: "prasad-corner", name: "Prasad Corner", concept: "Mahaprasad & Temple Sweets", hours: "06:00 – 20:00", description: "Conveniently located near our reception, Prasad Corner offers the sacred Mahaprasad of Lord Jagannath along with traditional Odia sweets and snacks for devotees and guests throughout the day.", image: "/images/dining-ember.png", align: "right" },
+  { id: "rooftop-chai", name: "Rooftop Chai Stall", concept: "Evening Tea & Snacks", hours: "17:00 – 21:00", description: "Unwind on our rooftop terrace with a warm cup of masala chai, light snacks, and a gentle breeze as the evening settles over Puri. A perfect spot to relax after a day of darshan and sightseeing.", image: "/images/home-hero.png", align: "left" },
 ];
-
+ 
 export const morningItems = [
-  { title: "The Aurelia Breakfast", desc: "A 24-item spread of tropical fruits, freshly baked viennoiseries, artisan cheeses, and made-to-order egg dishes. Served in-villa or at Saltwater's beachside terrace." },
-  { title: "Sunrise Tray Service", desc: "Requested the evening before. Delivered at the exact moment the sun clears the horizon — a personal ritual for those who know." },
-  { title: "The Juice Ritual", desc: "Our juice master prepares bespoke cold-pressed blends each morning, drawing from the resort's private garden. Your preferences are noted and remembered." },
+  { title: "Odia Breakfast Thali", desc: "A filling morning spread of upma, poha, idli, sambar, chutney, and seasonal fruits — all freshly prepared in our kitchen. Served between 7:00 AM and 10:00 AM." },
+  { title: "Early Darshan Tea Service", desc: "For guests attending early morning temple darshan, we offer hot tea and biscuits from 5:30 AM onwards at the ground-floor lobby on request." },
+  { title: "Packed Lunch for Excursions", desc: "Planning a day trip to Konark or Chilika Lake? Let us know the night before and we will prepare a simple packed vegetarian lunch for your journey." },
 ];
-
+ 
 export const wines = [
-  { region: "Burgundy, France", label: "Domaine de la Romanée-Conti, 2018", style: "Grand Cru Pinot Noir" },
-  { region: "Champagne, France", label: "Krug, Grande Cuvée 170ème Édition", style: "Prestige Blanc de Blancs" },
-  { region: "Napa Valley, USA", label: "Screaming Eagle, Cabernet Sauvignon 2019", style: "Cult Cabernet" },
-  { region: "Priorat, Spain", label: "Álvaro Palacios, L'Ermita 2020", style: "Old Vine Garnacha" },
+  { region: "Puri, Odisha", label: "Mahaprasad of Jagannath Temple", style: "Sacred Odia Temple Offering" },
+  { region: "Puri, Odisha", label: "Fresh Coconut Water, Grand Road", style: "Natural Tropical Refreshment" },
+  { region: "Puri, Odisha", label: "Lassi from Local Dairy, Bada Danda", style: "Chilled Sweet or Salted" },
+  { region: "Puri, Odisha", label: "Masala Chai, Sabitri Rooftop", style: "Ginger & Cardamom Blend" },
 ];
-
+ 
 // ── Experiences Page Data ──
 export const experiences = [
-  { title: "Private Yacht Charter", duration: "Half or Full Day", description: "Set sail on a fully crewed luxury catamaran. Snorkel pristine sandbars, enjoy champagne at anchor, and return at dusk.", image: "/images/experiences-hero.png" },
-  { title: "Sunrise Reef Yoga", duration: "60 Minutes", description: "Begin your morning suspended above the lagoon on a floating platform as the sun rises over the atoll.", image: "/images/about-hero.png" },
-  { title: "Coral Restoration Dive", duration: "120 Minutes", description: "Join our resident marine biologist to plant coral fragments and witness the underwater garden you helped create.", image: "/images/experiences-hero.png" },
-  { title: "Helicopter Island Tour", duration: "45 Minutes", description: "A breathtaking aerial perspective of the atolls, lagoons, and uninhabited islands stretching to the horizon.", image: "/images/home-hero.png" },
-  { title: "Couples' Spa Ritual", duration: "150 Minutes", description: "An immersive journey through warm stone, tropical oils, and ancient Maldivian healing techniques for two.", image: "/images/rooms-hero.png" },
-  { title: "Private Beach Bonfire", duration: "Evening", description: "A secluded stretch of sand, a roaring fire, a private chef, and a sky full of stars. Nothing else exists tonight.", image: "/images/dining-ember.png" },
+  { title: "Jagannath Temple Darshan", duration: "1–3 Hours", description: "Walk just 200 metres from our doorstep to the sacred Jagannath Temple — one of India's four holiest Dhamas. Our staff can guide you on visiting timings and rituals.", image: "/images/experiences-hero.png" },
+  { title: "Puri Beach Morning Walk", duration: "60–90 Minutes", description: "Begin your morning with a peaceful stroll along the golden sands of Puri Beach, just 1 km from the guest house. Watch the sunrise over the Bay of Bengal.", image: "/images/about-hero.png" },
+  { title: "Konark Sun Temple Day Trip", duration: "Half Day", description: "Our reception can arrange an auto-rickshaw or taxi to the UNESCO World Heritage Konark Sun Temple, just 35 km away. A must-visit for history and architecture lovers.", image: "/images/experiences-hero.png" },
+  { title: "Chilika Lake Excursion", duration: "Full Day", description: "Explore Asia's largest brackish water lagoon, home to Irrawaddy dolphins and migratory birds. Day tours can be arranged from our reception with local guides.", image: "/images/home-hero.png" },
+  { title: "Rath Yatra Festival Experience", duration: "Full Day (Seasonal)", description: "Witness or participate in the world-famous Rath Yatra procession along Grand Road. Our guest house is ideally placed for viewing this magnificent annual festival.", image: "/images/rooms-hero.png" },
+  { title: "Local Market & Handicraft Walk", duration: "2–3 Hours", description: "Explore the vibrant local markets of Puri — pick up Pattachitra paintings, sea-shell crafts, and handloom textiles unique to Odisha. Our staff will guide you to the best spots.", image: "/images/dining-ember.png" },
 ];
-
+ 
 export const steps = [
-  { icon: Search, num: "01", title: "Choose", desc: "Browse our curated collection and select the moments that speak to you." },
-  { icon: Settings, num: "02", title: "Personalise", desc: "Your personal concierge shapes every detail — timing, additions, special requests." },
-  { icon: Sparkles, num: "03", title: "Immerse", desc: "Every detail handled. Every moment extraordinary. Simply arrive and be present." },
+  { icon: Search, num: "01", title: "Choose", desc: "Browse our room options and select what suits your group size and budget best." },
+  { icon: Settings, num: "02", title: "Book", desc: "Call us directly or book through MakeMyTrip, Goibibo, or Agoda. We confirm within hours." },
+  { icon: Sparkles, num: "03", title: "Arrive", desc: "Check in anytime after 12:00 PM. Our team will welcome you and help you settle in quickly." },
 ];
-
+ 
 export const seasons = [
-  { name: "Jan – Mar", label: "Peak Season", weather: "28°C | Calm seas", note: "Ideal diving & snorkelling" },
-  { name: "Apr – Jun", label: "Shoulder Season", weather: "30°C | Light winds", note: "Best surf & water sports" },
-  { name: "Jul – Sep", label: "Green Season", weather: "29°C | Tropical rains", note: "Whale shark migrations" },
-  { name: "Oct – Dec", label: "Transition", weather: "27°C | Variable", note: "Manta ray feeding season" },
+  { name: "Oct – Feb", label: "Peak Season", weather: "22–28°C | Pleasant", note: "Best time for temple & beach" },
+  { name: "Mar – May", label: "Warm Season", weather: "30–38°C | Sunny", note: "Fewer crowds, lower rates" },
+  { name: "Jun – Jul", label: "Rath Yatra", weather: "28–32°C | Monsoon onset", note: "Famous chariot festival" },
+  { name: "Aug – Sep", label: "Monsoon", weather: "25–30°C | Rains", note: "Lush greenery, quiet retreat" },
 ];
-
+ 
 // ── About Page Data ──
 export const aboutAwards = [
-  { name: "Conde Nast Traveler", title: "Top Resort in the Indian Ocean", year: "2024" },
-  { name: "Forbes Travel Guide", title: "Five-Star Rated", year: "2023–2024" },
-  { name: "Travel + Leisure", title: "World's Best Hotel", year: "2023" },
-  { name: "Michelin Guide", title: "Two Stars — Saltwater", year: "2022–2024" },
-  { name: "Tatler", title: "Best New Hotel", year: "2022" },
-  { name: "Virtuoso", title: "Best Sustainable Luxury Resort", year: "2023" },
+  { name: "Justdial", title: "Rated 4.7 – Guest Houses in Puri", year: "2024" },
+  { name: "MakeMyTrip", title: "Highly Recommended Budget Stay", year: "2023–2024" },
+  { name: "Goibibo", title: "Very Good Rating – Popular Among Tourists", year: "2023" },
+  { name: "Agoda", title: "Top-Rated Homestay in Puri", year: "2022–2024" },
+  { name: "Expedia", title: "15-Min Walk to Jagannath Temple", year: "2023" },
+  { name: "TripAdvisor", title: "Budget Friendly, Good Value Stay", year: "2024" },
 ];
-
+ 
 export const values = [
-  { icon: Heart, title: "Handcrafted Hospitality", body: "Every detail is personally curated by our resident experience architects. Nothing is templated. Nothing is overlooked." },
-  { icon: Leaf, title: "Sustainability Pledge", body: "100% renewable energy, coral restoration programs, zero single-use plastics, and a dedicated marine biologist on-site since 2009." },
-  { icon: Star, title: "The Aurelia Standard", body: "A guest-to-staff ratio of 1:4 ensures anticipatory service that feels instinctive, never intrusive." },
+  { icon: Heart, title: "Warm Odia Hospitality", body: "We treat every guest like family. From helping you plan your temple visits to arranging local transport, our team is always ready to assist with a smile." },
+  { icon: Leaf, title: "Clean & Hygienic Rooms", body: "Our rooms are cleaned daily and inspected before every check-in. We maintain strict hygiene standards so you can focus entirely on your pilgrimage or holiday." },
+  { icon: Star, title: "Unbeatable Location", body: "Just 200 metres from the Jagannath Temple and 1 km from Puri Beach — no guest house in Puri puts you closer to the places that matter most." },
 ];
-
+ 
 export const timeline = [
-  { year: "1998", title: "Foundation", desc: "First overwater villa completed — built by hand over seven years by a marine architect and a Maldivian hospitality dynasty." },
-  { year: "2003", title: "First Michelin Recognition", desc: "Saltwater becomes the first Maldivian restaurant to earn a Michelin star, putting Aurelia on the world culinary map." },
-  { year: "2009", title: "Marine Conservation", desc: "Aurelia launches its coral restoration initiative, personally planting 18,000 coral fragments across the lagoon reef." },
-  { year: "2015", title: "Penthouse Opens", desc: "The 4,000 sq ft Penthouse Residence is unveiled — Aurelia's most exclusive accommodation to date." },
-  { year: "2022", title: "Second Michelin Star", desc: "A second star awarded to Saltwater, cementing Chef Arnaud Villeneuve's ocean-to-table philosophy globally." },
-  { year: "2024", title: "Forbes Recertified", desc: "Forbes Travel Guide recertifies Aurelia with Five Stars for the eighth consecutive year." },
+  { year: "2008", title: "Founded", desc: "Sabitri Guest House was established by the Sabitri family to offer clean, affordable accommodation for pilgrims and tourists visiting Jagannath Temple." },
+  { year: "2011", title: "First Expansion", desc: "Added a new block of AC rooms to meet growing demand from families and groups visiting during Rath Yatra and other festivals." },
+  { year: "2015", title: "Online Presence", desc: "Listed on MakeMyTrip, Goibibo, and Agoda, making it easier for guests across India and abroad to discover and book Sabitri Guest House." },
+  { year: "2018", title: "Breakfast Service Launched", desc: "Introduced a complimentary Odia breakfast service for all guests, earning widespread praise in guest reviews across all platforms." },
+  { year: "2021", title: "Rating Milestone", desc: "Crossed 200 verified reviews on Justdial with a consistent 4.7-star rating — a testament to the loyalty and satisfaction of our guests." },
+  { year: "2024", title: "Renovation & Upgrade", desc: "Completed a full renovation of all deluxe and family rooms with new furnishings, improved bathrooms, and upgraded WiFi infrastructure." },
 ];
-
+ 
 export const founders = [
-  { name: "Jean-Michel Reyes", role: "Co-Founder & Marine Architect", quote: "I wanted to build something that could only exist here, only in this light, only over this lagoon.", img: "/images/about-hero.png" },
-  { name: "Amina Nasheed", role: "Co-Founder & Hospitality Director", quote: "Maldivian culture is built on the rhythm of the ocean. Everything we do at Aurelia honours that rhythm.", img: "/images/rooms-hero.png" },
-  { name: "Arnaud Villeneuve", role: "Executive Chef, Two Michelin Stars", quote: "I came for two weeks. That was eighteen years ago. The lagoon never lets you go.", img: "/images/dining-saltwater.png" },
+  { name: "Sabitri Devi", role: "Founder & Proprietor", quote: "Every pilgrim who comes here deserves a clean bed and a warm welcome. That is all we have ever promised.", img: "/images/about-hero.png" },
+  { name: "Bikash Mohanty", role: "Manager & Operations Head", quote: "Our guests travel from across India to seek blessings. It is our honour to make their stay comfortable and worry-free.", img: "/images/rooms-hero.png" },
+  { name: "Priya Sabitri", role: "Guest Relations & Booking", quote: "From the first inquiry to check-out, we want every guest to feel they have a local friend in Puri.", img: "/images/dining-saltwater.png" },
 ];
-
+ 
 // ── Around Us Page Data ──
 export const locations = [
-  { name: "Snorkel Reef", distance: "200m", unit: "from the jetty", description: "A living coral garden teeming with hawksbill turtles, manta rays, and over 300 species of tropical fish. Gear provided complimentary.", icon: Waves, category: "Nature", travel: "3-min swim" },
-  { name: "Village Market", distance: "2km", unit: "by boat", description: "A vibrant local market offering hand-woven textiles, spices, and the island's legendary dried fish. Best visited at sunrise.", icon: Building2, category: "Culture", travel: "10-min boat" },
-  { name: "Ancient Temple", distance: "8km", unit: "from resort", description: "A 12th-century Buddhist temple complex, one of the oldest remaining structures in the archipelago. Guided tours available daily.", icon: Navigation, category: "Heritage", travel: "20-min speedboat" },
-  { name: "Twin Waterfalls", distance: "15km", unit: "inland", description: "Two dramatic cascades hidden deep in the rainforest. Aurelia arranges private jungle treks with expert naturalist guides.", icon: Trees, category: "Nature", travel: "30-min 4WD + hike" },
-  { name: "Dolphin Channel", distance: "22km", unit: "by charter", description: "A renowned spinner dolphin nursery. Dawn excursions by private catamaran offer close, non-intrusive wildlife encounters.", icon: Waves, category: "Wildlife", travel: "45-min yacht" },
-  { name: "Malé Capital", distance: "45km", unit: "by seaplane", description: "The compact island capital offers world-class dining, designer boutiques, and international connections.", icon: MapPin, category: "Urban", travel: "15-min seaplane" },
+  { name: "Jagannath Temple", distance: "200m", unit: "from the guest house", description: "One of India's four sacred Dhamas, the 12th-century Jagannath Temple is the spiritual heart of Puri. Entry is restricted to Hindus; our staff will guide you on visiting protocols.", icon: Navigation, category: "Heritage", travel: "3-min walk" },
+  { name: "Puri Beach (Golden Beach)", distance: "1km", unit: "from the guest house", description: "A wide, clean stretch of the Bay of Bengal shore. Popular for sunrise walks, horse rides, and evening snacks from beach-side stalls.", icon: Waves, category: "Nature", travel: "12-min walk" },
+  { name: "Swargadwar Cremation Ground", distance: "1.5km", unit: "from the guest house", description: "A sacred riverside site of immense spiritual significance, believed to grant moksha. A solemn place visited by many pilgrims during their stay in Puri.", icon: Compass, category: "Heritage", travel: "18-min walk" },
+  { name: "Konark Sun Temple", distance: "35km", unit: "from Puri", description: "A UNESCO World Heritage Site and one of India's greatest architectural marvels — the 13th-century Sun Temple shaped like a colossal chariot. Day trips easily arranged.", icon: Building2, category: "Heritage", travel: "45-min taxi" },
+  { name: "Chilika Lake", distance: "50km", unit: "from Puri", description: "Asia's largest brackish water lagoon, home to Irrawaddy dolphins, flamingos, and hundreds of migratory bird species. Boat safaris available.", icon: Waves, category: "Wildlife", travel: "1-hr taxi" },
+  { name: "Raghurajpur Craft Village", distance: "14km", unit: "from Puri", description: "A UNESCO-recognised heritage village where every family practises traditional Pattachitra painting, palm-leaf engraving, and stone carving. A living art experience.", icon: Trees, category: "Culture", travel: "25-min taxi" },
 ];
-
+ 
 export const categoryColors: Record<string, string> = {
   Nature: "text-emerald-600",
   Culture: "text-amber-600",
@@ -191,39 +192,40 @@ export const categoryColors: Record<string, string> = {
   Wildlife: "text-cyan-600",
   Urban: "text-violet-600",
 };
-
+ 
 export const transports = [
-  { icon: PlaneTakeoff, type: "Seaplane", duration: "15 min", desc: "From Velana Airport" },
-  { icon: Anchor, type: "Speedboat", duration: "45 min", desc: "Shared or private" },
-  { icon: Wind, type: "Helicopter", duration: "20 min", desc: "Private charter" },
-  { icon: Waves, type: "Private Yacht", duration: "60+ min", desc: "Fully crewed departure" },
+  { icon: PlaneTakeoff, type: "By Air", duration: "60 km", desc: "From Biju Patnaik Airport, Bhubaneswar" },
+  { icon: Anchor, type: "By Train", duration: "1 km", desc: "From Puri Railway Station" },
+  { icon: Wind, type: "By Bus", duration: "2 km", desc: "From Puri Bus Stand" },
+  { icon: Waves, type: "Auto-Rickshaw", duration: "5 min", desc: "Easily available throughout the city" },
 ];
-
+ 
 export const islandHighlights = [
-  { label: "Sandbars", value: "14", note: "Private access available" },
-  { label: "Dive Sites", value: "28+", note: "PADI-certified guides" },
-  { label: "Marine Species", value: "300+", note: "Reef-monitored" },
-  { label: "Uninhabited Islands", value: "7", note: "Reachable by seaplane" },
+  { label: "Temple Distance", value: "200m", note: "Walk in 3 minutes" },
+  { label: "Beach Distance", value: "1km", note: "Easy 12-min walk" },
+  { label: "Guest Rating", value: "4.7★", note: "Verified on Justdial" },
+  { label: "Reviews", value: "227+", note: "Across platforms" },
 ];
-
+ 
 // ── Contact Page Data ──
 export const contactDetails = [
-  { icon: Phone, label: "Reservations", value: "+960 123 4567", href: "tel:+9601234567" },
-  { icon: MessageCircle, label: "WhatsApp", value: "+960 987 6543", href: "https://wa.me/960987654" },
-  { icon: Mail, label: "Email", value: "reservations@aurelia.com", href: "mailto:reservations@aurelia.com" },
-  { icon: MapPin, label: "Address", value: "Aurelia Atoll, MV 00120", href: "#" },
+  { icon: Phone, label: "Call Us", value: "+91 90901 48874", href: "tel:+919090148874" },
+  { icon: MessageCircle, label: "WhatsApp", value: "+91 90901 48874", href: "https://wa.me/919090148874" },
+  { icon: Mail, label: "Email", value: "sabitriguesthouse@gmail.com", href: "mailto:sabitriguesthouse@gmail.com" },
+  { icon: MapPin, label: "Address", value: "Shree Marg, Chudanga Sahi, Puri, Odisha – 752001", href: "#" },
 ];
-
+ 
 export const promises = [
-  { icon: Clock, title: "2-Hour Response", desc: "All enquiries personally acknowledged within 2 hours by your assigned concierge." },
-  { icon: Shield, title: "Total Discretion", desc: "Guest privacy is sacred at Aurelia. Our entire team operates under strict confidentiality protocols." },
-  { icon: Star, title: "No Request Too Rare", desc: "From private jet arrangements to rare vintage sourcing — if it exists, we will find it." },
+  { icon: Clock, title: "Quick Confirmation", desc: "All booking enquiries confirmed within 2 hours by our reception team. Call or WhatsApp any time." },
+  { icon: Shield, title: "Safe & Secure Stay", desc: "CCTV-monitored premises, 24-hour reception, and a safe neighbourhood just steps from the temple complex." },
+  { icon: Star, title: "Honest Pricing", desc: "No hidden charges. What you see is what you pay — clean rooms at fair prices, every single time." },
 ];
-
+ 
 export const faqs = [
-  { q: "What is the minimum stay?", a: "Three nights during peak season (December – April), two nights in off-peak periods. For holiday periods such as Christmas and New Year, a minimum of five nights applies." },
-  { q: "Do you offer airport transfers?", a: "Yes — we arrange both seaplane (15 minutes) and speedboat (45 minutes) transfers from Velana International Airport. All transfers are pre-arranged by your personal concierge." },
-  { q: "Is the resort all-inclusive?", a: "Rates are room-only. Curated dining, spa, and experience packages are available on request and can be tailored entirely to your preferences before arrival." },
-  { q: "What is the cancellation policy?", a: "Full refund for cancellations made 14 or more days before arrival. Within 14 days, a one-night charge applies. Within 7 days, a two-night charge applies. Holiday periods may vary." },
-  { q: "Can you accommodate dietary requirements?", a: "Absolutely. Our kitchen team accommodates all dietary preferences — vegan, gluten-free, Kosher, Halal, allergen-specific. Please advise at booking so we can prepare for your arrival." },
+  { q: "What is the check-in and check-out time?", a: "Check-in is at 12:00 PM and check-out is at 11:00 AM. Early check-in or late check-out may be available on request, subject to room availability." },
+  { q: "Is the guest house close to Jagannath Temple?", a: "Yes — Sabitri Guest House is located just 200 metres from the Jagannath Temple on Shree Marg, Chudanga Sahi. You can walk to the temple in under 5 minutes." },
+  { q: "Do you provide complimentary breakfast?", a: "Yes, a simple Odia breakfast is included with all room bookings. Tea and coffee are available at the reception from 5:30 AM for guests attending early morning darshan." },
+  { q: "Is parking available?", a: "Limited two-wheeler parking is available on the premises. For four-wheelers, a public parking area is available nearby. Please inform us in advance if you are arriving by car." },
+  { q: "Do you accommodate solo female travellers and families?", a: "Absolutely. We welcome families, couples, solo male and solo female travellers. Our premises are safe, well-monitored, and staffed around the clock." },
 ];
+ 
