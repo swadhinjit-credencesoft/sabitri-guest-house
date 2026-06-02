@@ -4,9 +4,9 @@ interface VillaComparisonItem {
   name: string;
   size: string;
   beds: number;
-  pool: boolean;
-  butler: boolean;
-  sea: boolean;
+  ac: boolean;
+  tv: boolean;
+  geyser: boolean;
   from: number;
 }
 
@@ -34,7 +34,7 @@ export function ComparisonTable({
           <h2 className="font-serif text-3xl md:text-4xl text-foreground">
             {title || (
               <>
-                Villa <span className="text-primary italic">Comparison</span>
+                Room <span className="text-primary italic">Comparison</span>
               </>
             )}
           </h2>
@@ -48,12 +48,12 @@ export function ComparisonTable({
           <table className="w-full min-w-[580px]">
             <thead>
               <tr className="border-b border-border">
-                <th className="text-left py-4 px-4 text-xs uppercase tracking-widest text-muted-foreground font-normal">Villa</th>
+                <th className="text-left py-4 px-4 text-xs uppercase tracking-widest text-muted-foreground font-normal">Room Type</th>
                 <th className="py-4 px-3 text-xs uppercase tracking-widest text-muted-foreground font-normal text-center">Size</th>
                 <th className="py-4 px-3 text-xs uppercase tracking-widest text-muted-foreground font-normal text-center">Beds</th>
-                <th className="py-4 px-3 text-xs uppercase tracking-widest text-muted-foreground font-normal text-center">Pool</th>
-                <th className="py-4 px-3 text-xs uppercase tracking-widest text-muted-foreground font-normal text-center">Butler</th>
-                <th className="py-4 px-3 text-xs uppercase tracking-widest text-muted-foreground font-normal text-center">Sea View</th>
+                <th className="py-4 px-3 text-xs uppercase tracking-widest text-muted-foreground font-normal text-center">AC</th>
+                <th className="py-4 px-3 text-xs uppercase tracking-widest text-muted-foreground font-normal text-center">TV</th>
+                <th className="py-4 px-3 text-xs uppercase tracking-widest text-muted-foreground font-normal text-center">Geyser</th>
                 <th className="text-right py-4 px-4 text-xs uppercase tracking-widest text-muted-foreground font-normal">From / night</th>
               </tr>
             </thead>
@@ -71,16 +71,16 @@ export function ComparisonTable({
                   <td className="py-4 px-3 text-center text-sm text-muted-foreground">{v.size} sq ft</td>
                   <td className="py-4 px-3 text-center text-sm text-muted-foreground">{v.beds}</td>
                   <td className="py-4 px-3 text-center">
-                    {v.pool ? <span className="text-primary font-medium">✓</span> : <span className="text-muted-foreground/30">—</span>}
+                    {v.ac ? <span className="text-primary font-medium">✓</span> : <span className="text-muted-foreground/30">—</span>}
                   </td>
                   <td className="py-4 px-3 text-center">
-                    {v.butler ? <span className="text-primary font-medium">✓</span> : <span className="text-muted-foreground/30">—</span>}
+                    {v.tv ? <span className="text-primary font-medium">✓</span> : <span className="text-muted-foreground/30">—</span>}
                   </td>
                   <td className="py-4 px-3 text-center">
-                    {v.sea ? <span className="text-primary font-medium">✓</span> : <span className="text-muted-foreground/30">—</span>}
+                    {v.geyser ? <span className="text-primary font-medium">✓</span> : <span className="text-muted-foreground/30">—</span>}
                   </td>
                   <td className="py-4 px-4 text-right font-serif text-primary text-lg">
-                    ${v.from.toLocaleString()}
+                    ₹{v.from.toLocaleString()}
                   </td>
                 </motion.tr>
               ))}

@@ -33,7 +33,7 @@ export default function Contact() {
             viewport={{ once: true }}
             className="text-center mb-10"
           >
-            <p className="text-amber-400 uppercase tracking-widest text-xs mb-3">The Aurelia Promise</p>
+            <p className="text-amber-400 uppercase tracking-widest text-xs mb-3">The Sabitri Promise</p>
             <h2 className="font-serif text-3xl md:text-4xl text-white">
               What to Expect <span className="text-amber-400 italic">When You Reach Out</span>
             </h2>
@@ -96,7 +96,7 @@ export default function Contact() {
               <p className="font-serif text-xl text-foreground italic mb-2 leading-relaxed">
                 "The moment you enquire,<br />you become our guest."
               </p>
-              <p className="text-muted-foreground text-xs uppercase tracking-widest">— Aurelia Hospitality Creed</p>
+              <p className="text-muted-foreground text-xs uppercase tracking-widest">— Sabitri Hospitality Creed</p>
             </div>
           </motion.div>
 

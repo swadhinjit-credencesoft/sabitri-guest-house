@@ -4,7 +4,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Clock, Waves } from "lucide-react";
-import { experiences, steps, seasons } from "@/data/resortData";
+import { experiences, steps, seasons, darshantStats } from "@/data/resortData";
 import { CinematicHero } from "@/components/layout/CinematicHero";
 
 export default function Experiences() {
@@ -21,21 +21,21 @@ export default function Experiences() {
       {/* ── Cinematic Hero ── */}
       <CinematicHero
         bgImage="/images/experiences-hero.png"
-        altText="Curated Experiences"
-        eyebrow="Beyond the Villa"
+        altText="Curated Experiences in Puri"
+        eyebrow="Discover Puri &amp; Odisha"
         title={
           <>
-            Curated<br /><span className="text-amber-400 italic">Experiences</span>
+            Sacred<br /><span className="text-amber-400 italic">Experiences</span>
           </>
         }
-        subtitle="Every moment, meticulously crafted for the extraordinary"
+        subtitle="Immerse yourself in devotion, history, culture, and nature"
         overlayGradient="bg-gradient-to-b from-black/40 via-black/20 to-black/85"
       />
 
-      {/* ── Signature Yacht Experience ── */}
+      {/* ── Shree Jagannath Temple Darshan ── */}
       <section ref={yachtRef} className="relative h-screen flex items-center overflow-hidden grain-overlay">
         <motion.div style={{ y: yachtParallax }} className="absolute inset-0 z-0">
-          <img src="/images/home-hero.png" alt="Private Yacht Charter" className="w-full h-full object-cover scale-110" />
+          <img src="/images/home-hero.png" alt="Shree Jagannath Temple Darshan" className="w-full h-full object-cover scale-110" />
           <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/55 to-black/10" />
         </motion.div>
         <div className="relative z-10 container mx-auto px-4 md:px-6 lg:px-8">
@@ -45,13 +45,13 @@ export default function Experiences() {
               <p className="text-amber-400 uppercase tracking-[0.35em] text-xs">Signature Experience</p>
             </div>
             <h2 className="font-serif text-5xl md:text-6xl lg:text-7xl text-white leading-[0.9] mb-7 text-shadow-hero">
-              The Private<br /><span className="text-amber-400 italic">Yacht Charter</span>
+              Shree Jagannath<br /><span className="text-amber-400 italic">Temple Darshan</span>
             </h2>
             <p className="text-white/65 text-base md:text-lg leading-relaxed mb-5">
-              Your own fully crewed 52-foot catamaran for a day — or three. Sail to uninhabited atolls, anchor above pristine reefs, and dine under open skies with our private chef aboard.
+              Located just 200m from the Jagannath Temple, Sabitri Guest House is the perfect base for pilgrims. Witness early morning rituals, participate in holy chants, and receive Lord Jagannath's blessings with ease.
             </p>
             <div className="grid grid-cols-3 gap-4 mb-9">
-              {[{ v: "52ft", l: "Catamaran" }, { v: "4", l: "Crew" }, { v: "48", l: "Atolls to Explore" }].map((s, i) => (
+              {darshantStats.map((s, i) => (
                 <div key={i} className="glass-dark rounded-xl p-4 text-center">
                   <div className="font-serif text-2xl text-amber-400">{s.v}</div>
                   <div className="text-white/40 text-xs uppercase tracking-wider mt-1">{s.l}</div>
@@ -59,7 +59,7 @@ export default function Experiences() {
               ))}
             </div>
             <Link href="/contact">
-              <Button className="rounded-full px-10 py-5 bg-amber-500 text-white hover:bg-amber-600 uppercase tracking-widest text-xs shadow-lg" data-testid="button-yacht">Charter Now</Button>
+              <Button className="rounded-full px-10 py-5 bg-amber-500 text-white hover:bg-amber-600 uppercase tracking-widest text-xs shadow-lg" data-testid="button-yacht">Enquire Now</Button>
             </Link>
           </motion.div>
         </div>
@@ -116,23 +116,23 @@ export default function Experiences() {
         </div>
       </section>
 
-      {/* ── Private Island Picnic ── */}
+      {/* ── Golden Sands of Puri Beach ── */}
       <section ref={islandRef} className="relative h-[75vh] flex items-center justify-center overflow-hidden grain-overlay">
         <motion.div style={{ y: islandParallax }} className="absolute inset-0 z-0">
-          <img src="/images/dining-saltwater.png" alt="Private Island Picnic" className="w-full h-full object-cover scale-110" />
+          <img src="/images/dining-saltwater.png" alt="Scenic Puri Beach Sunset" className="w-full h-full object-cover scale-110" />
           <div className="absolute inset-0 bg-black/65" />
         </motion.div>
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 1 }}
           className="relative z-10 text-center px-4 max-w-3xl mx-auto">
-          <p className="text-amber-400 uppercase tracking-[0.35em] text-xs mb-6">Exclusively Yours</p>
+          <p className="text-amber-400 uppercase tracking-[0.35em] text-xs mb-6">Local Coastal Serenity</p>
           <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white leading-[0.9] mb-7 text-shadow-hero">
-            A Private Island,<br /><span className="text-amber-400 italic">Just for You</span>
+            Puri Golden Beach,<br /><span className="text-amber-400 italic">Minutes Away</span>
           </h2>
           <p className="text-white/60 text-base md:text-lg max-w-xl mx-auto mb-10 leading-relaxed">
-            We arrange exclusive access to uninhabited nearby atolls. Your chef, your sommelier, your butler — all transferred by seaplane to prepare a meal you will describe for the rest of your life.
+            Puri's famous clean and tranquil Golden Beach is located just 1 km from Sabitri Guest House. Take a peaceful walk along the Bay of Bengal shore, watch the fishermen, and browse local seashell market stalls.
           </p>
           <Link href="/contact">
-            <Button className="rounded-full px-12 py-6 bg-amber-500 text-white hover:bg-amber-600 uppercase tracking-widest text-xs shadow-lg" data-testid="button-private-island">Reserve This Experience</Button>
+            <Button className="rounded-full px-12 py-6 bg-amber-500 text-white hover:bg-amber-600 uppercase tracking-widest text-xs shadow-lg" data-testid="button-private-island">Plan Your Visit</Button>
           </Link>
         </motion.div>
       </section>

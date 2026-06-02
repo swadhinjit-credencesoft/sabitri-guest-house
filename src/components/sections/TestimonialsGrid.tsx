@@ -36,7 +36,7 @@ export function TestimonialsGrid({
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-white">
             {title || (
               <>
-                Voices of <span className="text-amber-400 italic">Aurelia</span>
+                Voices of <span className="text-amber-400 italic">Sabitri</span>
               </>
             )}
           </h2>

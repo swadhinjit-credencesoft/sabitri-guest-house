@@ -35,7 +35,7 @@ export function TeamGrid({
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-white">
             {title || (
               <>
-                The People <span className="text-amber-400 italic">Behind Aurelia</span>
+                The People <span className="text-amber-400 italic">Behind Sabitri</span>
               </>
             )}
           </h2>

@@ -36,7 +36,7 @@ export function Navbar() {
     >
       <div className="container mx-auto px-4 md:px-6 h-20 md:h-24 flex items-center justify-between">
         <Link href="/" className="font-serif text-2xl md:text-3xl text-primary tracking-widest uppercase" data-testid="link-logo">
-          AURELIA
+          SABITRI
         </Link>
 
         {/* Desktop Nav */}

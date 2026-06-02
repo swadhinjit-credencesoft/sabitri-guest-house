@@ -4,7 +4,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
-import { stats, awards, testimonials, galleryImages } from "@/data/resortData";
+import { stats, awards, testimonials, galleryImages, spaStats } from "@/data/resortData";
 
 import { CinematicHero } from "@/components/layout/CinematicHero";
 import { EditorialSplit } from "@/components/layout/EditorialSplit";
@@ -23,16 +23,16 @@ export default function Home() {
 
       {/* ── Cinematic Hero ── */}
       <CinematicHero
-        bgImage="/images/home-hero.png"
-        altText="Aurelia Resort at golden hour"
-        eyebrow="Aurelia Resort & Spa — Maldives"
+        bgImage="/sabitrihomeimg.png"
+        altText="Sabitri Guest House exterior"
+        eyebrow="Sabitri Guest House — Puri, Odisha"
         title={
           <>
-            Where Time<br />Dissolves<br />
-            <span className="text-amber-400 italic">Into Luxury</span>
+            Comfortable Stay<br />Near Shree<br />
+            <span className="text-amber-400 italic">Jagannath Temple</span>
           </>
         }
-        subtitle="An exclusive sanctuary at the edge of the world"
+        subtitle="A warm, budget-friendly family guest house located just 200m from the temple"
         ctas={
           <>
             <Link href="/rooms">
@@ -40,7 +40,7 @@ export default function Home() {
                 className="rounded-full px-10 py-6 bg-amber-500 text-white hover:bg-amber-600 uppercase tracking-widest text-xs shadow-lg shadow-amber-500/20 w-48 sm:w-auto"
                 data-testid="button-explore-rooms"
               >
-                Explore Villas
+                Explore Rooms
               </Button>
             </Link>
             <Link href="/experiences">
@@ -49,7 +49,7 @@ export default function Home() {
                 className="rounded-full px-10 py-6 border-white/40 text-white bg-white/10 hover:bg-white/20 uppercase tracking-widest text-xs backdrop-blur-sm w-48 sm:w-auto"
                 data-testid="button-discover"
               >
-                Discover More
+                Experiences
               </Button>
             </Link>
           </>
@@ -81,13 +81,13 @@ export default function Home() {
           <div className="section-divider gsap-item" />
           <p className="text-primary uppercase tracking-[0.35em] text-xs mb-10 gsap-item">Our Belief</p>
           <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-foreground leading-[1.05] mb-10 gsap-item">
-            True luxury is not the<br />
-            <span className="text-primary italic">accumulation of things.</span><br />
-            It is the precision of moments.
+            Serving pilgrims is<br />
+            <span className="text-primary italic">our highest devotion.</span><br />
+            Experience true Odia warmth.
           </h2>
           <div className="section-divider gsap-item" />
           <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto mt-10 leading-relaxed gsap-item">
-            For 26 years, Aurelia has curated experiences that cannot be purchased elsewhere — only felt, remembered, and returned to. Every sunrise we witness from our jetty is proof that the world still holds wonder.
+            For over 15 years, Sabitri Guest House has welcomed devotees and families visiting the holy town of Puri. We offer a clean, peaceful sanctuary near Lord Jagannath's holy temple, ensuring your spiritual journey is comfortable and worry-free.
           </p>
         </GSAPStaggerReveal>
       </section>
@@ -98,22 +98,22 @@ export default function Home() {
       {/* ── Villa Showcase (editorial split) ── */}
       <EditorialSplit
         imageSrc="/images/home-hero.png"
-        imageAlt="Overwater Villa"
+        imageAlt="Deluxe AC Room"
         eyebrow="Signature Accommodation"
         title={
           <>
-            The Overwater <span className="text-amber-400 italic">Villa</span>
+            The Deluxe AC <span className="text-amber-400 italic">Room</span>
           </>
         }
-        description="Suspended above the turquoise lagoon. Glass floor panels reveal the ocean below. A private infinity plunge pool extends to the horizon. Wake to the sound of nothing but the sea."
-        features={["1,200 sq ft", "Private Pool", "Butler Service", "Ocean Access"]}
+        description="Spacious and fully air-conditioned, our Deluxe Room is designed with comfort in mind. Features a comfortable king-size bed, a large attached bathroom with geyser, high-speed WiFi, and a flat-screen TV — perfect for couples and small families."
+        features={["250 sq ft", "Air Conditioned", "Attached Bathroom", "High-Speed WiFi"]}
         cta={
           <Link href="/rooms">
             <Button
               className="w-full sm:w-auto rounded-full px-10 py-5 bg-amber-500 text-white hover:bg-amber-600 uppercase tracking-widest text-xs"
               data-testid="button-villa-showcase"
             >
-              Explore Villas
+              Explore Rooms
             </Button>
           </Link>
         }
@@ -131,7 +131,7 @@ export default function Home() {
         >
           <p className="text-primary uppercase tracking-widest text-xs mb-3">As Seen Through Our Lens</p>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground">
-            Life at <span className="text-primary italic">Aurelia</span>
+            Life at <span className="text-primary italic">Sabitri</span>
           </h2>
         </motion.div>
         <div className="grid grid-cols-3 grid-rows-2 gap-3 md:gap-4 h-[70vw] md:h-[50vw] max-h-[640px]">
@@ -153,17 +153,14 @@ export default function Home() {
             </motion.div>
           ))}
         </div>
-      </section>
-
-      {/* ── Dining Teaser (cinematic full-bleed) ── */}
-      <section className="relative h-[85vh] flex items-center overflow-hidden grain-overlay">
+      </section>      <section className="relative h-[85vh] flex items-center overflow-hidden grain-overlay">
         <div className="absolute inset-0 z-0">
           <img
             src="/images/dining-saltwater.png"
-            alt="Saltwater dining at dusk"
+            alt="Authentic Odia food served at the guest house"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/55 to-transparent" />
         </div>
         <div className="relative z-10 container mx-auto px-4 md:px-6 lg:px-8">
           <motion.div
@@ -173,12 +170,12 @@ export default function Home() {
             transition={{ duration: 1 }}
             className="max-w-xl"
           >
-            <p className="text-amber-400 uppercase tracking-[0.35em] text-xs mb-6">Three Dining Concepts</p>
+            <p className="text-amber-400 uppercase tracking-[0.35em] text-xs mb-6">Traditional Vegetarian Cuisine</p>
             <h2 className="font-serif text-5xl md:text-6xl lg:text-7xl text-white leading-[0.9] mb-8 text-shadow-hero">
-              Dining As<br /><span className="text-amber-400 italic">Theatre</span>
+              Sacred<br /><span className="text-amber-400 italic">Flavours</span>
             </h2>
             <p className="text-white/65 text-base md:text-lg mb-10 leading-relaxed">
-              Beachfront seafood. Fire-roasted jungle cuisine. A rooftop champagne bar under the stars.
+              Home-style pure Odia vegetarian thalis. Sacred Mahaprasad of Lord Jagannath served daily. Unwind with ginger masala tea on our rooftop terrace.
             </p>
             <Link href="/dining">
               <Button
@@ -197,7 +194,7 @@ export default function Home() {
         <motion.div style={{ y: spaY }} className="absolute inset-0 z-0">
           <img
             src="/images/rooms-hero.png"
-            alt="Aurelia Spa & Wellness"
+            alt="Devotional Rest and Quiet Atmosphere"
             className="w-full h-full object-cover scale-115"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/75" />
@@ -211,15 +208,15 @@ export default function Home() {
             <Sparkles size={14} className="text-amber-400" />
             <div className="w-8 h-px bg-amber-400/50" />
           </div>
-          <p className="text-amber-400 uppercase tracking-[0.35em] text-xs mb-7 gsap-item">Aurelia Spa & Wellness</p>
+          <p className="text-amber-400 uppercase tracking-[0.35em] text-xs mb-7 gsap-item">Devotional Rest & Comfort</p>
           <h2 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-white leading-[0.9] mb-8 text-shadow-hero gsap-item">
-            Surrender to the<br /><span className="text-amber-400 italic">Art of Stillness</span>
+            Find Peace in the<br /><span className="text-amber-400 italic">Holy Dham</span>
           </h2>
           <p className="text-white/60 text-base md:text-lg max-w-xl mx-auto mb-12 leading-relaxed gsap-item">
-            63 bespoke treatments. Ancient Maldivian rituals. Open-air pavilions suspended above the lagoon. Our spa biologist personalises every journey.
+            Unwind in our clean and peaceful guest rooms. Whether returning from early morning temple rituals or an evening walk at Puri beach, our guest house provides the quiet comfort you need.
           </p>
           <div className="grid grid-cols-3 gap-6 max-w-md mx-auto mb-12 gsap-item">
-            {[{ v: "63", l: "Treatments" }, { v: "4", l: "Pavilions" }, { v: "∞", l: "Ocean Views" }].map((s, i) => (
+            {spaStats.map((s, i) => (
               <div key={i} className="text-center">
                 <div className="font-serif text-3xl md:text-4xl text-amber-400">{s.v}</div>
                 <div className="text-white/40 text-xs uppercase tracking-wider mt-1">{s.l}</div>
@@ -227,13 +224,13 @@ export default function Home() {
             ))}
           </div>
           <div className="gsap-item">
-            <Link href="/experiences">
+            <Link href="/rooms">
               <Button
                 variant="outline"
                 className="rounded-full px-10 py-6 border-white/30 text-white bg-white/10 hover:bg-white/20 uppercase tracking-widest text-xs backdrop-blur-sm"
                 data-testid="button-spa"
               >
-                Discover Wellness
+                View Rooms
               </Button>
             </Link>
           </div>
@@ -244,12 +241,12 @@ export default function Home() {
       <section className="py-16 md:py-24 container mx-auto px-4 md:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center">
           <GSAPStaggerReveal selector=".gsap-item" className="w-full">
-            <p className="text-primary uppercase tracking-widest text-xs mb-4 gsap-item">Beyond the Villa</p>
+            <p className="text-primary uppercase tracking-widest text-xs mb-4 gsap-item">Spiritual & Scenic Tours</p>
             <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground mb-5 gsap-item">
               Curated <span className="text-primary italic">Experiences</span>
             </h2>
             <p className="text-muted-foreground text-base md:text-lg leading-relaxed mb-8 gsap-item">
-              Sunrise yoga on the reef. Private yacht charters at dusk. Coral restoration dives. Helicopter tours over the atolls. Every moment engineered to astonish.
+              Early morning Jagannath Temple Darshan guide. Scenic beachside strolls on Golden Beach. Excursions to Konark Sun Temple and Chilika Lake. Experience Odisha at its spiritual and cultural best.
             </p>
             <div className="gsap-item">
               <Link href="/experiences">
@@ -271,13 +268,13 @@ export default function Home() {
           >
             <img
               src="/images/experiences-hero.png"
-              alt="Ocean experiences at Aurelia"
+              alt="Temple and beach experiences in Puri"
               className="w-full object-cover hover:scale-105 transition-transform duration-1000"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent pointer-events-none" />
             <div className="absolute bottom-6 left-6 glass-dark rounded-xl px-5 py-3">
-              <p className="text-amber-400 text-xs uppercase tracking-widest">From</p>
-              <p className="text-white font-serif text-2xl">$180 <span className="text-white/50 text-sm font-sans">/ person</span></p>
+              <p className="text-amber-400 text-xs uppercase tracking-widest">Rooms From</p>
+              <p className="text-white font-serif text-2xl">₹600 <span className="text-white/50 text-sm font-sans">/ night</span></p>
             </div>
           </motion.div>
         </div>
@@ -289,7 +286,7 @@ export default function Home() {
       {/* ── Final CTA ── */}
       <section className="relative py-28 md:py-40 overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/images/about-hero.png" alt="Aurelia CTA" className="w-full h-full object-cover" />
+          <img src="/images/about-hero.png" alt="Sabitri Guest House CTA" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-black/70" />
         </div>
         <motion.div
@@ -298,9 +295,9 @@ export default function Home() {
           viewport={{ once: true }}
           className="relative z-10 container mx-auto px-4 md:px-6 lg:px-8 text-center"
         >
-          <p className="text-amber-400 uppercase tracking-widest text-xs mb-6">Your Escape Awaits</p>
+          <p className="text-amber-400 uppercase tracking-widest text-xs mb-6">Your Pilgrimage Awaits</p>
           <h2 className="font-serif text-5xl md:text-6xl lg:text-8xl text-white mb-12 max-w-4xl mx-auto leading-[0.9] text-shadow-hero">
-            Begin Your <span className="text-amber-400 italic">Aurelia</span> Story
+            Begin Your <span className="text-amber-400 italic">Sabitri</span> Story
           </h2>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact">
@@ -317,7 +314,7 @@ export default function Home() {
                 className="rounded-full px-12 py-6 border-white/30 text-white bg-white/10 hover:bg-white/20 uppercase tracking-widest text-xs backdrop-blur-sm"
                 data-testid="button-cta-rooms"
               >
-                View All Villas
+                View All Rooms
               </Button>
             </Link>
           </div>

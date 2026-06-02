@@ -18,14 +18,14 @@ export default function AroundUs() {
       {/* ── Cinematic Hero ── */}
       <CinematicHero
         bgImage="/images/experiences-hero.png"
-        altText="The Aurelia Atoll"
-        eyebrow="The Aurelia Atoll &amp; Beyond"
+        altText="Spiritual landmark of Puri"
+        eyebrow="Land of Lord Jagannath"
         title={
           <>
             Around<br /><span className="text-amber-400 italic">Us</span>
           </>
         }
-        subtitle="The resort is a sanctuary — the world beyond is equally extraordinary"
+        subtitle="Our guest house is located in the heart of Puri's holy landscape"
         scrollIndicator={true}
         overlayGradient="bg-gradient-to-b from-black/40 via-black/20 to-black/85"
       />
@@ -39,7 +39,7 @@ export default function AroundUs() {
             viewport={{ once: true }}
             className="text-center text-amber-400 uppercase tracking-widest text-xs mb-10"
           >
-            Getting Here from Velana International Airport
+            Getting Here: Transportation &amp; Accessibility
           </motion.p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-5">
             {transports.map((t, i) => (
@@ -71,13 +71,13 @@ export default function AroundUs() {
           <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
             <div className="flex items-center gap-2 mb-7">
               <Compass size={16} className="text-primary" />
-              <p className="text-primary uppercase tracking-[0.3em] text-xs">The Atoll at a Glance</p>
+              <p className="text-primary uppercase tracking-[0.3em] text-xs">Puri at a Glance</p>
             </div>
             <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground leading-tight mb-7">
-              An Ocean of<br /><span className="text-primary italic">Possibilities</span>
+              A Pilgrimage of<br /><span className="text-primary italic">Discoveries</span>
             </h2>
             <p className="text-muted-foreground text-base md:text-lg leading-relaxed mb-8">
-              Aurelia sits at the heart of a 74 sq km atoll — a living, breathing ecosystem of reefs, sandbars, channels, and wildlife sanctuaries. Every direction holds a new discovery.
+              Sabitri Guest House sits at the spiritual core of Puri. Experience a landscape rich with ancient heritage temples, tranquil golden sands, sacred lakes, and artistic heritage craft villages.
             </p>
             <div className="grid grid-cols-2 gap-4">
               {islandHighlights.map((h, i) => (
@@ -107,8 +107,8 @@ export default function AroundUs() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
             <div className="absolute bottom-6 left-6 right-6 glass-dark rounded-xl px-5 py-4">
               <p className="text-amber-400 text-xs uppercase tracking-widest mb-1">Location</p>
-              <p className="text-white font-serif text-lg">North Malé Atoll, Maldives</p>
-              <p className="text-white/50 text-xs mt-0.5">4°12'N 73°31'E</p>
+              <p className="text-white font-serif text-lg">Puri, Odisha, India</p>
+              <p className="text-white/50 text-xs mt-0.5">19.8049° N, 85.8179° E</p>
             </div>
           </motion.div>
         </div>
@@ -157,10 +157,10 @@ export default function AroundUs() {
         </div>
       </section>
 
-      {/* ── Private Island Discovery ── */}
+      {/* ── Guided Excursions ── */}
       <section ref={islandRef} className="relative h-[80vh] flex items-center justify-center overflow-hidden grain-overlay">
         <motion.div style={{ y: islandParallax }} className="absolute inset-0 z-0">
-          <img src="/images/dining-saltwater.png" alt="Private island discovery" className="w-full h-full object-cover scale-110" />
+          <img src="/images/dining-saltwater.png" alt="Guided Excursions in Puri" className="w-full h-full object-cover scale-110" />
           <div className="absolute inset-0 bg-black/70" />
         </motion.div>
         <motion.div
@@ -170,19 +170,19 @@ export default function AroundUs() {
           transition={{ duration: 1 }}
           className="relative z-10 text-center px-4 max-w-3xl mx-auto"
         >
-          <p className="text-amber-400 uppercase tracking-[0.35em] text-xs mb-6">Private Island Access</p>
+          <p className="text-amber-400 uppercase tracking-[0.35em] text-xs mb-6">Guided Excursions</p>
           <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white leading-[0.9] mb-7 text-shadow-hero">
-            Seven Uninhabited Islands,<br /><span className="text-amber-400 italic">Exclusively Yours</span>
+            Explore Sacred Lands &amp;<br /><span className="text-amber-400 italic">Scenic Wetlands</span>
           </h2>
           <p className="text-white/60 text-base md:text-lg max-w-xl mx-auto mb-10 leading-relaxed">
-            Our concierge can arrange exclusive half-day or full-day access to nearby uninhabited atolls. Your team, your picnic, your stretch of paradise.
+            Our reception desk can arrange reliable auto-rickshaws or private taxis for guided day tours to Konark Sun Temple, Raghurajpur heritage crafts village, or dolphin spotting at Chilika Lake.
           </p>
           <Link href="/contact">
             <Button
               className="rounded-full px-12 py-6 bg-amber-500 text-white hover:bg-amber-600 uppercase tracking-widest text-xs shadow-lg shadow-amber-500/20"
               data-testid="button-around-enquire"
             >
-              Plan Your Discovery
+              Plan Your Journey
             </Button>
           </Link>
         </motion.div>

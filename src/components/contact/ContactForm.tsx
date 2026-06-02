@@ -1,3 +1,5 @@
+"use client";
+
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -104,14 +106,14 @@ export function ContactForm() {
                   <Select onValueChange={field.onChange} defaultValue={field.value}>
                     <FormControl>
                       <SelectTrigger className="bg-white/60 border-border/60" data-testid="select-room-type">
-                        <SelectValue placeholder="Select a villa type" />
+                        <SelectValue placeholder="Select a room type" />
                       </SelectTrigger>
                     </FormControl>
                     <SelectContent>
-                      <SelectItem value="overwater">Overwater Villa</SelectItem>
-                      <SelectItem value="ocean-suite">Ocean Suite</SelectItem>
-                      <SelectItem value="garden">Garden Pool Villa</SelectItem>
-                      <SelectItem value="penthouse">Penthouse Residence</SelectItem>
+                      <SelectItem value="standard-non-ac">Standard Non-AC Room</SelectItem>
+                      <SelectItem value="standard-ac">Standard AC Room</SelectItem>
+                      <SelectItem value="deluxe-ac">Deluxe AC Room</SelectItem>
+                      <SelectItem value="family-room">Family Room</SelectItem>
                     </SelectContent>
                   </Select>
                   <FormMessage />

@@ -17,14 +17,14 @@ export default function Rooms() {
       {/* ── Cinematic Hero ── */}
       <CinematicHero
         bgImage="/images/rooms-hero.png"
-        altText="Aurelia Villas"
-        eyebrow="Private Residences"
+        altText="Sabitri Guest House rooms"
+        eyebrow="Comfortable Lodgings"
         title={
           <>
-            Rooms &amp;<br /><span className="text-amber-400 italic">Villas</span>
+            Rooms &amp;<br /><span className="text-amber-400 italic">Suites</span>
           </>
         }
-        subtitle="48 private residences — each one a world of its own"
+        subtitle="24 clean and spacious rooms designed for families and pilgrims"
         scrollIndicator={true}
         overlayGradient="bg-gradient-to-b from-black/40 via-black/20 to-black/85"
       />
@@ -33,15 +33,15 @@ export default function Rooms() {
       <section className="py-16 md:py-24 container mx-auto px-4 md:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center">
           <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.9 }}>
-            <p className="text-primary uppercase tracking-[0.3em] text-xs mb-5">Design Philosophy</p>
+            <p className="text-primary uppercase tracking-[0.3em] text-xs mb-5">Pilgrim Sanctuary</p>
             <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground leading-tight mb-7">
-              The Architecture<br />of <span className="text-primary italic">Retreat</span>
+              A Sanctuary of<br />Comfort &amp; <span className="text-primary italic">Peace</span>
             </h2>
             <p className="text-muted-foreground text-base md:text-lg leading-relaxed mb-6">
-              Each villa at Aurelia was designed by a marine architect who spent three years studying the movement of light across the lagoon at different hours. Every window, every terrace angle, every pool orientation is precise.
+              At Sabitri Guest House, our rooms are designed with one goal: providing a clean, spacious, and quiet environment to relax after a long day of travel, pilgrimage, or beach walking.
             </p>
             <p className="text-muted-foreground text-base leading-relaxed mb-8">
-              Local craftspeople from across the Maldives built every structure by hand — no prefabrication, no compromise. The result is a collection of spaces that feel inevitable, as though they grew here.
+              Every room is equipped with comfortable bedding, fresh linen, attached modern bathrooms, and standard ventilation. Our dedicated housekeeping team ensures high standards of cleanliness for all guests.
             </p>
             <Link href="/about">
               <Button variant="ghost" className="text-primary hover:text-primary/80 uppercase tracking-widest text-xs gap-2 px-0" data-testid="link-architecture">
@@ -82,7 +82,7 @@ export default function Rooms() {
               <div className="absolute inset-0 p-6 md:p-8 flex flex-col justify-end">
                 <div className="glass p-5 md:p-7 rounded-xl">
                   <h3 className="font-serif text-2xl md:text-3xl mb-1 text-foreground">{room.name}</h3>
-                  <span className="text-xs tracking-wider uppercase text-primary">From ${room.price.toLocaleString()} / night</span>
+                  <span className="text-xs tracking-wider uppercase text-primary">From ₹{room.price.toLocaleString()} / night</span>
                   <AnimatePresence>
                     {expandedId === room.id && (
                       <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: "auto", opacity: 1 }} exit={{ height: 0, opacity: 0 }} className="overflow-hidden">
@@ -109,22 +109,22 @@ export default function Rooms() {
       {/* ── Villa Comparison Table ── */}
       <ComparisonTable villas={villas} />
 
-      {/* ── Penthouse Spotlight ── */}
+      {/* ── Family Room Spotlight ── */}
       <section className="relative h-screen flex items-center justify-end overflow-hidden grain-overlay">
         <div className="absolute inset-0 z-0">
-          <img src="/images/about-hero.png" alt="Penthouse Residence" className="w-full h-full object-cover scale-110" />
+          <img src="/images/about-hero.png" alt="Family Room Residence" className="w-full h-full object-cover scale-110" />
           <div className="absolute inset-0 bg-gradient-to-l from-black/85 via-black/55 to-black/10" />
         </div>
         <div className="relative z-10 container mx-auto px-4 md:px-6 lg:px-8 flex justify-end">
           <motion.div initial={{ opacity: 0, x: 40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 1 }} className="max-w-md lg:max-w-lg text-right">
-            <p className="text-amber-400 uppercase tracking-[0.35em] text-xs mb-6">The Pinnacle</p>
+            <p className="text-amber-400 uppercase tracking-[0.35em] text-xs mb-6">Family Friendly Stay</p>
             <h2 className="font-serif text-5xl md:text-6xl lg:text-7xl text-white leading-[0.9] mb-7 text-shadow-hero">
-              Penthouse<br /><span className="text-amber-400 italic">Residence</span>
+              Spacious<br /><span className="text-amber-400 italic">Family Room</span>
             </h2>
-            <p className="text-white/65 text-base md:text-lg leading-relaxed mb-4">4,000 sq ft of uncompromised luxury. Three bedrooms, a private spa room, rooftop dining terrace with 360° panoramas, and a full-time dedicated team.</p>
-            <p className="text-amber-400/80 font-serif text-2xl mb-8">From $5,500 / night</p>
+            <p className="text-white/65 text-base md:text-lg leading-relaxed mb-4">Our largest suite, specifically designed for families and groups traveling together. Features multiple beds, ample storage, an attached bathroom with hot and cold water geyser, and high-speed internet.</p>
+            <p className="text-amber-400/80 font-serif text-2xl mb-8">From ₹1,600 / night</p>
             <Link href="/contact">
-              <Button className="rounded-full px-10 py-5 bg-amber-500 text-white hover:bg-amber-600 uppercase tracking-widest text-xs" data-testid="button-penthouse-reserve">Enquire</Button>
+              <Button className="rounded-full px-10 py-5 bg-amber-500 text-white hover:bg-amber-600 uppercase tracking-widest text-xs" data-testid="button-penthouse-reserve">Enquire Now</Button>
             </Link>
           </motion.div>
         </div>
@@ -134,7 +134,7 @@ export default function Rooms() {
       <section className="py-16 md:py-24 bg-stone-900">
         <div className="container mx-auto px-4 md:px-6 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-12">
-            <p className="text-amber-400 uppercase tracking-widest text-xs mb-4">Every Villa Includes</p>
+            <p className="text-amber-400 uppercase tracking-widest text-xs mb-4">Every Room Includes</p>
             <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-white">Standard <span className="text-amber-400 italic">Amenities</span></h2>
           </motion.div>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 md:gap-5">
@@ -155,7 +155,7 @@ export default function Rooms() {
       <section className="py-20 md:py-24 container mx-auto px-4 md:px-6 lg:px-8 text-center">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground mb-6">Ready to <span className="text-primary italic">Reserve</span>?</h2>
-          <p className="text-muted-foreground max-w-md mx-auto mb-8">Our reservation team is available 24/7. Let us find the perfect villa for your stay.</p>
+          <p className="text-muted-foreground max-w-md mx-auto mb-8">Our reservation team is available 24/7. Let us find the perfect room for your stay.</p>
           <Link href="/contact">
             <Button className="rounded-full px-12 py-5 bg-primary text-primary-foreground hover:bg-primary/90 uppercase tracking-widest text-xs" data-testid="button-rooms-book">Book Now</Button>
           </Link>

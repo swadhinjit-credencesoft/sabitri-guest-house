@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
@@ -109,18 +111,18 @@ export function BookingWidget() {
                 render={({ field }) => (
                   <FormItem className="xl:col-span-1">
                     <div className="flex flex-col gap-1">
-                      <label className="text-[10px] uppercase tracking-widest text-muted-foreground/70">Villa Type</label>
+                      <label className="text-[10px] uppercase tracking-widest text-muted-foreground/70">Room Type</label>
                       <Select onValueChange={field.onChange} defaultValue={field.value}>
                         <FormControl>
-                          <SelectTrigger className="bg-white border-border/60 h-10" data-testid="select-villa-type">
-                            <SelectValue placeholder="Villa Type" />
+                          <SelectTrigger className="bg-white border-border/60 h-10" data-testid="select-room-type">
+                            <SelectValue placeholder="Room Type" />
                           </SelectTrigger>
                         </FormControl>
                         <SelectContent>
-                          <SelectItem value="overwater">Overwater Villa</SelectItem>
-                          <SelectItem value="ocean-suite">Ocean Suite</SelectItem>
-                          <SelectItem value="garden">Garden Pool Villa</SelectItem>
-                          <SelectItem value="penthouse">Penthouse Residence</SelectItem>
+                          <SelectItem value="standard-non-ac">Standard Non-AC Room</SelectItem>
+                          <SelectItem value="standard-ac">Standard AC Room</SelectItem>
+                          <SelectItem value="deluxe-ac">Deluxe AC Room</SelectItem>
+                          <SelectItem value="family-room">Family Room</SelectItem>
                         </SelectContent>
                       </Select>
                     </div>

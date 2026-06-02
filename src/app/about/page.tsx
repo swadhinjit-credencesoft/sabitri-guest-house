@@ -2,7 +2,7 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Award, Leaf, Users } from "lucide-react";
-import { aboutAwards as awards, values, timeline, founders } from "@/data/resortData";
+import { aboutAwards as awards, values, timeline, founders, storyParagraphs, aboutMiniStats } from "@/data/resortData";
 import { CinematicHero } from "@/components/layout/CinematicHero";
 import { TimelineSection } from "@/components/sections/TimelineSection";
 import { TeamGrid } from "@/components/sections/TeamGrid";
@@ -18,11 +18,11 @@ export default function About() {
       {/* ── Cinematic Hero ── */}
       <CinematicHero
         bgImage="/images/about-hero.png"
-        altText="Aurelia Resort Architecture"
-        eyebrow="Est. 1998 — Maldives"
+        altText="Sabitri Guest House lobby"
+        eyebrow="Est. 2008 — Puri, Odisha"
         title={
           <>
-            Crafted for Those<br />Who Expect<span className="text-amber-400 italic">Everything</span>
+            Crafted for Comfort<br />and Sacred<span className="text-amber-400 italic">Peace</span>
           </>
         }
         subtitle=""
@@ -34,11 +34,7 @@ export default function About() {
       {/* ── Story ── */}
       <section className="container mx-auto px-4 md:px-6 lg:px-8 py-20 md:py-28 max-w-4xl">
         <div className="space-y-8">
-          {[
-            "Aurelia was born from a single conviction: that true luxury is not about excess, but about the extraordinary precision of moments. Founded in 1998 by a marine architect and a Maldivian hospitality dynasty, the resort was built over seven years — by hand, with purpose.",
-            "Every overwater villa was positioned to capture the exact angle of sunrise. The coral gardens beneath the main jetty were planted personally by our founding team, who still returns each year to tend them. The kitchens were designed around the rhythms of the local fishing community, not the other way around.",
-            "Twenty-six years later, Aurelia has welcomed heads of state, Nobel laureates, and newly-weds who honeymooned here and return every anniversary. We have never changed the occupancy limit. We never will.",
-          ].map((para, i) => (
+          {storyParagraphs.map((para, i) => (
             <motion.p key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1, duration: 0.8 }}
               className={i === 0 ? "text-xl md:text-2xl lg:text-3xl font-serif text-foreground leading-relaxed" : "text-base md:text-lg text-muted-foreground leading-relaxed"}>
               {para}
@@ -47,37 +43,33 @@ export default function About() {
         </div>
       </section>
 
-      {/* ── Marine Conservation ── */}
+      {/* ── Pilgrim Hospitality ── */}
       <section ref={conservationRef} className="relative h-screen flex items-center overflow-hidden grain-overlay">
         <motion.div style={{ y: conservationParallax }} className="absolute inset-0 z-0">
-          <img src="/images/experiences-hero.png" alt="Coral reef conservation" className="w-full h-full object-cover scale-110" />
+          <img src="/images/experiences-hero.png" alt="Pilgrim hospitality in Puri" className="w-full h-full object-cover scale-110" />
           <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/65 to-black/20" />
         </motion.div>
         <div className="relative z-10 container mx-auto px-4 md:px-6 lg:px-8">
           <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 1 }} className="max-w-xl">
             <div className="flex items-center gap-2 mb-8">
               <Leaf size={16} className="text-emerald-400" />
-              <p className="text-emerald-400 uppercase tracking-[0.35em] text-xs">Marine Conservation</p>
+              <p className="text-emerald-400 uppercase tracking-[0.35em] text-xs">Pilgrim Service</p>
             </div>
             <h2 className="font-serif text-5xl md:text-6xl lg:text-7xl text-white leading-[0.9] mb-8 text-shadow-hero">
-              The Reef Belongs<br /><span className="text-emerald-400 italic">To All of Us</span>
+              Serving You is<br /><span className="text-emerald-400 italic">Our Holy Duty</span>
             </h2>
             <p className="text-white/65 text-base md:text-lg leading-relaxed mb-7">
-              Since 2009, Aurelia has maintained a full-time marine biologist, a coral nursery, and a reef monitoring program covering 12 hectares of lagoon. Guests are invited — encouraged — to take part.
+              We treat every traveler as a guest of Lord Jagannath Himself. From early morning tea before darshan to guiding you through temple entry and Rath Yatra festival paths, we are here to support your journey.
             </p>
             <div className="grid grid-cols-3 gap-4 mb-9">
-              {[
-                { v: "18,400", l: "Coral Fragments Planted" },
-                { v: "12ha", l: "Reef Under Protection" },
-                { v: "100%", l: "Renewable Energy" },
-              ].map((s, i) => (
+              {aboutMiniStats.map((s, i) => (
                 <div key={i} className="glass-dark rounded-xl p-4 text-center">
                   <div className="font-serif text-xl md:text-2xl text-emerald-400">{s.v}</div>
                   <div className="text-white/40 text-[10px] uppercase tracking-wider mt-1">{s.l}</div>
                 </div>
               ))}
             </div>
-            <p className="text-white/40 text-xs uppercase tracking-widest">Virtuoso Award — Best Sustainable Luxury Resort 2023</p>
+            <p className="text-white/40 text-xs uppercase tracking-widest">Recommended Budget Guest House on MakeMyTrip & Goibibo</p>
           </motion.div>
         </div>
       </section>
@@ -114,7 +106,7 @@ export default function About() {
       {/* ── Team ── */}
       <TeamGrid
         eyebrow="The Team"
-        title={<>The People <span className="text-amber-400 italic">Behind Aurelia</span></>}
+        title={<>The People <span className="text-amber-400 italic">Behind Sabitri</span></>}
         members={founders}
       />
 
