@@ -47,7 +47,7 @@ export const galleryImages = [
   { src: "/images/home-hero.png",         alt: "Sabitri Guest House exterior near Jagannath Temple", span: "col-span-2 row-span-2" },
   { src: "/images/rooms-hero.png",        alt: "Clean and comfortable guest room",                  span: "col-span-1 row-span-1" },
   { src: "/images/dining-saltwater.png",  alt: "Breakfast dining area",                            span: "col-span-1 row-span-1" },
-  { src: "/images/experiences-hero.png",  alt: "View of Jagannath Temple from nearby",             span: "col-span-1 row-span-2" },
+  // { src: "/images/experiences-hero.png",  alt: "View of Jagannath Temple from nearby",             span: "col-span-1 row-span-2" },
   { src: "/images/about-hero.png",        alt: "Sabitri Guest House lobby",                        span: "col-span-1 row-span-1" },
   { src: "/images/dining-ember.png",      alt: "Local Odia food served at the guest house",        span: "col-span-1 row-span-1" },
 ];

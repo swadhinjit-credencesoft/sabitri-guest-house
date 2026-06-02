@@ -16,31 +16,31 @@ export const experiences = [
     title:       "Puri Beach Morning Walk",
     duration:    "60–90 Minutes",
     description: "Begin your morning with a peaceful stroll along the golden sands of Puri Beach, just 1 km from the guest house. Watch the sunrise over the Bay of Bengal.",
-    image:       "/images/about-hero.png",
+    image:       "/puribeach.jpg",
   },
   {
     title:       "Konark Sun Temple Day Trip",
     duration:    "Half Day",
     description: "Our reception can arrange an auto-rickshaw or taxi to the UNESCO World Heritage Konark Sun Temple, just 35 km away. A must-visit for history and architecture lovers.",
-    image:       "/images/experiences-hero.png",
+    image:       "/konarktemple.jpg",
   },
   {
     title:       "Chilika Lake Excursion",
     duration:    "Full Day",
     description: "Explore Asia's largest brackish water lagoon, home to Irrawaddy dolphins and migratory birds. Day tours can be arranged from our reception with local guides.",
-    image:       "/images/home-hero.png",
+    image:       "/chilikalake.jpg",
   },
   {
     title:       "Rath Yatra Festival Experience",
     duration:    "Full Day (Seasonal)",
     description: "Witness or participate in the world-famous Rath Yatra procession along Grand Road. Our guest house is ideally placed for viewing this magnificent annual festival.",
-    image:       "/images/rooms-hero.png",
+    image:       "/rathayatra.jpg",
   },
   {
     title:       "Local Market & Handicraft Walk",
     duration:    "2–3 Hours",
     description: "Explore the vibrant local markets of Puri — pick up Pattachitra paintings, sea-shell crafts, and handloom textiles unique to Odisha. Our staff will guide you to the best spots.",
-    image:       "/images/dining-ember.png",
+    image:       "/handcraft.png",
   },
 ];
 

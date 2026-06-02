@@ -35,7 +35,7 @@ export default function Experiences() {
       {/* ── Shree Jagannath Temple Darshan ── */}
       <section ref={yachtRef} className="relative h-screen flex items-center overflow-hidden grain-overlay">
         <motion.div style={{ y: yachtParallax }} className="absolute inset-0 z-0">
-          <img src="/images/home-hero.png" alt="Shree Jagannath Temple Darshan" className="w-full h-full object-cover scale-110" />
+          <img src="/jagannathmandir3.jpg" alt="Shree Jagannath Temple Darshan" className="w-full h-full object-cover scale-110" />
           <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/55 to-black/10" />
         </motion.div>
         <div className="relative z-10 container mx-auto px-4 md:px-6 lg:px-8">
@@ -119,7 +119,7 @@ export default function Experiences() {
       {/* ── Golden Sands of Puri Beach ── */}
       <section ref={islandRef} className="relative h-[75vh] flex items-center justify-center overflow-hidden grain-overlay">
         <motion.div style={{ y: islandParallax }} className="absolute inset-0 z-0">
-          <img src="/images/dining-saltwater.png" alt="Scenic Puri Beach Sunset" className="w-full h-full object-cover scale-110" />
+          <img src="/puribeachnear.jpg" alt="Scenic Puri Beach Sunset" className="w-full h-full object-cover scale-110" />
           <div className="absolute inset-0 bg-black/65" />
         </motion.div>
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 1 }}

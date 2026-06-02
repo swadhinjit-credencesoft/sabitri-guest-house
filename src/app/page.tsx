@@ -267,7 +267,7 @@ export default function Home() {
             className="relative rounded-3xl overflow-hidden shadow-xl"
           >
             <img
-              src="/images/experiences-hero.png"
+              src="/jagannathmandir1.jpg"
               alt="Temple and beach experiences in Puri"
               className="w-full object-cover hover:scale-105 transition-transform duration-1000"
             />
