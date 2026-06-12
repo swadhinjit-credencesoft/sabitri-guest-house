@@ -17,7 +17,7 @@ export default function AroundUs() {
 
       {/* ── Cinematic Hero ── */}
       <CinematicHero
-        bgImage="/images/experiences-hero.png"
+        bgImage="https://bookonelocal.in/cdn/aoundusvideo.mp4"
         altText="Spiritual landmark of Puri"
         eyebrow="Land of Lord Jagannath"
         title={

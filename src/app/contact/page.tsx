@@ -11,7 +11,7 @@ export default function Contact() {
 
       {/* ── Cinematic Hero ── */}
       <CinematicHero
-        bgImage="/images/dining-saltwater.png"
+        bgImage="/sabitri5 (1).avif"
         altText="Begin your journey"
         eyebrow="We Are Here For You"
         title={

@@ -23,7 +23,7 @@ export default function Home() {
 
       {/* ── Cinematic Hero ── */}
       <CinematicHero
-        bgImage="/sabitrihomeimg.png"
+        bgImage="/sabitri1.avif"
         altText="Sabitri Guest House exterior"
         eyebrow="Sabitri Guest House — Puri, Odisha"
         title={
@@ -97,7 +97,7 @@ export default function Home() {
 
       {/* ── Villa Showcase (editorial split) ── */}
       <EditorialSplit
-        imageSrc="/images/home-hero.png"
+        imageSrc="/room4 (1).avif"
         imageAlt="Deluxe AC Room"
         eyebrow="Signature Accommodation"
         title={
@@ -193,7 +193,7 @@ export default function Home() {
       <section ref={spaRef} className="relative h-screen flex items-center justify-center overflow-hidden grain-overlay">
         <motion.div style={{ y: spaY }} className="absolute inset-0 z-0">
           <img
-            src="/images/rooms-hero.png"
+            src="/seabeach.jpg"
             alt="Devotional Rest and Quiet Atmosphere"
             className="w-full h-full object-cover scale-115"
           />

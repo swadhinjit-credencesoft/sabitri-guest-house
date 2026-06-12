@@ -17,7 +17,7 @@ export default function About() {
 
       {/* ── Cinematic Hero ── */}
       <CinematicHero
-        bgImage="/images/about-hero.png"
+        bgImage="/sabitri3 (1).avif"
         altText="Sabitri Guest House lobby"
         eyebrow="Est. 2008 — Puri, Odisha"
         title={

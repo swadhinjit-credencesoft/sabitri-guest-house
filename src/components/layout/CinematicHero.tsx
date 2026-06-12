@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useMemo } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 // import { ChevronDown } from "lucide-react";
 
@@ -32,6 +32,8 @@ export function CinematicHero({
   const heroY = useTransform(scrollYProgress, [0, 1], ["0%", "28%"]);
   const heroOpacity = useTransform(scrollYProgress, [0, 0.85], [1, 0]);
 
+  const isVideo = useMemo(() => /\.(mp4|webm|mov|ogg)$/i.test(bgImage), [bgImage]);
+
   // Adjust flex alignment classes based on the prop
   let alignmentClasses = "items-center justify-center text-center pt-24 pb-16";
   if (align === "left") {
@@ -44,11 +46,22 @@ export function CinematicHero({
     <section ref={heroRef} className={heightClass}>
       {/* Background parallax image */}
       <motion.div style={{ y: heroY }} className="absolute inset-0 z-0">
-        <img
-          src={bgImage}
-          alt={altText}
-          className="w-full h-full object-cover scale-110"
-        />
+        {isVideo ? (
+          <video
+            src={bgImage}
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-full object-cover scale-110"
+          />
+        ) : (
+          <img
+            src={bgImage}
+            alt={altText}
+            className="w-full h-full object-cover scale-110"
+          />
+        )}
         <div className={`absolute inset-0 ${overlayGradient}`} />
       </motion.div>
 
