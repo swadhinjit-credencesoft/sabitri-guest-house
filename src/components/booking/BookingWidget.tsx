@@ -20,7 +20,7 @@ const bookingSchema = z.object({
 type BookingForm = z.infer<typeof bookingSchema>;
 
 export function BookingWidget() {
-  const [bookingSubmitted, setBookingSubmitted] = useState(false);
+  const [isRedirecting, setIsRedirecting] = useState(false);
   const { toast } = useToast();
 
   const form = useForm<BookingForm>({
@@ -28,14 +28,28 @@ export function BookingWidget() {
     defaultValues: { checkIn: "", checkOut: "", guests: "", roomType: "" },
   });
 
-  function onBook(_values: BookingForm) {
+  function onBook(values: BookingForm) {
+    setIsRedirecting(true);
     toast({
-      title: "Reservation Request Received",
-      description: "Your personal concierge will confirm within 2 hours."
+      title: "Opening Booking Engine",
+      description: "Redirecting you to our online reservation system..."
     });
-    setBookingSubmitted(true);
-    setTimeout(() => setBookingSubmitted(false), 4000);
-    form.reset();
+
+    const baseUrl = "https://bookone.io/Sabitri-Guest-House";
+    const params = new URLSearchParams({
+      bookingEngine: "true",
+      checkIn: values.checkIn,
+      checkOut: values.checkOut,
+      guests: values.guests,
+      roomType: values.roomType,
+    });
+
+    window.open(`${baseUrl}?${params.toString()}`, "_blank");
+
+    setTimeout(() => {
+      setIsRedirecting(false);
+      form.reset();
+    }, 2000);
   }
 
   return (
@@ -137,7 +151,7 @@ export function BookingWidget() {
                   className="bg-primary text-primary-foreground hover:bg-primary/90 uppercase tracking-widest text-xs rounded-xl w-full h-10"
                   data-testid="button-book-now"
                 >
-                  {bookingSubmitted ? "Confirmed ✓" : "Book Now"}
+                  {isRedirecting ? "Redirecting..." : "Book Now"}
                 </Button>
               </div>
             </form>

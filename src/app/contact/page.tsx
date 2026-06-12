@@ -4,6 +4,7 @@ import { contactDetails, promises, faqs } from "@/data/resortData";
 import { CinematicHero } from "@/components/layout/CinematicHero";
 import { ContactForm } from "@/components/contact/ContactForm";
 import { FaqSection } from "@/components/sections/FaqSection";
+import { Button } from "@/components/ui/button";
 
 export default function Contact() {
   return (
@@ -97,6 +98,22 @@ export default function Contact() {
                 "The moment you enquire,<br />you become our guest."
               </p>
               <p className="text-muted-foreground text-xs uppercase tracking-widest">— Sabitri Hospitality Creed</p>
+            </div>
+            <div className="glass rounded-2xl p-7 mt-4 border border-amber-500/25 bg-amber-500/5 shadow-sm">
+              <h3 className="font-serif text-xl text-amber-600 mb-2 font-semibold">Book Instantly</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                Want to secure your room immediately? Skip the manual enquiry and book directly via our online reservation system.
+              </p>
+              <a
+                href="https://bookone.io/Sabitri-Guest-House?bookingEngine=true"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full"
+              >
+                <Button className="w-full bg-amber-500 hover:bg-amber-600 text-white text-xs uppercase tracking-widest rounded-xl py-5">
+                  Use Booking Engine
+                </Button>
+              </a>
             </div>
           </motion.div>
 

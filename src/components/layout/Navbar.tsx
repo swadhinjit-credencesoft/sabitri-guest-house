@@ -60,7 +60,11 @@ export function Navbar() {
         </nav>
 
         <div className="hidden lg:block">
-          <Link href="/contact">
+          <a
+            href="https://bookone.io/Sabitri-Guest-House?bookingEngine=true"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Button
               className={`rounded-full px-6 xl:px-8 uppercase tracking-widest text-xs transition-all duration-300 ${
                 scrolled
@@ -71,7 +75,7 @@ export function Navbar() {
             >
               Book Now
             </Button>
-          </Link>
+          </a>
         </div>
 
         {/* Mobile Toggle */}
@@ -103,11 +107,16 @@ export function Navbar() {
               {link.name}
             </Link>
           ))}
-          <Link href="/contact">
-            <Button className="mt-2 rounded-full px-8 bg-primary text-primary-foreground hover:bg-primary/90 uppercase tracking-widest text-xs">
+          <a
+            href="https://bookone.io/Sabitri-Guest-House?bookingEngine=true"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full text-center"
+          >
+            <Button className="mt-2 rounded-full px-8 bg-primary text-primary-foreground hover:bg-primary/90 uppercase tracking-widest text-xs w-[80%] mx-auto block">
               Book Now
             </Button>
-          </Link>
+          </a>
         </nav>
       </motion.div>
     </motion.header>

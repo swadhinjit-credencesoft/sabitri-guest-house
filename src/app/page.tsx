@@ -300,14 +300,18 @@ export default function Home() {
             Begin Your <span className="text-amber-400 italic">Sabitri</span> Story
           </h2>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact">
+            <a
+              href="https://bookone.io/Sabitri-Guest-House?bookingEngine=true"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button
                 className="rounded-full px-12 py-6 bg-amber-500 text-white hover:bg-amber-600 uppercase tracking-widest text-xs shadow-lg shadow-amber-500/20"
                 data-testid="button-cta-book"
               >
                 Reserve Now
               </Button>
-            </Link>
+            </a>
             <Link href="/rooms">
               <Button
                 variant="outline"

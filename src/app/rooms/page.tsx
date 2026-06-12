@@ -90,9 +90,14 @@ export default function Rooms() {
                         <div className="flex gap-4 mb-5 text-xs text-muted-foreground uppercase tracking-wider">
                           <span>{room.size}</span><span>&bull;</span><span>{room.guests}</span>
                         </div>
-                        <Link href="/contact">
+                        <a
+                          href={`https://bookone.io/Sabitri-Guest-House?bookingEngine=true&roomType=${room.id}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="w-full"
+                        >
                           <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90 text-xs uppercase tracking-widest" data-testid={`button-reserve-${room.id}`}>Reserve</Button>
-                        </Link>
+                        </a>
                       </motion.div>
                     )}
                   </AnimatePresence>
@@ -123,9 +128,13 @@ export default function Rooms() {
             </h2>
             <p className="text-white/65 text-base md:text-lg leading-relaxed mb-4">Our largest suite, specifically designed for families and groups traveling together. Features multiple beds, ample storage, an attached bathroom with hot and cold water geyser, and high-speed internet.</p>
             <p className="text-amber-400/80 font-serif text-2xl mb-8">From ₹1,600 / night</p>
-            <Link href="/contact">
-              <Button className="rounded-full px-10 py-5 bg-amber-500 text-white hover:bg-amber-600 uppercase tracking-widest text-xs" data-testid="button-penthouse-reserve">Enquire Now</Button>
-            </Link>
+            <a
+              href="https://bookone.io/Sabitri-Guest-House?bookingEngine=true&roomType=family-room"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button className="rounded-full px-10 py-5 bg-amber-500 text-white hover:bg-amber-600 uppercase tracking-widest text-xs" data-testid="button-penthouse-reserve">Book Now</Button>
+            </a>
           </motion.div>
         </div>
       </section>
@@ -156,9 +165,13 @@ export default function Rooms() {
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground mb-6">Ready to <span className="text-primary italic">Reserve</span>?</h2>
           <p className="text-muted-foreground max-w-md mx-auto mb-8">Our reservation team is available 24/7. Let us find the perfect room for your stay.</p>
-          <Link href="/contact">
+          <a
+            href="https://bookone.io/Sabitri-Guest-House?bookingEngine=true"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Button className="rounded-full px-12 py-5 bg-primary text-primary-foreground hover:bg-primary/90 uppercase tracking-widest text-xs" data-testid="button-rooms-book">Book Now</Button>
-          </Link>
+          </a>
         </motion.div>
       </section>
     </motion.div>
