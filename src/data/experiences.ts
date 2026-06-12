@@ -10,7 +10,7 @@ export const experiences = [
     title:       "Jagannath Temple Darshan",
     duration:    "1–3 Hours",
     description: "Walk just 200 metres from our doorstep to the sacred Jagannath Temple — one of India's four holiest Dhamas. Our staff can guide you on visiting timings and rituals.",
-    image:       "/images/experiences-hero.png",
+    image:       "/jagannathmandir3.jpg",
   },
   {
     title:       "Puri Beach Morning Walk",

@@ -54,13 +54,13 @@ export function Footer() {
               <li>Shree Marg, Chudanga Sahi</li>
               <li>Puri, Odisha – 752001</li>
               <li className="pt-1">
-                <a href="tel:+919090148874" className="hover:text-amber-400 transition-colors">+91 90901 48874</a>
+                <a href="tel:+919078240376" className="hover:text-amber-400 transition-colors">+91 90782 40376</a>
               </li>
               <li>
-                <a href="https://wa.me/919090148874" className="hover:text-amber-400 transition-colors">WhatsApp: +91 90901 48874</a>
+                <a href="https://wa.me/919078240376" className="hover:text-amber-400 transition-colors">WhatsApp: +91 90782 40376</a>
               </li>
               <li>
-                <a href="mailto:sabitriguesthouse@gmail.com" className="hover:text-amber-400 transition-colors">sabitriguesthouse@gmail.com</a>
+                <a href="mailto:sabitriguesthousepuri@gmail.com" className="hover:text-amber-400 transition-colors">sabitriguesthousepuri@gmail.com</a>
               </li>
             </ul>
           </div>

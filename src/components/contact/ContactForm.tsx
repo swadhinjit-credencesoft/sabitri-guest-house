@@ -110,10 +110,8 @@ export function ContactForm() {
                       </SelectTrigger>
                     </FormControl>
                     <SelectContent>
-                      <SelectItem value="standard-non-ac">Standard Non-AC Room</SelectItem>
-                      <SelectItem value="standard-ac">Standard AC Room</SelectItem>
-                      <SelectItem value="deluxe-ac">Deluxe AC Room</SelectItem>
-                      <SelectItem value="family-room">Family Room</SelectItem>
+                      <SelectItem value="8722">Deluxe Non AC Room</SelectItem>
+                      <SelectItem value="8721">Deluxe AC Room</SelectItem>
                     </SelectContent>
                   </Select>
                   <FormMessage />

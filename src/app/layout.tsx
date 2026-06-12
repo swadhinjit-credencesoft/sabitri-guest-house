@@ -73,12 +73,12 @@ export default function RootLayout({
               },
               "geo": {
                 "@type": "GeoCoordinates",
-                "latitude": 19.8049,
-                "longitude": 85.8179
+                "latitude": 19.808069569109232,
+                "longitude": 85.82015639999999
               },
               "url": "https://sabitriguesthouse.com",
-              "telephone": "+919090148874",
-              "priceRange": "INR 600 - 1600",
+              "telephone": "+919078240376",
+              "priceRange": "INR 1500 - 2000",
               "aggregateRating": {
                 "@type": "AggregateRating",
                 "ratingValue": "4.7",

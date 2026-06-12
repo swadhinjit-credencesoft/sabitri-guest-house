@@ -20,7 +20,7 @@ export default function Experiences() {
 
       {/* ── Cinematic Hero ── */}
       <CinematicHero
-        bgImage="/images/experiences-hero.png"
+        bgImage="/sabitri13 (1).avif"
         altText="Curated Experiences in Puri"
         eyebrow="Discover Puri &amp; Odisha"
         title={

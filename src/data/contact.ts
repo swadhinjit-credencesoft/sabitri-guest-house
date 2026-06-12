@@ -6,9 +6,9 @@ import { Phone, MessageCircle, Mail, MapPin, Clock, Shield, Star } from "lucide-
 
 // ── Contact detail cards ──────────────────────
 export const contactDetails = [
-  { icon: Phone,         label: "Call Us",   value: "+91 90901 48874",                          href: "tel:+919090148874" },
-  { icon: MessageCircle, label: "WhatsApp",  value: "+91 90901 48874",                          href: "https://wa.me/919090148874" },
-  { icon: Mail,          label: "Email",     value: "sabitriguesthouse@gmail.com",              href: "mailto:sabitriguesthouse@gmail.com" },
+  { icon: Phone,         label: "Call Us",   value: "+91 90782 40376",                          href: "tel:+919078240376" },
+  { icon: MessageCircle, label: "WhatsApp",  value: "+91 90782 40376",                          href: "https://wa.me/919078240376" },
+  { icon: Mail,          label: "Email",     value: "sabitriguesthousepuri@gmail.com",          href: "mailto:sabitriguesthousepuri@gmail.com" },
   { icon: MapPin,        label: "Address",   value: "Shree Marg, Chudanga Sahi, Puri, Odisha – 752001", href: "#" },
 ];
 
