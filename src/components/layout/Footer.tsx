@@ -34,7 +34,7 @@ export function Footer() {
             <ul className="space-y-3">
               {[
                 { label: "Rooms & Suites", path: "/rooms" },
-                { label: "Dining", path: "/dining" },
+                // { label: "Dining", path: "/dining" },
                 { label: "Experiences", path: "/experiences" },
                 { label: "About Us", path: "/about" },
                 { label: "Around Us", path: "/around" },
