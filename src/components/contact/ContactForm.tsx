@@ -11,11 +11,11 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { useToast } from "@/hooks/use-toast";
 
 const enquirySchema = z.object({
-  name: z.string().min(2, "Please enter your name"),
-  email: z.string().email("Please enter a valid email"),
-  arrivalDate: z.string().min(1, "Please select an arrival date"),
-  roomType: z.string().min(1, "Please select a room type"),
-  message: z.string().min(10, "Please tell us more about your enquiry"),
+  name: z.string().optional(),
+  email: z.string().optional(),
+  arrivalDate: z.string().optional(),
+  roomType: z.string().optional(),
+  message: z.string().optional(),
 });
 type EnquiryForm = z.infer<typeof enquirySchema>;
 
