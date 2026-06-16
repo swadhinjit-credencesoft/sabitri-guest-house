@@ -43,15 +43,19 @@ export default function Home() {
                 Explore Rooms
               </Button>
             </Link>
-            <Link href="/experiences">
+            <a
+              href="https://bookone.io/Sabitri-Guest-House?bookingEngine=true"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button
                 variant="outline"
                 className="rounded-full px-10 py-6 border-white/40 text-white bg-white/10 hover:bg-white/20 uppercase tracking-widest text-xs backdrop-blur-sm w-48 sm:w-auto"
                 data-testid="button-discover"
               >
-                Experiences
+                Book Now
               </Button>
-            </Link>
+            </a>
           </>
         }
       />
