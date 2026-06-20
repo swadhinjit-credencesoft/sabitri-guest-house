@@ -23,7 +23,7 @@ export default function Home() {
 
       {/* ── Cinematic Hero ── */}
       <CinematicHero
-        bgImage="/sabitri1.avif"
+        bgImage="/sabitri13 (1).avif"
         altText="Sabitri Guest House exterior"
         eyebrow="Sabitri Guest House — Puri, Odisha"
         title={
