@@ -104,11 +104,11 @@ export default function About() {
       />
 
       {/* ── Team ── */}
-      <TeamGrid
+      {/* <TeamGrid
         eyebrow="The Team"
         title={<>The People <span className="text-amber-400 italic">Behind Sabitri</span></>}
         members={founders}
-      />
+      /> */}
 
       {/* ── Awards ── */}
       <section className="py-16 md:py-24 container mx-auto px-4 md:px-6 lg:px-8">

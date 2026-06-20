@@ -67,7 +67,17 @@ export function Footer() {
         </div>
 
         <div className="mt-14 pt-8 border-t border-stone-800 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-stone-500">
-          <p>&copy; {new Date().getFullYear()} Sabitri Guest House. All rights reserved.</p>
+          <p>
+            Designed and Developed By{" "}
+            <a href="https://www.credencesoft.in/" target="_blank" rel="noopener noreferrer" className="text-amber-400 hover:text-amber-300 transition-colors">
+              CredenceSoft
+            </a>
+            , Powered By{" "}
+            <a href="https://bookonepms.com/" target="_blank" rel="noopener noreferrer" className="text-amber-400 hover:text-amber-300 transition-colors">
+              BookOne
+            </a>
+            .
+          </p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-amber-400 transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-amber-400 transition-colors">Terms of Service</a>
