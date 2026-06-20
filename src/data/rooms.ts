@@ -16,15 +16,6 @@ import {
 // ── Room cards ────────────────────────────────
 export const rooms = [
   {
-    id:          "8722",
-    name:        "Deluxe Non AC Room",
-    price:       1500,
-    size:        "200 sq ft",
-    guests:      "2–4 Guests",
-    description: "Comfortable non-air-conditioned room featuring cozy bedding, attached bathroom, essential amenities, natural ventilation, and a peaceful stay experience.",
-    image:       "/room2 (1).avif",
-  },
-  {
     id:          "8721",
     name:        "Deluxe AC Room",
     price:       2000,
@@ -49,6 +40,5 @@ export const amenities = [
 
 // ── Comparison table rows ─────────────────────
 export const villas = [
-  { name: "Deluxe Non AC",   ac: false, tv: true,  size: "200", from: 1500, geyser: true,  beds: 1 },
   { name: "Deluxe AC",       ac: true,  tv: true,  size: "250", from: 2000, geyser: true,  beds: 1 },
 ];

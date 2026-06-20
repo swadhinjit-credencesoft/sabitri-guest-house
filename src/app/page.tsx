@@ -287,10 +287,10 @@ export default function Home() {
               className="w-full object-cover hover:scale-105 transition-transform duration-1000"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent pointer-events-none" />
-            <div className="absolute bottom-6 left-6 glass-dark rounded-xl px-5 py-3">
+            {/* <div className="absolute bottom-6 left-6 glass-dark rounded-xl px-5 py-3">
               <p className="text-amber-400 text-xs uppercase tracking-widest">Rooms From</p>
               <p className="text-white font-serif text-2xl">₹1,500 <span className="text-white/50 text-sm font-sans">/ night</span></p>
-            </div>
+            </div> */}
           </motion.div>
         </div>
       </section>

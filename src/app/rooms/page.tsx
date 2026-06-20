@@ -114,31 +114,6 @@ export default function Rooms() {
       {/* ── Villa Comparison Table ── */}
       <ComparisonTable villas={villas} />
 
-      {/* ── Deluxe Non AC Room Spotlight ── */}
-      <section className="relative h-screen flex items-center justify-end overflow-hidden grain-overlay">
-        <div className="absolute inset-0 z-0">
-          <img src="/images/about-hero.png" alt="Deluxe Non AC Room Residence" className="w-full h-full object-cover scale-110" />
-          <div className="absolute inset-0 bg-gradient-to-l from-black/85 via-black/55 to-black/10" />
-        </div>
-        <div className="relative z-10 container mx-auto px-4 md:px-6 lg:px-8 flex justify-end">
-          <motion.div initial={{ opacity: 0, x: 40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 1 }} className="max-w-md lg:max-w-lg text-right">
-            <p className="text-amber-400 uppercase tracking-[0.35em] text-xs mb-6">Tranquil Stay</p>
-            <h2 className="font-serif text-5xl md:text-6xl lg:text-7xl text-white leading-[0.9] mb-7 text-shadow-hero">
-              Deluxe<br /><span className="text-amber-400 italic">Non AC Room</span>
-            </h2>
-            <p className="text-white/65 text-base md:text-lg leading-relaxed mb-4">Comfortable and spacious, featuring cozy bedding, attached bathroom with geyser, essential amenities, natural ventilation, and a peaceful atmosphere for a relaxing stay.</p>
-            <p className="text-amber-400/80 font-serif text-2xl mb-8">From ₹1,500 / night</p>
-            <a
-              href="https://bookone.io/Sabitri-Guest-House?bookingEngine=true&roomType=8722"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button className="rounded-full px-10 py-5 bg-amber-500 text-white hover:bg-amber-600 uppercase tracking-widest text-xs" data-testid="button-penthouse-reserve">Book Now</Button>
-            </a>
-          </motion.div>
-        </div>
-      </section>
-
       {/* ── Amenities ── */}
       <section className="py-16 md:py-24 bg-stone-900">
         <div className="container mx-auto px-4 md:px-6 lg:px-8">

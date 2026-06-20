@@ -133,7 +133,6 @@ export function BookingWidget() {
                           </SelectTrigger>
                         </FormControl>
                         <SelectContent>
-                          <SelectItem value="8722">Deluxe Non AC Room</SelectItem>
                           <SelectItem value="8721">Deluxe AC Room</SelectItem>
                         </SelectContent>
                       </Select>
