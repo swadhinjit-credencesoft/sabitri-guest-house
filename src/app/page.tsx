@@ -25,14 +25,15 @@ export default function Home() {
       <CinematicHero
         bgImage="/sabitri13 (1).avif"
         altText="Sabitri Guest House exterior"
-        eyebrow="Sabitri Guest House — Puri, Odisha"
+        eyebrow=""
         title={
           <>
-            Comfortable Stay<br />Near Shree<br />
-            <span className="text-amber-400 italic">Jagannath Temple</span>
+            Comfortable Stay<br />Near Shree <span className="text-amber-400 italic">Jagannath Temple</span>
           </>
         }
-        subtitle="A warm, budget-friendly family guest house located just 200m from the temple"
+        subtitle=""
+        titleClass="!text-4xl sm:!text-5xl md:!text-6xl lg:!text-7xl"
+        align="bottom-left"
         ctas={
           <>
             <Link href="/rooms">
@@ -177,9 +178,9 @@ export default function Home() {
       transition={{ duration: 1 }}
       className="max-w-xl"
     >
-      <p className="text-amber-400 uppercase tracking-[0.35em] text-xs mb-6">
+      {/* <p className="text-amber-400 uppercase tracking-[0.35em] text-xs mb-6">
         Comfortable Stay • Temple Hospitality
-      </p>
+      </p> */}
 
       <h2 className="font-serif text-5xl md:text-6xl lg:text-7xl text-white leading-[0.9] mb-8 text-shadow-hero">
         Stay in<br />

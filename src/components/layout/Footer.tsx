@@ -8,7 +8,7 @@ export function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 md:gap-8">
           <div className="sm:col-span-2 space-y-6">
             <Link href="/" className="font-serif text-3xl text-amber-400 tracking-widest uppercase block">
-           SABITRI
+           SABITRI GUEST HOUSE
             </Link>
             <p className="text-stone-400 text-base max-w-xs italic font-serif leading-relaxed">
               "A warm, budget-friendly family stay in Puri."
