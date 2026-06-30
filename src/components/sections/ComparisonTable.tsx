@@ -54,7 +54,7 @@ export function ComparisonTable({
                 <th className="py-4 px-3 text-xs uppercase tracking-widest text-muted-foreground font-normal text-center">AC</th>
                 <th className="py-4 px-3 text-xs uppercase tracking-widest text-muted-foreground font-normal text-center">TV</th>
                 <th className="py-4 px-3 text-xs uppercase tracking-widest text-muted-foreground font-normal text-center">Geyser</th>
-                <th className="text-right py-4 px-4 text-xs uppercase tracking-widest text-muted-foreground font-normal">From / night</th>
+                <th className="text-right py-4 px-4 text-xs uppercase tracking-widest text-muted-foreground font-normal">Book</th>
               </tr>
             </thead>
             <tbody>
@@ -79,8 +79,16 @@ export function ComparisonTable({
                   <td className="py-4 px-3 text-center">
                     {v.geyser ? <span className="text-primary font-medium">✓</span> : <span className="text-muted-foreground/30">—</span>}
                   </td>
-                  <td className="py-4 px-4 text-right font-serif text-primary text-lg">
-                    ₹{v.from.toLocaleString()}
+                  <td className="py-4 px-4 text-right">
+                    <a
+                      href={`https://bookone.io/Sabitri-Guest-House?bookingEngine=true&roomType=${v.name.replace(/\s+/g, "-").toLowerCase()}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block rounded-full px-5 py-2 bg-amber-500 text-white hover:bg-amber-600 text-xs uppercase tracking-widest shadow-sm transition-colors"
+                      data-testid={`button-compare-book-${i}`}
+                    >
+                      Book Now
+                    </a>
                   </td>
                 </motion.tr>
               ))}

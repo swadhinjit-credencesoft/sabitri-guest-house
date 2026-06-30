@@ -23,7 +23,7 @@ export function RoomsGrid() {
             <div className="absolute inset-0 p-6 md:p-8 flex flex-col justify-end">
               <div className="glass p-5 md:p-7 rounded-xl">
                 <h3 className="font-serif text-2xl md:text-3xl mb-1 text-foreground">{room.name}</h3>
-                <span className="text-xs tracking-wider uppercase text-primary">From ₹{room.price.toLocaleString()} / night</span>
+                {/* <span className="text-xs tracking-wider uppercase text-primary">From ₹{room.price.toLocaleString()} / night</span> */}
                 <AnimatePresence>
                   {expandedId === room.id && (
                     <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: "auto", opacity: 1 }} exit={{ height: 0, opacity: 0 }} className="overflow-hidden">
