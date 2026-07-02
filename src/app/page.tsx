@@ -20,7 +20,7 @@ export default function Home() {
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="overflow-x-hidden">
 
       <CinematicHero
-        bgImage="/sabitri13 (1).avif"
+        bgImage="/IMG-20260517-WA0000(1).jpg.avif"
         altText="Sabitri Guest House exterior"
         eyebrow=""
         title={
