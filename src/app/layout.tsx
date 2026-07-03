@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
   description: "Sabitri Guest House is a top-rated, budget-friendly guest house in Puri, located just 200 meters from the holy Shree Jagannath Temple. Clean rooms, warm Odia hospitality, and family-friendly amenities.",
   keywords: ["Sabitri Guest House", "Sabitri Lodge", "Sabitri Homestay Puri", "hotels near Jagannath Temple Puri", "budget stay in Puri", "family rooms in Puri", "Puri guest house near temple"],
-  metadataBase: new URL("https://sabitriguesthouse.com"),
+  metadataBase: new URL("https://sabitriguesthouse.in"),
   alternates: {
     canonical: "/",
   },
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Sabitri Guest House | Budget Family Stay near Jagannath Temple, Puri",
     description: "Enjoy a comfortable and budget-friendly family stay at Sabitri Guest House, just a 3-minute walk (200m) from Lord Jagannath Temple in Puri, Odisha. Clean AC & Non-AC rooms with warm hospitality.",
-    url: "https://sabitriguesthouse.com",
+    url: "https://sabitriguesthouse.in",
     siteName: "Sabitri Guest House Puri",
     locale: "en_IN",
     type: "website",
@@ -62,7 +62,7 @@ export default function RootLayout({
               "@type": "Hotel",
               "name": "Sabitri Guest House",
               "description": "Sabitri Guest House is a top-rated, budget-friendly guest house in Puri, located just 200 meters from the holy Shree Jagannath Temple. Clean rooms, warm Odia hospitality, and family-friendly amenities.",
-              "image": "https://sabitriguesthouse.com/images/home-hero.png",
+              "image": "https://sabitriguesthouse.in/images/home-hero.png",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Shree Marg, Chudanga Sahi",
@@ -76,7 +76,7 @@ export default function RootLayout({
                 "latitude": 19.808069569109232,
                 "longitude": 85.82015639999999
               },
-              "url": "https://sabitriguesthouse.com",
+              "url": "https://sabitriguesthouse.in",
               "telephone": "+919078240376",
               "priceRange": "INR 1500 - 2000",
               "aggregateRating": {

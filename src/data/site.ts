@@ -11,7 +11,7 @@ export const siteConfig = {
   phoneRaw: "+919078240376",
   whatsapp: "https://wa.me/919078240376",
   email: "sabitriguesthousepuri@gmail.com",
-  website: "https://sabitriguesthouse.com",
+  website: "https://sabitriguesthouse.in",
   coordinates: { lat: 19.808069569109232, lng: 85.82015639999999 },
   rating: "4.7",
   reviews: "227",
