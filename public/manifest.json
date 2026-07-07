@@ -1,0 +1,23 @@
+{
+  "name": "Sabitri Guest House Puri",
+  "short_name": "Sabitri Guest House",
+  "description": "Budget family guest house near Jagannath Temple, Puri. Book your stay online.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fcf9f4",
+  "theme_color": "#b8860b",
+  "orientation": "portrait-primary",
+  "lang": "en-IN",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["travel", "accommodation", "hotels"],
+  "screenshots": [],
+  "prefer_related_applications": false
+}

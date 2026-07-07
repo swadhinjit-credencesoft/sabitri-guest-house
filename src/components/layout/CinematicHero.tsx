@@ -13,6 +13,7 @@ interface CinematicHeroProps {
   overlayGradient?: string;
   heightClass?: string;
   titleClass?: string;
+  priority?: boolean;
 }
 
 export function CinematicHero({
@@ -26,7 +27,8 @@ export function CinematicHero({
   align = "center",
   overlayGradient = "bg-gradient-to-b from-black/45 via-black/25 to-black/85",
   heightClass = "relative h-screen min-h-[640px] flex flex-col overflow-hidden grain-overlay",
-  titleClass
+  titleClass,
+  priority = false,
 }: CinematicHeroProps) {
   const heroRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({ target: heroRef, offset: ["start start", "end start"] });
@@ -58,6 +60,8 @@ export function CinematicHero({
           <img
             src={bgImage}
             alt={altText}
+            loading={priority ? "eager" : "lazy"}
+            fetchPriority={priority ? "high" : "auto"}
             className="w-full h-full object-cover scale-110"
           />
         )}

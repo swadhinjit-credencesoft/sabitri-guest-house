@@ -14,14 +14,21 @@ import { SpiritualComfortSection } from "@/components/home/SpiritualComfortSecti
 import { SpaWellnessSection } from "@/components/home/SpaWellnessSection";
 import { ExperiencesTeaser } from "@/components/home/ExperiencesTeaser";
 import { FinalCTASection } from "@/components/home/FinalCTASection";
+import { ReviewJsonLd } from "@/components/home/ReviewJsonLd";
 
 export default function Home() {
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="overflow-x-hidden">
 
+      <ReviewJsonLd
+        testimonials={testimonials}
+        itemReviewedName="Sabitri Guest House"
+        itemReviewedUrl="https://sabitriguesthouse.in"
+      />
+
       <CinematicHero
         bgImage="/IMG-20260517-WA0000(1).jpg.avif"
-        altText="Sabitri Guest House exterior"
+        altText="Sabitri Guest House exterior near Jagannath Temple Puri"
         eyebrow=""
         title={
           <>
@@ -31,6 +38,7 @@ export default function Home() {
         subtitle=""
         titleClass="!text-4xl sm:!text-5xl md:!text-6xl lg:!text-7xl"
         align="bottom-left"
+        priority={true}
         ctas={
           <>
             <Link href="/rooms">

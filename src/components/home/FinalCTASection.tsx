@@ -7,7 +7,7 @@ export function FinalCTASection() {
   return (
     <section className="relative py-28 md:py-40 overflow-hidden">
       <div className="absolute inset-0">
-        <img src="/images/about-hero.png" alt="Sabitri Guest House CTA" className="w-full h-full object-cover" />
+        <img src="/images/about-hero.png" alt="Sabitri Guest House CTA" loading="lazy" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black/70" />
       </div>
       <motion.div

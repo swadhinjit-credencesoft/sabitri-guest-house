@@ -28,14 +28,14 @@ export function RoomSanctuarySection() {
         <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.9 }}
           className="grid grid-cols-2 gap-3">
           <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-lg">
-            <img src="/room2 (1).avif" alt="Villa design detail" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+            <img src="/room2 (1).avif" alt="Deluxe AC Room interior at Sabitri Guest House" loading="lazy" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
           </div>
           <div className="space-y-3 pt-8">
             <div className="aspect-square rounded-2xl overflow-hidden shadow-md">
-              <img src="/sabitri5 (1).avif" alt="Lagoon view" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+              <img src="/sabitri5 (1).avif" alt="Sabitri Guest House room corridor" loading="lazy" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
             </div>
             <div className="aspect-video rounded-2xl overflow-hidden shadow-md">
-              <img src="/sabitri6 (1).avif" alt="Tropical architecture" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+              <img src="/sabitri6 (1).avif" alt="Sabitri Guest House exterior and garden" loading="lazy" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
             </div>
           </div>
         </motion.div>

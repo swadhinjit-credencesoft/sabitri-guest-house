@@ -25,7 +25,6 @@ export const siteConfig = {
 export const navLinks = [
   { name: "Home",        path: "/" },
   { name: "Rooms",       path: "/rooms" },
-  // { name: "Dining",      path: "/dining" },
   { name: "Experiences", path: "/experiences" },
   { name: "About",       path: "/about" },
   { name: "Around Us",   path: "/around" },

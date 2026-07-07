@@ -40,6 +40,7 @@ export function EditorialSplit({
       <img
         src={imageSrc}
         alt={imageAlt}
+        loading="lazy"
         className="w-full h-full object-cover scale-105 hover:scale-100 transition-transform duration-1000"
       />
       <div className={`absolute inset-0 bg-gradient-to-r from-transparent to-black/40 hidden lg:block`} />

@@ -5,10 +5,13 @@ import { CinematicHero } from "@/components/layout/CinematicHero";
 import { FaqSection } from "@/components/sections/FaqSection";
 import { ConciergePromiseSection } from "@/components/contact/ConciergePromiseSection";
 import { ContactDetailsSection } from "@/components/contact/ContactDetailsSection";
+import { FaqJsonLd } from "@/components/contact/FaqJsonLd";
 
 export default function Contact() {
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="pb-24">
+
+      <FaqJsonLd faqs={faqs} />
 
       <CinematicHero
         bgImage="/sabitri5 (1).avif"

@@ -17,7 +17,8 @@ export function SpaWellnessSection() {
       <motion.div style={{ y: spaY }} className="absolute inset-0 z-0">
         <img
           src="/seabeach.jpg"
-          alt="Devotional Rest and Quiet Atmosphere"
+          alt="Puri beach near Sabitri Guest House"
+          loading="lazy"
           className="w-full h-full object-cover scale-115"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/75" />

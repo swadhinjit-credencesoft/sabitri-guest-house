@@ -1,2 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /_next/
+Disallow: /out/
+
+Sitemap: https://sabitriguesthouse.in/sitemap.xml

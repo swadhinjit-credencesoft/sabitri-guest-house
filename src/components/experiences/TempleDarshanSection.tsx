@@ -14,7 +14,7 @@ export function TempleDarshanSection() {
   return (
     <section ref={yachtRef} className="relative h-screen flex items-center overflow-hidden grain-overlay">
       <motion.div style={{ y: yachtParallax }} className="absolute inset-0 z-0">
-        <img src="/jagannathmandir3.jpg" alt="Shree Jagannath Temple Darshan" className="w-full h-full object-cover scale-110" />
+        <img src="/jagannathmandir3.jpg" alt="Shree Jagannath Temple Darshan near Sabitri Guest House" loading="lazy" className="w-full h-full object-cover scale-110" />
         <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/55 to-black/10" />
       </motion.div>
       <div className="relative z-10 container mx-auto px-4 md:px-6 lg:px-8">

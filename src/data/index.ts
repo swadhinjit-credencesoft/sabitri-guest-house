@@ -8,7 +8,6 @@
 export * from "./site";
 export * from "./home";
 export * from "./rooms";
-export * from "./dining";
 export * from "./experiences";
 export * from "./about";
 export * from "./around";

@@ -31,7 +31,7 @@ export function DiscoveriesSection() {
         </motion.div>
         <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}
           className="relative aspect-[3/4] rounded-3xl overflow-hidden shadow-xl">
-          <img src="/jagannathmandir3.jpg" alt="Aerial atoll view" className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" />
+          <img src="/jagannathmandir3.jpg" alt="Shree Jagannath Temple Puri near Sabitri Guest House" loading="lazy" className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
           <div className="absolute bottom-6 left-6 right-6 glass-dark rounded-xl px-5 py-4">
             <p className="text-amber-400 text-xs uppercase tracking-widest mb-1">Location</p>

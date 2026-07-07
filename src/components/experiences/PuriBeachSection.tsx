@@ -12,7 +12,7 @@ export function PuriBeachSection() {
   return (
     <section ref={islandRef} className="relative h-[75vh] flex items-center justify-center overflow-hidden grain-overlay">
       <motion.div style={{ y: islandParallax }} className="absolute inset-0 z-0">
-        <img src="/puribeachnear.jpg" alt="Scenic Puri Beach Sunset" className="w-full h-full object-cover scale-110" />
+        <img src="/puribeachnear.jpg" alt="Puri Golden Beach sunset near Sabitri Guest House" loading="lazy" className="w-full h-full object-cover scale-110" />
         <div className="absolute inset-0 bg-black/65" />
       </motion.div>
       <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 1 }}

@@ -16,7 +16,7 @@ export function ExperiencesGrid() {
         {experiences.map((exp, i) => (
           <motion.div key={i} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-60px" }} transition={{ delay: i * 0.08, duration: 0.75 }}
             whileHover={{ y: -6 }} className="group relative aspect-square overflow-hidden rounded-2xl cursor-pointer shadow-md" data-testid={`experience-card-${i}`}>
-            <img src={exp.image} alt={exp.title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+            <img src={exp.image} alt={exp.title} loading="lazy" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/88 via-black/30 to-transparent" />
             <div className="absolute inset-0 p-5 md:p-6 flex flex-col justify-end">
               <div className="glass p-5 rounded-xl translate-y-2 group-hover:translate-y-0 transition-transform duration-500">

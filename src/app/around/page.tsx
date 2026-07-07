@@ -10,9 +10,26 @@ export default function AroundUs() {
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="pb-24">
 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "VideoObject",
+            "name": "Around Sabitri Guest House - Puri",
+            "description": "Explore the spiritual landscape around Sabitri Guest House in Puri, Odisha. Located in the heart of Puri's holy district near Jagannath Temple.",
+            "thumbnailUrl": "https://sabitriguesthouse.in/jagannathmandir3.jpg",
+            "contentUrl": "https://bookonelocal.in/cdn/aoundusvideo.mp4",
+            "embedUrl": "https://bookonelocal.in/cdn/aoundusvideo.mp4",
+            "uploadDate": "2026-01-01",
+            "duration": "PT30S",
+          }),
+        }}
+      />
+
       <CinematicHero
         bgImage="https://bookonelocal.in/cdn/aoundusvideo.mp4"
-        altText="Spiritual landmark of Puri"
+        altText="Sabitri Guest House located in the heart of Puri near Jagannath Temple"
         eyebrow="Land of Lord Jagannath"
         title={
           <>

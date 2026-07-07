@@ -12,7 +12,7 @@ export function GuidedExcursionsSection() {
   return (
     <section ref={islandRef} className="relative h-[80vh] flex items-center justify-center overflow-hidden grain-overlay">
       <motion.div style={{ y: islandParallax }} className="absolute inset-0 z-0">
-        <img src="/images/dining-saltwater.png" alt="Guided Excursions in Puri" className="w-full h-full object-cover scale-110" />
+        <img src="/images/dining-saltwater.png" alt="Guided excursions from Sabitri Guest House to Konark and Chilika" loading="lazy" className="w-full h-full object-cover scale-110" />
         <div className="absolute inset-0 bg-black/70" />
       </motion.div>
       <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 1 }}

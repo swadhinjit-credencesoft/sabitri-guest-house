@@ -18,7 +18,7 @@ export function RoomsGrid() {
           <motion.div key={room.id} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-80px" }} transition={{ delay: i * 0.1 }}
             className="relative group overflow-hidden rounded-2xl aspect-[4/5] cursor-pointer shadow-lg" onClick={() => setExpandedId(expandedId === room.id ? null : room.id)}
             data-testid={`room-card-${room.id}`}>
-            <img src={room.image} alt={room.name} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            <img src={room.image} alt={room.name} loading="lazy" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent" />
             <div className="absolute inset-0 p-6 md:p-8 flex flex-col justify-end">
               <div className="glass p-5 md:p-7 rounded-xl">

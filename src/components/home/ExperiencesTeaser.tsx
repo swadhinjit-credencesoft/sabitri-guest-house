@@ -37,7 +37,8 @@ export function ExperiencesTeaser() {
         >
           <img
             src="/rathayatra1.png"
-            alt="Temple and beach experiences in Puri"
+            alt="Rath Yatra festival near Jagannath Temple Puri"
+            loading="lazy"
             className="w-full object-cover hover:scale-105 transition-transform duration-1000"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent pointer-events-none" />

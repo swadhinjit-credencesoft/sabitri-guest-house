@@ -54,6 +54,25 @@ export function ContactDetailsSection() {
           </a>
         </div>
       </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.4 }}
+        className="mt-10 rounded-2xl overflow-hidden border border-border/60 shadow-lg"
+      >
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3794.1535093826933!2d85.8201564!3d19.8080696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19e8e6c5b2a1a7%3A0x1234567890abcdef!2sSabitri%20Guest%20House!5e1!3m2!1sen!2sin!4v1"
+          width="100%"
+          height="350"
+          style={{ border: 0 }}
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          title="Sabitri Guest House location on map - Shree Marg, Chudanga Sahi, Puri"
+        />
+      </motion.div>
     </section>
   );
 }
