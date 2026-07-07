@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { blogPosts } from "@/data/blog";
-import { siteConfig } from "@/data/site";
+import { siteConfig, getWhatsAppBookingUrl } from "@/data/site";
 import { BlogJsonLd } from "@/components/blog/BlogJsonLd";
 
 export function generateStaticParams() {
@@ -123,7 +123,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                           Book Now
                         </a>
                         <a
-                          href="https://wa.me/919078240376"
+                          href={getWhatsAppBookingUrl()}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="rounded-full px-5 py-3 bg-green-500 text-white hover:bg-green-600 uppercase tracking-widest text-xs font-medium transition-colors"

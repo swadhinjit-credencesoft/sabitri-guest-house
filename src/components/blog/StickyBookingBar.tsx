@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import { getWhatsAppBookingUrl } from "@/data/site";
 
 export function StickyBookingBar() {
   const [visible, setVisible] = useState(false);
@@ -32,7 +33,7 @@ export function StickyBookingBar() {
               Call Now
             </a>
             <a
-              href="https://wa.me/919078240376"
+              href={getWhatsAppBookingUrl()}
               target="_blank"
               rel="noopener noreferrer"
               className="flex-1 sm:flex-none text-center rounded-full px-5 py-2.5 bg-green-500 text-white hover:bg-green-600 text-xs uppercase tracking-wider font-medium transition-colors"

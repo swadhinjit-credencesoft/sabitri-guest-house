@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Facebook, Instagram, Twitter } from "lucide-react";
+import { getWhatsAppBookingUrl } from "@/data/site";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -78,7 +79,7 @@ export function Footer() {
                 <a href="tel:+919078240376" className="hover:text-amber-400 transition-colors" aria-label="Call Sabitri Guest House at +91 90782 40376">+91 90782 40376</a>
               </li>
               <li>
-                <a href="https://wa.me/919078240376" className="hover:text-amber-400 transition-colors" aria-label="WhatsApp Sabitri Guest House">WhatsApp: +91 90782 40376</a>
+                <a href={getWhatsAppBookingUrl()} className="hover:text-amber-400 transition-colors" aria-label="WhatsApp Sabitri Guest House">WhatsApp: +91 90782 40376</a>
               </li>
               <li>
                 <a href="mailto:sabitriguesthousepuri@gmail.com" className="hover:text-amber-400 transition-colors" aria-label="Email Sabitri Guest House">sabitriguesthousepuri@gmail.com</a>

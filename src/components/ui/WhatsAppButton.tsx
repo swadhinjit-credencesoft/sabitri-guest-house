@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import { MessageCircle, X } from "lucide-react";
+import { getWhatsAppBookingUrl } from "@/data/site";
 
 export function WhatsAppButton() {
   const [visible, setVisible] = useState(false);
@@ -48,7 +49,7 @@ export function WhatsAppButton() {
               👋 Hi! Welcome to Sabitri Guest House. How can we help you with your booking?
             </div>
             <a
-              href="https://wa.me/919078240376?text=Hi%21%20I%27d%20like%20to%20book%20a%20room%20at%20Sabitri%20Guest%20House%20in%20Puri."
+              href={getWhatsAppBookingUrl()}
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full bg-green-500 hover:bg-green-600 text-white text-center py-3 rounded-lg text-sm font-medium transition-colors"

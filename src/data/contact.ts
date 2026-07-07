@@ -3,11 +3,12 @@
 // ────────────────────────────────────────────
 
 import { Phone, MessageCircle, Mail, MapPin, Clock, Shield, Star } from "lucide-react";
+import { getWhatsAppBookingUrl } from "./site";
 
 // ── Contact detail cards ──────────────────────
 export const contactDetails = [
   { icon: Phone,         label: "Call Us",   value: "+91 90782 40376",                          href: "tel:+919078240376" },
-  { icon: MessageCircle, label: "WhatsApp",  value: "+91 90782 40376",                          href: "https://wa.me/919078240376" },
+  { icon: MessageCircle, label: "WhatsApp",  value: "+91 90782 40376",                          href: getWhatsAppBookingUrl() },
   { icon: Mail,          label: "Email",     value: "sabitriguesthousepuri@gmail.com",          href: "mailto:sabitriguesthousepuri@gmail.com" },
   { icon: MapPin,        label: "Address",   value: "Shree Marg, Chudanga Sahi, Puri, Odisha – 752001", href: "#" },
 ];

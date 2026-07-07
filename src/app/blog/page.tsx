@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { blogPosts } from "@/data/blog";
+import { getWhatsAppBookingUrl } from "@/data/site";
 import { CinematicHero } from "@/components/layout/CinematicHero";
 
 export default function BlogPage() {
@@ -46,7 +47,7 @@ export default function BlogPage() {
               View Rooms & Pricing
             </Link>
             <a
-              href="https://wa.me/919078240376"
+              href={getWhatsAppBookingUrl()}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block rounded-full px-10 py-5 bg-green-500 text-white hover:bg-green-600 uppercase tracking-widest text-xs font-medium transition-colors"
