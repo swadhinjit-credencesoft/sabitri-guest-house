@@ -28,5 +28,6 @@ export const navLinks = [
   { name: "Experiences", path: "/experiences" },
   { name: "About",       path: "/about" },
   { name: "Around Us",   path: "/around" },
+  { name: "Blog",        path: "/blog" },
   { name: "Contact",     path: "/contact" },
 ];

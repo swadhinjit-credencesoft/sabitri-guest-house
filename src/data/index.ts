@@ -12,3 +12,4 @@ export * from "./experiences";
 export * from "./about";
 export * from "./around";
 export * from "./contact";
+export * from "./blog";

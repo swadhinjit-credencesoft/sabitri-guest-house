@@ -57,6 +57,7 @@ export function Footer() {
                 { label: "Experiences", path: "/experiences" },
                 { label: "About Us", path: "/about" },
                 { label: "Around Us", path: "/around" },
+                { label: "Blog", path: "/blog" },
                 { label: "Contact", path: "/contact" },
               ].map((item) => (
                 <li key={item.path}>
