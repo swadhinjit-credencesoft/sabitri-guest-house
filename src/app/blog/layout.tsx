@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { StickyBookingBar } from "@/components/blog/StickyBookingBar";
 
 export const metadata: Metadata = {
   title: "Travel Blog",
@@ -31,5 +32,10 @@ export const metadata: Metadata = {
 };
 
 export default function BlogLayout({ children }: { children: React.ReactNode }) {
-  return children;
+  return (
+    <>
+      {children}
+      <StickyBookingBar />
+    </>
+  );
 }

@@ -21,8 +21,49 @@ export default function BlogPage() {
         overlayGradient="bg-gradient-to-b from-black/40 via-black/20 to-black/85"
       />
 
+      <section className="py-16 bg-gradient-to-br from-amber-50 to-stone-50">
+        <div className="container mx-auto px-4 md:px-6 lg:px-8 text-center">
+          <span className="text-amber-600 uppercase tracking-widest text-xs font-medium">Book Direct & Save</span>
+          <h2 className="font-serif text-3xl md:text-4xl text-stone-900 mt-3 mb-4">
+            Stay at Sabitri Guest House — Just 200m from <span className="text-amber-600 italic">Jagannath Temple</span>
+          </h2>
+          <p className="text-stone-600 max-w-2xl mx-auto mb-8 text-lg">
+            Clean AC & Non-AC rooms &bull; Free WiFi &bull; Complimentary Breakfast &bull; 4.7&starf; Rating &bull; From ₹1,500/night
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="https://bookone.io/Sabitri-Guest-House?bookingEngine=true"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block rounded-full px-10 py-5 bg-amber-500 text-white hover:bg-amber-600 uppercase tracking-widest text-sm font-semibold transition-colors shadow-lg shadow-amber-500/30"
+            >
+              Book Your Stay Now
+            </a>
+            <Link
+              href="/rooms"
+              className="inline-block rounded-full px-10 py-5 border-2 border-amber-500 text-amber-600 hover:bg-amber-50 uppercase tracking-widest text-sm font-medium transition-colors"
+            >
+              View Rooms & Pricing
+            </Link>
+            <a
+              href="https://wa.me/919078240376"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block rounded-full px-10 py-5 bg-green-500 text-white hover:bg-green-600 uppercase tracking-widest text-xs font-medium transition-colors"
+            >
+              WhatsApp Us
+            </a>
+          </div>
+        </div>
+      </section>
+
       <div className="py-20">
         <div className="container mx-auto px-4 md:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="font-serif text-3xl text-stone-900">Explore Our Travel Guides</h2>
+            <p className="text-stone-500 mt-2">Plan your perfect Puri trip with our detailed articles</p>
+          </div>
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {blogPosts.map((post) => (
               <Link
@@ -62,6 +103,33 @@ export default function BlogPage() {
           </div>
         </div>
       </div>
+
+      <section className="py-16 bg-stone-900 text-center">
+        <div className="container mx-auto px-4 md:px-6 lg:px-8">
+          <h2 className="font-serif text-3xl md:text-4xl text-white mb-4">
+            Ready to Experience Puri?
+          </h2>
+          <p className="text-stone-400 max-w-xl mx-auto mb-8">
+            Book your stay at Sabitri Guest House and enjoy the best of Puri — spirituality, beaches, and warm Odia hospitality.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="https://bookone.io/Sabitri-Guest-House?bookingEngine=true"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block rounded-full px-10 py-5 bg-amber-500 text-white hover:bg-amber-600 uppercase tracking-widest text-sm font-semibold transition-colors shadow-lg shadow-amber-500/30"
+            >
+              Book Now — From ₹1,500/night
+            </a>
+            <a
+              href="tel:+919078240376"
+              className="inline-block rounded-full px-10 py-5 border border-white/30 text-white hover:bg-white/10 uppercase tracking-widest text-sm transition-colors"
+            >
+              Call +91 90782 40376
+            </a>
+          </div>
+        </div>
+      </section>
     </motion.div>
   );
 }
