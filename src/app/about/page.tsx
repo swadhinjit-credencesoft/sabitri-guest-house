@@ -3,6 +3,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { timeline, founders } from "@/data/resortData";
 import { CinematicHero } from "@/components/layout/CinematicHero";
+import { PageBreadcrumb } from "@/components/shared/PageBreadcrumb";
 import { TimelineSection } from "@/components/sections/TimelineSection";
 import { TeamGrid } from "@/components/sections/TeamGrid";
 import { StorySection } from "@/components/about/StorySection";
@@ -14,7 +15,11 @@ export default function About() {
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="pb-24">
 
-      <CinematicHero
+      <section className="relative">
+        <div className="absolute top-20 left-0 right-0 z-20 container mx-auto px-4 md:px-6 lg:px-8 max-w-6xl">
+          <PageBreadcrumb light items={[{ name: "Home", href: "/" }, { name: "About" }]} />
+        </div>
+        <CinematicHero
         bgImage="/sabitri3 (1).avif"
         altText="Sabitri Guest House lobby"
         eyebrow="Est. 2008 — Puri, Odisha"
@@ -28,6 +33,7 @@ export default function About() {
         scrollIndicator={true}
         overlayGradient="bg-gradient-to-t from-black/90 via-black/40 to-black/15"
       />
+      </section>
 
       <StorySection />
 

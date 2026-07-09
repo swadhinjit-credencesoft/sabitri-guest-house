@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { blogPosts } from "@/data/blog";
 import { siteConfig, getWhatsAppBookingUrl } from "@/data/site";
 import { BlogJsonLd } from "@/components/blog/BlogJsonLd";
+import { PageBreadcrumb } from "@/components/shared/PageBreadcrumb";
 
 export function generateStaticParams() {
   return blogPosts.map((post) => ({ slug: post.slug }));
@@ -117,6 +118,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
 
       <article className="pt-28 pb-24">
         <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-4xl">
+          <PageBreadcrumb items={[{ name: "Home", href: "/" }, { name: "Blog", href: "/blog" }, { name: post.title }]} />
           <div className="mb-10">
             <div className="flex items-center gap-3 text-sm text-stone-500 mb-4">
               <span className="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-xs font-medium uppercase tracking-wider">

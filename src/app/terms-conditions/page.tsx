@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { siteConfig } from "@/data/resortData";
 import { Clock, UserCheck, Shield, Ban, MapPin, Building, HelpCircle } from "lucide-react";
+import { PageBreadcrumb } from "@/components/shared/PageBreadcrumb";
 
 export default function TermsConditions() {
   const rules = [
@@ -77,6 +78,7 @@ export default function TermsConditions() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-4xl">
+        <PageBreadcrumb items={[{ name: "Home", href: "/" }, { name: "Terms & Conditions" }]} />
         <h1 className="font-serif text-4xl md:text-5xl text-foreground mb-4">Property Rules & Terms</h1>
         <p className="text-muted-foreground text-sm mb-12">
           Please read the following rules and terms carefully before booking your stay at {siteConfig.name}.

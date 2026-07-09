@@ -4,11 +4,16 @@ import Link from "next/link";
 import { blogPosts } from "@/data/blog";
 import { getWhatsAppBookingUrl } from "@/data/site";
 import { CinematicHero } from "@/components/layout/CinematicHero";
+import { PageBreadcrumb } from "@/components/shared/PageBreadcrumb";
 
 export default function BlogPage() {
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="overflow-x-hidden">
-      <CinematicHero
+      <section className="relative">
+        <div className="absolute top-20 left-0 right-0 z-20 container mx-auto px-4 md:px-6 lg:px-8 max-w-6xl">
+          <PageBreadcrumb light items={[{ name: "Home", href: "/" }, { name: "Blog" }]} />
+        </div>
+        <CinematicHero
         bgImage="/jagannathmandir3.jpg"
         altText="Sabitri Guest House travel blog - Puri travel guides and tips"
         eyebrow="Sabitri Guest House"
@@ -21,6 +26,7 @@ export default function BlogPage() {
         scrollIndicator={true}
         overlayGradient="bg-gradient-to-b from-black/40 via-black/20 to-black/85"
       />
+      </section>
 
       <section className="py-16 bg-gradient-to-br from-amber-50 to-stone-50">
         <div className="container mx-auto px-4 md:px-6 lg:px-8 text-center">

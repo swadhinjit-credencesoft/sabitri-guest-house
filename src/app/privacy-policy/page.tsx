@@ -1,11 +1,13 @@
 "use client";
 import { motion } from "framer-motion";
 import { siteConfig } from "@/data/resortData";
+import { PageBreadcrumb } from "@/components/shared/PageBreadcrumb";
 
 export default function PrivacyPolicy() {
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="pt-28 pb-24">
       <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-4xl">
+        <PageBreadcrumb items={[{ name: "Home", href: "/" }, { name: "Privacy Policy" }]} />
         <h1 className="font-serif text-4xl md:text-5xl text-foreground mb-4">Privacy Policy</h1>
         <p className="text-muted-foreground text-sm mb-10">Last updated: July 2026</p>
 

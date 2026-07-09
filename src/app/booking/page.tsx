@@ -3,6 +3,7 @@ import { rooms } from "@/data/rooms";
 import { siteConfig, getWhatsAppBookingUrl } from "@/data/site";
 import { testimonials } from "@/data/home";
 import { Shield, BadgeCheck, Lock, Star, MapPin, Phone } from "lucide-react";
+import { PageBreadcrumb } from "@/components/shared/PageBreadcrumb";
 
 const bookingFaqs = [
   {
@@ -43,7 +44,8 @@ export default function BookingPage() {
 
       <div className="relative bg-gradient-to-b from-stone-900 via-stone-900/95 to-stone-900/0 pt-16 pb-24 md:pb-32 mb-8 -mt-28 px-4">
         <div className="container mx-auto md:px-6 lg:px-8 max-w-6xl">
-          <div className="text-center pt-8">
+          <PageBreadcrumb light items={[{ name: "Home", href: "/" }, { name: "Booking" }]} />
+          <div className="text-center pt-6">
             <span className="text-amber-400 uppercase tracking-widest text-xs font-medium">Best Rates Guaranteed</span>
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white mt-3 mb-4">
               Book Your Stay at <span className="text-amber-400 italic">Sabitri Guest House</span>
