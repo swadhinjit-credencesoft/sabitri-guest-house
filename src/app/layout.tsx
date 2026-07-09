@@ -465,6 +465,11 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://bookone.io" />
         <link rel="dns-prefetch" href="https://bookone.io" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://bookonelocal.in" />
+        <link rel="dns-prefetch" href="https://bookonelocal.in" />
+        <link rel="preload" as="image" href="/IMG-20260517-WA0000(1).jpg.avif" fetchPriority="high" />
+        <link rel="preload" as="image" href="/opengraph.jpg" fetchPriority="high" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

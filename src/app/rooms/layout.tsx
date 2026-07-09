@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { WebPageJsonLd } from "@/components/shared/WebPageJsonLd";
+import { rooms } from "@/data/rooms";
 
 export const metadata: Metadata = {
   title: "AC Rooms in Puri — Deluxe & Budget Rooms Near Jagannath Temple",
@@ -44,6 +45,23 @@ export const metadata: Metadata = {
 };
 
 export default function RoomsLayout({ children }: { children: React.ReactNode }) {
+  const roomSchema = rooms.map((room) => ({
+    "@type": "HotelRoom",
+    "@id": `https://sabitriguesthouse.in/#room-${room.id}`,
+    "name": room.name,
+    "description": room.description,
+    "image": `https://sabitriguesthouse.in${room.image}`,
+    "occupancy": { "@type": "QuantitativeValue", "maxValue": 4, "unitText": "guests" },
+    "size": { "@type": "QuantitativeValue", "value": 250, "unitText": "square feet" },
+    "offers": {
+      "@type": "Offer",
+      "price": room.price,
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock",
+      "url": "https://sabitriguesthouse.in/booking",
+    },
+  }));
+
   return (
     <>
       <WebPageJsonLd
@@ -51,6 +69,25 @@ export default function RoomsLayout({ children }: { children: React.ReactNode })
         name="Rooms & Suites | Sabitri Guest House Puri"
         description="Explore 24 AC and non-AC rooms at Sabitri Guest House, Puri. Budget-friendly family stay near Jagannath Temple with free WiFi, attached bathrooms, and housekeeping."
         image="https://sabitriguesthouse.in/room4 (1).avif"
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              ...roomSchema,
+              {
+                "@type": "ItemList",
+                "itemListElement": rooms.map((room, i) => ({
+                  "@type": "ListItem",
+                  "position": i + 1,
+                  "item": { "@id": `https://sabitriguesthouse.in/#room-${room.id}` },
+                })),
+              },
+            ],
+          }),
+        }}
       />
       {children}
     </>
