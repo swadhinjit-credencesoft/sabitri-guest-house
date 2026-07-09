@@ -6,7 +6,17 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/_next/", "/out/"],
+        disallow: [
+          "/_next/",
+          "/out/",
+          "/api/",
+          "/admin/",
+          "/404",
+        ],
+      },
+      {
+        userAgent: "GPTBot",
+        disallow: "/",
       },
     ],
     sitemap: "https://sabitriguesthouse.in/sitemap.xml",

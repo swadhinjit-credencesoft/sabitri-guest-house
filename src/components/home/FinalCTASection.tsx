@@ -42,6 +42,15 @@ export function FinalCTASection() {
               View All Rooms
             </Button>
           </Link>
+          <Link href="/booking">
+            <Button
+              variant="outline"
+              className="rounded-full px-12 py-6 border-white/30 text-white bg-white/10 hover:bg-white/20 uppercase tracking-widest text-xs backdrop-blur-sm"
+              data-testid="button-cta-booking"
+            >
+              Book Direct
+            </Button>
+          </Link>
         </div>
       </motion.div>
     </section>

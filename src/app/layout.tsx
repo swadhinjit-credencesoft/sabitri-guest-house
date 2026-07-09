@@ -339,7 +339,7 @@ const jsonLd = {
         { "@type": "LocationFeatureSpecification", "name": "Air Conditioning", "value": true },
         { "@type": "LocationFeatureSpecification", "name": "Daily Housekeeping", "value": true },
         { "@type": "LocationFeatureSpecification", "name": "24-Hour Front Desk", "value": true },
-        { "@type": "LocationFeatureSpecification", "name": "Complimentary Breakfast", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Complimentary Tea/Coffee", "value": true },
         { "@type": "LocationFeatureSpecification", "name": "Hot & Cold Water", "value": true },
         { "@type": "LocationFeatureSpecification", "name": "Free Parking", "value": true },
         { "@type": "LocationFeatureSpecification", "name": "CCTV Security", "value": true },

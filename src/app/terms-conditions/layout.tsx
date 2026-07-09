@@ -1,9 +1,18 @@
 import type { Metadata } from "next";
+import { WebPageJsonLd } from "@/components/shared/WebPageJsonLd";
 
 export const metadata: Metadata = {
   title: "Terms & Conditions",
   description:
     "Property rules, booking terms, and conditions at Sabitri Guest House in Puri. Check-in 9 AM, check-out 8 AM, couple-friendly, family stay near Jagannath Temple.",
+  keywords: [
+    "Sabitri Guest House terms",
+    "hotel booking terms Puri",
+    "check in check out timings",
+    "guest house rules Puri",
+    "cancellation policy Puri",
+    "hotel regulations Odisha",
+  ],
   alternates: {
     canonical: "/terms-conditions",
   },
@@ -31,5 +40,14 @@ export const metadata: Metadata = {
 };
 
 export default function TermsConditionsLayout({ children }: { children: React.ReactNode }) {
-  return children;
+  return (
+    <>
+      <WebPageJsonLd
+        url="https://sabitriguesthouse.in/terms-conditions"
+        name="Terms & Conditions | Sabitri Guest House Puri"
+        description="Property rules, booking terms, check-in/out timings, and ID requirements at Sabitri Guest House, Puri."
+      />
+      {children}
+    </>
+  );
 }

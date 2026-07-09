@@ -1,9 +1,18 @@
 import type { Metadata } from "next";
+import { WebPageJsonLd } from "@/components/shared/WebPageJsonLd";
 
 export const metadata: Metadata = {
-  title: "About Us",
+  title: "About Sabitri Guest House | Family Guest House in Puri Near Jagannath Temple",
   description:
-    "Learn about Sabitri Guest House in Puri — established 2008, located 200m from Shree Jagannath Temple. Budget-friendly family accommodation with warm Odia hospitality. 4.7★ rated on Justdial with 227+ reviews.",
+    "Learn about Sabitri Guest House in Puri — established 2008, located 200m from Shree Jagannath Temple. Family-run, budget-friendly family guest house in Puri with warm Odia hospitality. 4.7★ rated with 227+ reviews.",
+  keywords: [
+    "about Sabitri Guest House",
+    "Sabitri Guest House Puri story",
+    "family run guest house Puri",
+    "guest house established 2008",
+    "Odia hospitality Puri",
+    "about us Puri hotel",
+  ],
   alternates: {
     canonical: "/about",
   },
@@ -31,5 +40,15 @@ export const metadata: Metadata = {
 };
 
 export default function AboutLayout({ children }: { children: React.ReactNode }) {
-  return children;
+  return (
+    <>
+      <WebPageJsonLd
+        url="https://sabitriguesthouse.in/about"
+        name="About Us | Sabitri Guest House Puri"
+        description="Learn about Sabitri Guest House in Puri — established 2008, located 200m from Shree Jagannath Temple. Family-run, 4.7★ rated budget accommodation."
+        image="https://sabitriguesthouse.in/sabitri3 (1).avif"
+      />
+      {children}
+    </>
+  );
 }

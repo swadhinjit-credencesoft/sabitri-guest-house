@@ -1,9 +1,22 @@
 import type { Metadata } from "next";
+import { WebPageJsonLd } from "@/components/shared/WebPageJsonLd";
 
 export const metadata: Metadata = {
-  title: "Rooms & Suites",
+  title: "AC Rooms in Puri — Deluxe & Budget Rooms Near Jagannath Temple",
   description:
-    "Explore 24 clean and spacious AC & non-AC rooms at Sabitri Guest House in Puri. Family-friendly lodgings with attached bathrooms, WiFi, and housekeeping starting at ₹1,500/night. Budget guest house near Jagannath Temple. Book now!",
+    "Explore AC rooms in Puri at Sabitri Guest House. Deluxe AC room with attached bathroom, WiFi, TV, geyser. Family-friendly budget accommodation near Jagannath Temple. Rooms from ₹2,000/night. Book now!",
+  keywords: [
+    "rooms in Puri",
+    "AC rooms near Jagannath Temple",
+    "budget rooms in Puri",
+    "guest house rooms Puri",
+    "hotel rooms near Puri beach",
+    "deluxe room Puri",
+    "non AC rooms Puri",
+    "family rooms Puri",
+    "rooms under 2000 Puri",
+    "accommodation near Jagannath Temple",
+  ],
   alternates: {
     canonical: "/rooms",
   },
@@ -31,5 +44,15 @@ export const metadata: Metadata = {
 };
 
 export default function RoomsLayout({ children }: { children: React.ReactNode }) {
-  return children;
+  return (
+    <>
+      <WebPageJsonLd
+        url="https://sabitriguesthouse.in/rooms"
+        name="Rooms & Suites | Sabitri Guest House Puri"
+        description="Explore 24 AC and non-AC rooms at Sabitri Guest House, Puri. Budget-friendly family stay near Jagannath Temple with free WiFi, attached bathrooms, and housekeeping."
+        image="https://sabitriguesthouse.in/room4 (1).avif"
+      />
+      {children}
+    </>
+  );
 }

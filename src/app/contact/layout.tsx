@@ -1,9 +1,20 @@
 import type { Metadata } from "next";
+import { WebPageJsonLd } from "@/components/shared/WebPageJsonLd";
 
 export const metadata: Metadata = {
-  title: "Contact Us",
+  title: "Contact Sabitri Guest House Puri | Book Budget Guest House Near Jagannath Temple",
   description:
-    "Contact Sabitri Guest House in Puri — call +91 90782 40376, WhatsApp, or email. Located 200m from Jagannath Temple, Shree Marg, Chudanga Sahi. Book your budget family stay today. 24/7 reception.",
+    "Contact Sabitri Guest House — the best budget guest house in Puri near Jagannath Temple. Call +91 90782 40376, WhatsApp, or email. Located Shree Marg, Chudanga Sahi. Book your family stay today.",
+  keywords: [
+    "contact Sabitri Guest House",
+    "Sabitri Guest House phone number",
+    "Sabitri Guest House email",
+    "book Sabitri Guest House",
+    "guest house Puri contact",
+    "hotel near Jagannath Temple contact",
+    "Puri guest house booking",
+    "Sabitri Guest House WhatsApp",
+  ],
   alternates: {
     canonical: "/contact",
   },
@@ -31,5 +42,15 @@ export const metadata: Metadata = {
 };
 
 export default function ContactLayout({ children }: { children: React.ReactNode }) {
-  return children;
+  return (
+    <>
+      <WebPageJsonLd
+        url="https://sabitriguesthouse.in/contact"
+        name="Contact Us | Sabitri Guest House Puri"
+        description="Contact Sabitri Guest House in Puri. Call +91 90782 40376, WhatsApp, or email. Located 200m from Jagannath Temple, Shree Marg, Chudanga Sahi."
+        image="https://sabitriguesthouse.in/sabitri5 (1).avif"
+      />
+      {children}
+    </>
+  );
 }

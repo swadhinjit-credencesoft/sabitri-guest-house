@@ -1,6 +1,8 @@
 import { ReactNode } from "react";
 import { Navbar } from "./Navbar";
 import { Footer } from "./Footer";
+import { FloatingActionWidget } from "@/components/shared/FloatingActionWidget";
+import { CookieConsent } from "@/components/shared/CookieConsent";
 
 interface PageLayoutProps {
   children: ReactNode;
@@ -14,6 +16,8 @@ export function PageLayout({ children }: PageLayoutProps) {
         {children}
       </main>
       <Footer />
+      <FloatingActionWidget />
+      <CookieConsent />
     </div>
   );
 }

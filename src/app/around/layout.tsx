@@ -1,9 +1,22 @@
 import type { Metadata } from "next";
+import { WebPageJsonLd } from "@/components/shared/WebPageJsonLd";
 
 export const metadata: Metadata = {
-  title: "Around Us",
+  title: "Places to Visit in Puri | Nearby Attractions & Hotels Near Jagannath Temple",
   description:
-    "Explore what's around Sabitri Guest House in Puri — Jagannath Temple (200m walk), Puri Golden Beach (1km), Konark Sun Temple (35km), Chilika Lake (50km). Transportation guides, local attractions, and excursion tips for your Puri trip.",
+    "Explore places to visit in Puri — Jagannath Temple (200m), Puri Beach (1km), Konark Sun Temple, Chilika Lake. Complete guide to attractions near your budget guest house. Plan your Puri trip today.",
+  keywords: [
+    "attractions near Puri",
+    "places to visit in Puri",
+    "Puri nearby places",
+    "Jagannath Temple distance",
+    "Puri beach distance",
+    "Konark Sun Temple distance",
+    "Chilika Lake from Puri",
+    "how to reach Puri",
+    "Puri local transport",
+    "Puri sightseeing places",
+  ],
   alternates: {
     canonical: "/around",
   },
@@ -31,5 +44,15 @@ export const metadata: Metadata = {
 };
 
 export default function AroundLayout({ children }: { children: React.ReactNode }) {
-  return children;
+  return (
+    <>
+      <WebPageJsonLd
+        url="https://sabitriguesthouse.in/around"
+        name="Around Us | Sabitri Guest House Puri"
+        description="Explore attractions around Sabitri Guest House — Jagannath Temple (200m), Puri Beach (1km), Konark Sun Temple (35km). Transportation guides and excursion tips."
+        image="https://sabitriguesthouse.in/jagannathmandir3.jpg"
+      />
+      {children}
+    </>
+  );
 }

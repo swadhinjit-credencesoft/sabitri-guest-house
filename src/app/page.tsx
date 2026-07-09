@@ -26,6 +26,38 @@ export default function Home() {
         itemReviewedUrl="https://sabitriguesthouse.in"
       />
 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Event",
+            "name": "Rath Yatra Puri 2026",
+            "description": "The grand chariot festival of Lord Jagannath at Puri. Witness the three chariots travel from Jagannath Temple to Gundicha Temple.",
+            "startDate": "2026-07",
+            "endDate": "2026-07",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+            "location": {
+              "@type": "Place",
+              "name": "Shree Jagannath Temple Puri",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Puri",
+                "addressRegion": "Odisha",
+                "addressCountry": "IN"
+              }
+            },
+            "image": "https://sabitriguesthouse.in/rathayatra1.png",
+            "organizer": {
+              "@type": "Organization",
+              "name": "Shree Jagannath Temple Administration",
+              "url": "https://sabitriguesthouse.in"
+            }
+          }),
+        }}
+      />
+
       <CinematicHero
         bgImage="/IMG-20260517-WA0000(1).jpg.avif"
         altText="Sabitri Guest House exterior near Jagannath Temple Puri"

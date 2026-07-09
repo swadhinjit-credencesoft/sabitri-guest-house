@@ -60,8 +60,22 @@ export default function TermsConditions() {
     },
   ];
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faq.map((item) => ({
+      "@type": "Question",
+      name: item.q,
+      acceptedAnswer: { "@type": "Answer", text: item.a },
+    })),
+  };
+
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="pt-28 pb-24">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-4xl">
         <h1 className="font-serif text-4xl md:text-5xl text-foreground mb-4">Property Rules & Terms</h1>
         <p className="text-muted-foreground text-sm mb-12">

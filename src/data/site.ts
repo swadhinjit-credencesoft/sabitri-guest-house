@@ -36,6 +36,7 @@ export function getWhatsAppBookingUrl(): string {
 export const navLinks = [
   { name: "Home",        path: "/" },
   { name: "Rooms",       path: "/rooms" },
+  { name: "Booking",     path: "/booking" },
   { name: "Experiences", path: "/experiences" },
   { name: "About",       path: "/about" },
   { name: "Around Us",   path: "/around" },

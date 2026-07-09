@@ -1,9 +1,17 @@
 import type { Metadata } from "next";
+import { WebPageJsonLd } from "@/components/shared/WebPageJsonLd";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
     "Privacy Policy of Sabitri Guest House in Puri. Learn how we collect, use, and protect your personal information when you book or stay with us near Jagannath Temple.",
+  keywords: [
+    "Sabitri Guest House privacy policy",
+    "privacy policy Puri hotel",
+    "data protection guest house",
+    "booking privacy policy",
+    "hotel privacy terms",
+  ],
   alternates: {
     canonical: "/privacy-policy",
   },
@@ -31,5 +39,14 @@ export const metadata: Metadata = {
 };
 
 export default function PrivacyPolicyLayout({ children }: { children: React.ReactNode }) {
-  return children;
+  return (
+    <>
+      <WebPageJsonLd
+        url="https://sabitriguesthouse.in/privacy-policy"
+        name="Privacy Policy | Sabitri Guest House Puri"
+        description="Privacy Policy of Sabitri Guest House in Puri. Learn how we collect, use, and protect your personal information."
+      />
+      {children}
+    </>
+  );
 }

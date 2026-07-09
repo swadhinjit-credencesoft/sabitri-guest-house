@@ -1,6 +1,14 @@
+# Sabitri Guest House - Puri
+# https://sabitriguesthouse.in
+
 User-agent: *
 Allow: /
 Disallow: /_next/
 Disallow: /out/
+Disallow: /api/
+Disallow: /admin/
+
+User-agent: GPTBot
+Disallow: /
 
 Sitemap: https://sabitriguesthouse.in/sitemap.xml

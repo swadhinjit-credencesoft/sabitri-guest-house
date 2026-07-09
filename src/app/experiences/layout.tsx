@@ -1,9 +1,22 @@
 import type { Metadata } from "next";
+import { WebPageJsonLd } from "@/components/shared/WebPageJsonLd";
 
 export const metadata: Metadata = {
-  title: "Experiences",
+  title: "Things to Do in Puri | Sacred Experiences & Attractions Near Jagannath Temple",
   description:
-    "Discover curated experiences in Puri — Jagannath Temple darshan (200m walk), Puri Golden Beach (1km), Konark Sun Temple (35km), Chilika Lake excursions, and Rath Yatra festival. Book from Sabitri Guest House.",
+    "Discover the best things to do in Puri — Jagannath Temple darshan (200m walk), Puri Beach (1km), Konark Sun Temple (35km), Chilika Lake. Explore top attractions near your guest house in Puri. Book now.",
+  keywords: [
+    "experiences in Puri",
+    "things to do in Puri",
+    "Puri temple darshan",
+    "Puri beach activities",
+    "Konark Sun Temple tour",
+    "Chilika Lake boat ride",
+    "Rath Yatra Puri",
+    "Puri sightseeing",
+    "Puri travel experiences",
+    "what to do in Puri",
+  ],
   alternates: {
     canonical: "/experiences",
   },
@@ -31,5 +44,15 @@ export const metadata: Metadata = {
 };
 
 export default function ExperiencesLayout({ children }: { children: React.ReactNode }) {
-  return children;
+  return (
+    <>
+      <WebPageJsonLd
+        url="https://sabitriguesthouse.in/experiences"
+        name="Experiences | Sabitri Guest House Puri"
+        description="Discover curated experiences in Puri — Jagannath Temple darshan (200m), Puri Beach (1km), Konark Sun Temple (35km), Chilika Lake. Book from Sabitri Guest House."
+        image="https://sabitriguesthouse.in/sabitri13 (1).avif"
+      />
+      {children}
+    </>
+  );
 }

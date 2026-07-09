@@ -18,10 +18,10 @@ export default function Rooms() {
         eyebrow="Comfortable Lodgings"
         title={
           <>
-            Rooms &amp;<br /><span className="text-amber-400 italic">Suites</span>
+            AC Rooms in<br /><span className="text-amber-400 italic">Puri</span>
           </>
         }
-        subtitle="24 clean and spacious rooms designed for families and pilgrims"
+        subtitle="Budget-friendly Deluxe AC room near Jagannath Temple — ideal for pilgrims and families"
         scrollIndicator={true}
         overlayGradient="bg-gradient-to-b from-black/40 via-black/20 to-black/85"
       />

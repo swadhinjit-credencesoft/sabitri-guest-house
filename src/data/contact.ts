@@ -43,8 +43,8 @@ export const faqs = [
     a: "Yes — Sabitri Guest House is located just 200 metres from the Jagannath Temple on Shree Marg, Chudanga Sahi. You can walk to the temple in under 5 minutes.",
   },
   {
-    q: "Do you provide complimentary breakfast?",
-    a: "Yes, a simple Odia breakfast is included with all room bookings. Tea and coffee are available at the reception from 5:30 AM for guests attending early morning darshan.",
+    q: "Do you provide complimentary tea or coffee?",
+    a: "Yes, complimentary tea and coffee are available at the reception. Our guests appreciate a warm cup before heading out for early morning temple darshan.",
   },
   {
     q: "Is parking available?",

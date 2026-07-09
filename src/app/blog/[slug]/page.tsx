@@ -45,6 +45,56 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   };
 }
 
+function linkifyParagraph(text: string) {
+  const links: { pattern: RegExp; href: string; label?: string }[] = [
+    { pattern: /\bSabitri Guest House\b/g, href: "/" },
+    { pattern: /\bbook your stay\b/gi, href: "/booking" },
+    { pattern: /\bbook directly\b/gi, href: "/booking" },
+    { pattern: /\bbudget[- ]?friendly guest house\b/gi, href: "/rooms" },
+    { pattern: /\bguest house near Jagannath Temple\b/gi, href: "/" },
+    { pattern: /\bbudget guest house\b/gi, href: "/rooms" },
+  ];
+
+  const parts: (string | JSX.Element)[] = [text];
+  for (const { pattern, href } of links) {
+    const matched = parts.some(
+      (p) => typeof p === "string" && pattern.test(p)
+    );
+    if (!matched) continue;
+    const newParts: (string | JSX.Element)[] = [];
+    for (const part of parts) {
+      if (typeof part !== "string") {
+        newParts.push(part);
+        continue;
+      }
+      pattern.lastIndex = 0;
+      let lastIndex = 0;
+      let result: RegExpExecArray | null;
+      let hasMatch = false;
+      while ((result = pattern.exec(part)) !== null) {
+        hasMatch = true;
+        if (result.index > lastIndex) {
+          newParts.push(part.slice(lastIndex, result.index));
+        }
+        newParts.push(
+          <a key={`${href}-${result.index}`} href={href} className="text-amber-600 hover:text-amber-700 underline underline-offset-2">
+            {result[0]}
+          </a>
+        );
+        lastIndex = pattern.lastIndex;
+      }
+      if (hasMatch && lastIndex < part.length) {
+        newParts.push(part.slice(lastIndex));
+      } else if (!hasMatch) {
+        newParts.push(part);
+      }
+    }
+    parts.length = 0;
+    parts.push(...newParts);
+  }
+  return parts.length === 1 && typeof parts[0] === "string" ? parts[0] : parts;
+}
+
 export default function BlogPostPage({ params }: { params: { slug: string } }) {
   const post = blogPosts.find((p) => p.slug === params.slug);
   if (!post) notFound();
@@ -56,13 +106,13 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
       <BlogJsonLd
         title={post.title}
         description={post.description}
-        url={`https://${siteConfig.website}/blog/${post.slug}`}
-        image={`https://${siteConfig.website}${post.image}`}
+        url={`${siteConfig.website}/blog/${post.slug}`}
+        image={`${siteConfig.website}${post.image}`}
         datePublished={post.date}
         dateModified={post.date}
         authorName={siteConfig.name}
         publisherName={siteConfig.name}
-        publisherLogo={`https://${siteConfig.website}/favicon.svg`}
+        publisherLogo={`${siteConfig.website}/favicon.svg`}
       />
 
       <article className="pt-28 pb-24">
@@ -99,7 +149,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                 </h2>
                 {section.paragraphs.map((p, j) => (
                   <p key={j} className="text-stone-600 leading-relaxed mb-4">
-                    {p}
+                    {linkifyParagraph(p)}
                   </p>
                 ))}
                 {i === midIndex - 1 && (
@@ -147,7 +197,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
               Sabitri Guest House &bull; 200m from Jagannath Temple &bull; 1km from Puri Beach
             </p>
             <p className="text-amber-400 text-xl font-semibold mb-8">
-              Rooms from ₹1,500/night &bull; Free WiFi &bull; Breakfast Included
+              Rooms from ₹1,500/night &bull; Free WiFi
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -173,7 +223,27 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
             </div>
           </div>
 
-          <div className="mt-12 text-center">
+          <div className="mt-16 mb-12">
+            <h2 className="font-serif text-2xl text-stone-900 mb-6 text-center">Related Travel Guides</h2>
+            <div className="grid md:grid-cols-3 gap-6">
+              {blogPosts
+                .filter((p) => p.slug !== post.slug)
+                .slice(0, 3)
+                .map((related) => (
+                  <Link key={related.slug} href={`/blog/${related.slug}`} className="group block bg-white rounded-xl border border-stone-200 overflow-hidden hover:border-amber-300 hover:shadow-lg transition-all">
+                    <div className="aspect-[16/9] overflow-hidden">
+                      <img src={related.image} alt={related.imageAlt} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                    </div>
+                    <div className="p-4">
+                      <span className="text-amber-600 uppercase tracking-widest text-[10px] font-medium">{related.category}</span>
+                      <h3 className="font-serif text-base text-stone-900 mt-1 group-hover:text-amber-600 transition-colors line-clamp-2">{related.title}</h3>
+                    </div>
+                  </Link>
+                ))}
+            </div>
+          </div>
+
+          <div className="mt-8 text-center">
             <Link
               href="/blog"
               className="text-amber-600 hover:text-amber-700 underline underline-offset-4 text-sm"

@@ -5,6 +5,10 @@ const nextConfig = {
     unoptimized: true,
   },
   transpilePackages: ['framer-motion'],
+  compress: true,
+  generateEtags: true,
+  poweredByHeader: false,
+  reactStrictMode: true,
 };
 
 export default nextConfig;

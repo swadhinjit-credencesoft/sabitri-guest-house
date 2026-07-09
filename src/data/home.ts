@@ -46,10 +46,10 @@ export const testimonials = [
 export const galleryImages = [
   { src: "/sabitri1.avif",         alt: "Sabitri Guest House exterior near Jagannath Temple", span: "col-span-2 row-span-2" },
   { src: "/sabitri6 (1).avif",        alt: "Clean and comfortable guest room",                  span: "col-span-1 row-span-1" },
-  { src: "/room4 (1).avif",  alt: "Breakfast dining area",                            span: "col-span-1 row-span-1" },
+  { src: "/room4 (1).avif",  alt: "Deluxe AC Room at Sabitri Guest House",            span: "col-span-1 row-span-1" },
   // { src: "/images/experiences-hero.png",  alt: "View of Jagannath Temple from nearby",             span: "col-span-1 row-span-2" },
   { src: "/images/about-hero.png",        alt: "Sabitri Guest House lobby",                        span: "col-span-1 row-span-1" },
-  { src: "/images/dining-ember.png",      alt: "Local Odia food served at the guest house",        span: "col-span-1 row-span-1" },
+  { src: "/handcraft.png",      alt: "Traditional Odisha handicrafts and souvenirs near Puri",        span: "col-span-1 row-span-1" },
 ];
 
 // ── Inline stats shown in the "Devotional Rest" cinematic section ──

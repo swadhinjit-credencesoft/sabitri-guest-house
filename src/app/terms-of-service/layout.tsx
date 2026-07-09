@@ -4,8 +4,15 @@ export const metadata: Metadata = {
   title: "Terms of Service",
   description:
     "Terms of Service for Sabitri Guest House website. Understand the terms governing your use of our website and online booking services.",
+  keywords: [
+    "Sabitri Guest House terms of service",
+    "website terms Puri hotel",
+    "online booking terms",
+    "hotel website terms of use",
+  ],
+  robots: { index: false, follow: true },
   alternates: {
-    canonical: "/terms-of-service",
+    canonical: "/terms-conditions",
   },
   openGraph: {
     title: "Terms of Service | Sabitri Guest House Puri",

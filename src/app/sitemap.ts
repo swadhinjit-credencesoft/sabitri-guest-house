@@ -14,64 +14,63 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const pages: MetadataRoute.Sitemap = [
     {
       url: baseUrl,
-      lastModified: new Date(),
+      lastModified: new Date("2026-07-09"),
       changeFrequency: "weekly",
       priority: 1,
     },
     {
+      url: `${baseUrl}/booking`,
+      lastModified: new Date("2026-07-09"),
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/rooms`,
-      lastModified: new Date(),
+      lastModified: new Date("2026-07-09"),
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
       url: `${baseUrl}/about`,
-      lastModified: new Date(),
+      lastModified: new Date("2026-07-09"),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
       url: `${baseUrl}/experiences`,
-      lastModified: new Date(),
+      lastModified: new Date("2026-07-09"),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
       url: `${baseUrl}/blog`,
-      lastModified: new Date(),
+      lastModified: new Date("2026-07-09"),
       changeFrequency: "weekly",
       priority: 0.8,
     },
     {
       url: `${baseUrl}/around`,
-      lastModified: new Date(),
+      lastModified: new Date("2026-07-09"),
       changeFrequency: "monthly",
       priority: 0.7,
     },
     {
       url: `${baseUrl}/contact`,
-      lastModified: new Date(),
+      lastModified: new Date("2026-07-09"),
       changeFrequency: "monthly",
       priority: 0.9,
     },
     {
       url: `${baseUrl}/privacy-policy`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.5,
+      lastModified: new Date("2026-07-09"),
+      changeFrequency: "yearly",
+      priority: 0.3,
     },
-    {
-      url: `${baseUrl}/terms-of-service`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.5,
-    },
-
     {
       url: `${baseUrl}/terms-conditions`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.5,
+      lastModified: new Date("2026-07-09"),
+      changeFrequency: "yearly",
+      priority: 0.3,
     },
   ];
 

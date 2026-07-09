@@ -72,7 +72,7 @@ export const blogPosts: BlogPost[] = [
         heading: "Where to Stay During Rath Yatra in Puri",
         paragraphs: [
           "Finding accommodation during Rath Yatra is extremely competitive. Hotels and guest houses near Jagannath Temple get booked months in advance. For a stress-free experience, we recommend booking your stay at least 2–3 months ahead.",
-          "Sabitri Guest House, located just 200 meters from the Jagannath Temple, is the ideal base for Rath Yatra. Our budget-friendly AC and non-AC rooms provide a clean, comfortable retreat from the festival crowds. We offer 24-hour reception, free WiFi, complimentary breakfast, and a warm family atmosphere.",
+          "Sabitri Guest House, located just 200 meters from the Jagannath Temple, is the ideal base for Rath Yatra. Our budget-friendly AC and non-AC rooms provide a clean, comfortable retreat from the festival crowds. We offer 24-hour reception, free WiFi, complimentary tea/coffee, and a warm family atmosphere.",
           "Staying close to the temple means you can participate in the rituals at any time without worrying about transport. Book directly with us to avoid the high markups of online travel agencies during the festival season.",
         ],
       },
@@ -148,7 +148,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Where to Stay in Puri: Sabitri Guest House",
         paragraphs: [
-          "For a comfortable and affordable stay in Puri, Sabitri Guest House is the top choice. Located on Shree Marg, Chudanga Sahi, just 200 meters from the Jagannath Temple, our guest house offers clean AC and non-AC rooms, free WiFi, complimentary breakfast, hot and cold water, and 24-hour reception.",
+          "For a comfortable and affordable stay in Puri, Sabitri Guest House is the top choice. Located on Shree Marg, Chudanga Sahi, just 200 meters from the Jagannath Temple, our guest house offers clean AC and non-AC rooms, free WiFi, complimentary tea/coffee, hot and cold water, and 24-hour reception.",
           "We are a family-run establishment with a 4.7-star rating on Google and over 227 positive reviews. Whether you are visiting for pilgrimage, leisure, or both, Sabitri Guest House provides the perfect home base for your Puri exploration.",
         ],
       },
@@ -564,7 +564,244 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Where to Stay Near Puri Beach",
         paragraphs: [
-          "For budget-conscious travelers, Sabitri Guest House offers the perfect combination of proximity to both the beach (1 km) and the Jagannath Temple (200m). Our clean, comfortable rooms, free WiFi, and complimentary breakfast provide everything you need for a memorable beach vacation. Book directly with us for the best rates.",
+          "For budget-conscious travelers, Sabitri Guest House offers the perfect combination of proximity to both the beach (1 km) and the Jagannath Temple (200m). Our clean, comfortable rooms, free WiFi, and complimentary tea/coffee provide everything you need for a memorable beach vacation. Book directly with us for the best rates.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "konark-sun-temple-guide",
+    title: "Konark Sun Temple: Complete Travel Guide from Puri — History, Timings & Tips",
+    description:
+      "Complete travel guide to Konark Sun Temple from Puri. Learn about its 13th-century history, architecture, best visiting times, entry fees, light & sound show, and how to reach from Sabitri Guest House.",
+    keywords: [
+      "Konark Sun Temple",
+      "Konark temple guide",
+      "Konark Sun Temple timings",
+      "Konark from Puri",
+      "Konark day trip",
+      "Konark Sun Temple history",
+      "Konark light and sound show",
+      "UNESCO site Odisha",
+      "Konark entry fee",
+      "places near Puri",
+    ],
+    date: "2026-04-15",
+    readTime: "8 min read",
+    category: "Local Attractions",
+    image: "/konarktemple.jpg",
+    imageAlt: "Konark Sun Temple UNESCO World Heritage Site near Puri Odisha",
+    sections: [
+      {
+        heading: "Introduction to Konark Sun Temple",
+        paragraphs: [
+          "Konark Sun Temple is one of India's most magnificent architectural marvels and a UNESCO World Heritage Site. Built in the 13th century by King Narasimhadeva I of the Eastern Ganga dynasty, this temple is designed as a colossal chariot for the Sun God, Surya, with 12 pairs of intricately carved stone wheels pulled by seven horses.",
+          "Located just 35 km from Puri, Konark is an unmissable day trip for anyone visiting Sabitri Guest House. The temple's exquisite stone carvings, massive structure, and spiritual significance make it one of the most impressive monuments in India.",
+          "This guide covers everything you need to know for visiting Konark Sun Temple from Puri — history, architecture, timings, entry fees, best seasons, and how to plan your trip.",
+        ],
+      },
+      {
+        heading: "History and Architectural Significance",
+        paragraphs: [
+          "The Konark Sun Temple was constructed between 1238 and 1250 CE by King Narasimhadeva I to commemorate his military victories. The temple was designed as a massive chariot for Surya (the Sun God), with 24 wheels representing the 24 fortnights of the Hindu calendar and 7 horses representing the days of the week.",
+          "The temple originally stood over 70 meters tall, but only the Jagamohana (audience hall) remains today. The main sanctum (vimana) collapsed in the 19th century. Despite this, the surviving structure is a masterpiece of Kalinga architecture, with every surface covered in intricate sculptures depicting deities, dancers, musicians, animals, and scenes from daily life.",
+          "The temple is particularly famous for its erotic sculptures (mithuna) on the lower panels, which are reminiscent of Khajuraho. The Sun Temple is considered the pinnacle of Odishan temple architecture and attracts historians, architects, and tourists from around the world.",
+        ],
+      },
+      {
+        heading: "Konark Sun Temple Timings and Entry Fee",
+        paragraphs: [
+          "Konark Sun Temple is open from sunrise to sunset, typically 6:00 AM to 8:00 PM. The best time to visit is early morning (6:00 AM – 9:00 AM) or late afternoon (3:00 PM – 5:00 PM) to avoid the midday heat and enjoy the best lighting for photography.",
+          "Entry fees: Indian citizens — ₹40 per person; SAARC/BIMSTEC citizens — ₹50 per person; Foreign nationals — ₹600 per person; Children under 15 — Free. The Light & Sound Show in the evening has separate tickets: ₹100 per person for adults and ₹50 for children.",
+          "The Archaeological Survey of India (ASI) maintains the site, and guided tours are available. We recommend hiring an official guide at the entrance for a deeper understanding of the temple's history and symbolism.",
+        ],
+      },
+      {
+        heading: "How to Reach Konark from Puri",
+        paragraphs: [
+          "Konark is 35 km from Puri, and the drive takes approximately 45 minutes to 1 hour. The most convenient option is to hire a private taxi from Puri, which costs around ₹1,500–₹2,000 for a round trip including waiting time.",
+          "Government and private buses run regularly from Puri bus stand to Konark. The journey takes about 1 hour and costs approximately ₹30–₹50 per person. Auto-rickshaws are also available for hire but are less comfortable for the distance.",
+          "For guests staying at Sabitri Guest House, we can arrange reliable taxi services. Our central location near Jagannath Temple makes it easy to start your Konark day trip early in the morning.",
+        ],
+      },
+      {
+        heading: "Chandrabhaga Beach — The Perfect Addition",
+        paragraphs: [
+          "Just 2 km from the Sun Temple, Chandrabhaga Beach is one of the cleanest and most serene beaches on the Odisha coast. Unlike Puri Beach, Chandrabhaga is relatively untouched by commercialization, offering peaceful walks, stunning sunrise views, and clear waters.",
+          "The beach has been awarded the Blue Flag certification for its cleanliness and environmental sustainability. It is an ideal spot to relax after exploring the Sun Temple. Many visitors combine a Konark visit with an evening at Chandrabhaga Beach before returning to Puri.",
+        ],
+      },
+      {
+        heading: "Best Time to Visit Konark",
+        paragraphs: [
+          "The best time to visit Konark Sun Temple is from October to March, when the weather is pleasant with temperatures between 15°C and 30°C. The Konark Dance Festival, held annually in December, is a major cultural event featuring classical dance performances against the backdrop of the illuminated temple.",
+          "Summer months (April to June) can be extremely hot, with temperatures reaching 40°C. Monsoon (July to September) brings heavy rainfall, though the temple looks beautiful in the lush green surroundings. Winter remains the ideal season for a comfortable and enriching visit.",
+        ],
+      },
+      {
+        heading: "Where to Stay for Your Konark Trip",
+        paragraphs: [
+          "While there are a few accommodation options near Konark, most visitors prefer to stay in Puri and make a day trip. Sabitri Guest House, located just 200m from Jagannath Temple in Puri, is the perfect base for exploring Konark. Our clean, affordable rooms, free WiFi, and friendly service ensure a comfortable stay.",
+          "After a long day exploring the Sun Temple and Chandrabhaga Beach, return to the warm hospitality of Sabitri Guest House. Book your stay directly with us for the best rates.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "chilika-lake-travel-guide",
+    title: "Chilika Lake Travel Guide: Dolphin Watching, Bird Sanctuary & Boat Rides from Puri",
+    description:
+      "Complete travel guide to Chilika Lake from Puri — Asia's largest brackish water lagoon. Dolphin watching at Satpada, Kalijai Temple, Nalabana Bird Sanctuary, boat rides, and best seasons to visit.",
+    keywords: [
+      "Chilika Lake",
+      "Chilika Lake Puri",
+      "Chilika Lake boat ride",
+      "dolphin watching Chilika",
+      "Satpada dolphin sanctuary",
+      "Chilika Lake bird sanctuary",
+      "Kalijai Temple",
+      "day trip from Puri",
+      "Chilika Lake timings",
+      "Irrawaddy dolphins Odisha",
+    ],
+    date: "2026-05-01",
+    readTime: "9 min read",
+    category: "Local Attractions",
+    image: "/chilikalake.jpg",
+    imageAlt: "Chilika Lake boat ride near Puri Odisha dolpin watching",
+    sections: [
+      {
+        heading: "Introduction to Chilika Lake",
+        paragraphs: [
+          "Chilika Lake is Asia's largest brackish water lagoon and the second largest coastal lagoon in the world. Spread across 1,100 square kilometers, this breathtaking natural wonder is located about 50 km from Puri and is one of the most popular day trips for visitors staying at Sabitri Guest House.",
+          "Designated a Ramsar Site (wetland of international importance), Chilika Lake is home to a stunning diversity of flora and fauna. The lake is famous for its population of Irrawaddy dolphins, migratory birds, and the beautiful Kalijai Temple located on an island within the lake.",
+          "This comprehensive guide covers everything you need to plan your Chilika Lake trip from Puri — how to reach, best time to visit, dolphin watching, bird sanctuary, Kalijai Temple, boat rides, and budget tips.",
+        ],
+      },
+      {
+        heading: "How to Reach Chilika Lake from Puri",
+        paragraphs: [
+          "Chilika Lake is approximately 50 km from Puri, and the drive takes about 1 to 1.5 hours. The most common access point is Satpada, which is about 60 km from Puri but offers the best dolphin viewing opportunities.",
+          "By taxi: Hiring a private taxi from Puri is the most convenient option. A round trip typically costs ₹2,000–₹3,000 including waiting time at the lake. By bus: State-run and private buses from Puri to Satpada or Balugaon are available but less frequent. By train: The nearest railway station is Balugaon on the Puri-Bhubaneswar route.",
+          "For guests at Sabitri Guest House, we can help arrange transportation. Our reception desk can book reliable taxis for your Chilika day trip. We recommend starting early, around 6:00 AM, to catch the best dolphin sightings.",
+        ],
+      },
+      {
+        heading: "Dolphin Watching at Satpada",
+        paragraphs: [
+          "Satpada, located at the mouth of Chilika Lake where it meets the Bay of Bengal, is the best place for dolphin watching. The lagoon is home to approximately 150–200 Irrawaddy dolphins (Orcaella brevirostris), a rare and endangered species.",
+          "Boat tours typically last 2–3 hours and take you through the lake's channels to spot dolphins in their natural habitat. The best time for dolphin sightings is early morning (6:00 AM – 9:00 AM) when the water is calm. Boat rides cost approximately ₹500–₹1,500 per person depending on the type of boat and duration.",
+          "Motor boats and speed boats are available for hire at the Satpada jetty. We recommend taking a covered motor boat for comfort, especially during summer. Life jackets are provided and should be worn at all times.",
+        ],
+      },
+      {
+        heading: "Nalabana Bird Sanctuary",
+        paragraphs: [
+          "Nalabana Island, located within Chilika Lake, is a designated bird sanctuary that becomes a haven for migratory birds during winter. From November to March, thousands of birds from as far as Siberia, Central Asia, and Europe flock to the sanctuary.",
+          "Species commonly spotted include flamingos, painted storks, grey pelicans, ospreys, herons, and sandpipers. The island is accessible by boat, and guided bird-watching tours are available. Bird enthusiasts should bring binoculars and cameras with telephoto lenses.",
+          "The Nalabana Bird Sanctuary is a paradise for nature photographers and bird lovers. The sight of thousands of birds taking flight at sunrise is an unforgettable experience.",
+        ],
+      },
+      {
+        heading: "Kalijai Temple — The Island Shrine",
+        paragraphs: [
+          "Kalijai Temple is a revered Hindu shrine located on an island in Chilika Lake. Dedicated to Goddess Kalijai, the temple is accessible only by boat. The legend says that a young girl named Kalijai was sacrificed on the island and later worshipped as a goddess.",
+          "The boat ride to Kalijai Temple takes about 30–45 minutes from the mainland. The temple is particularly crowded during the Makar Mela festival in January, when thousands of devotees visit. The island offers panoramic views of the lake and is a popular photo spot.",
+          "Most Chilika Lake tours include a stop at Kalijai Temple. The combination of spiritual significance and natural beauty makes it a highlight of the trip.",
+        ],
+      },
+      {
+        heading: "Best Time to Visit Chilika Lake",
+        paragraphs: [
+          "The best time to visit Chilika Lake is from November to March. During these months, the weather is pleasant, and the lake is teeming with migratory birds. Dolphin sightings are also more frequent in calm winter waters.",
+          "Summer (April to June) can be hot and humid, but boat rides in the early morning remain enjoyable. Monsoon (July to October) brings heavy rainfall, and boat services may be restricted during storms. The lake's water level rises significantly during monsoon, creating a different but equally beautiful landscape.",
+          "For the complete Chilika experience — dolphins, birds, and pleasant weather — plan your visit between November and February.",
+        ],
+      },
+      {
+        heading: "Planning Your Chilika Day Trip",
+        paragraphs: [
+          "A typical Chilika Lake day trip from Puri starts early morning and returns by late afternoon. We recommend the following itinerary: 6:00 AM — Depart from Sabitri Guest House; 7:30 AM — Arrive at Satpada and begin dolphin watching boat ride; 10:00 AM — Visit Kalijai Temple; 11:30 AM — Explore Nalabana Bird Sanctuary (winter only); 1:00 PM — Lunch at a lakeside restaurant; 2:30 PM — Visit local fishing villages; 4:00 PM — Return to Puri.",
+          "Carry sunscreen, hats, sunglasses, drinking water, and light snacks. Wear comfortable clothing and footwear. If visiting in winter, carry a light jacket for the boat ride.",
+          "Book your stay at Sabitri Guest House in Puri for the most convenient base for your Chilika Lake adventure. Our affordable rooms, free WiFi, and central location near Jagannath Temple make us the ideal choice for travelers exploring Puri and its surroundings.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "how-to-reach-puri",
+    title: "How to Reach Puri: Complete Travel Guide by Train, Flight, Bus & Road",
+    description:
+      "Complete guide on how to reach Puri, Odisha. Detailed information on Puri Railway Station, nearest airport Bhubaneswar, bus services, road routes, and local transportation within Puri.",
+    keywords: [
+      "how to reach Puri",
+      "Puri railway station",
+      "Puri nearest airport",
+      "trains to Puri",
+      "flights to Bhubaneswar",
+      "Puri bus stand",
+      "Puri road trip",
+      "Puri travel guide",
+      "reach Puri from Kolkata",
+      "reach Puri from Delhi",
+    ],
+    date: "2026-05-20",
+    readTime: "7 min read",
+    category: "Travel Tips",
+    image: "/jagannathmandiroutside.png",
+    imageAlt: "How to reach Sabitri Guest House near Jagannath Temple Puri Odisha",
+    sections: [
+      {
+        heading: "Getting to Puri — An Overview",
+        paragraphs: [
+          "Puri is one of the most well-connected pilgrimage destinations in Eastern India. Located on the coast of Odisha, the city is accessible by rail, air, road, and bus. Whether you are traveling from Kolkata, Delhi, Mumbai, Chennai, or Bengaluru, reaching Puri is convenient and straightforward.",
+          "Sabitri Guest House is located just 200m from Jagannath Temple on Shree Marg, Chudanga Sahi. Once you reach Puri, our guest house is easily accessible from all major entry points. This guide covers every mode of transport to help you plan your journey.",
+        ],
+      },
+      {
+        heading: "By Train — Puri Railway Station",
+        paragraphs: [
+          "Puri Railway Station (station code: PURI) is a major railway junction on the East Coast Railway network. It is directly connected to all major Indian cities including Kolkata, Delhi, Mumbai, Chennai, Bengaluru, Hyderabad, Ahmedabad, and Guwahati.",
+          "Popular trains to Puri include: Puri Express from Kolkata (8 hours), Puri Duronto Express from Delhi (22 hours), Konark Express from Bhubaneswar (2 hours), Howrah-Puri Shatabdi Express (7 hours), and Chennai-Puri Express (16 hours).",
+          "The railway station is approximately 2 km from Sabitri Guest House. Auto-rickshaws and cycle-rickshaws are readily available outside the station. The fare to reach our guest house is approximately ₹50–₹100.",
+        ],
+      },
+      {
+        heading: "By Air — Nearest Airport",
+        paragraphs: [
+          "The nearest airport to Puri is Biju Patnaik International Airport in Bhubaneswar (IATA: BBI), located approximately 60 km away. The airport has direct flights from Delhi, Mumbai, Kolkata, Bengaluru, Hyderabad, Chennai, and other major cities.",
+          "From Bhubaneswar airport, you can take a prepaid taxi to Puri. The journey takes approximately 1.5 to 2 hours and costs around ₹1,500–₹2,000. Alternatively, you can take a bus from Bhubaneswar to Puri (frequent services from Baramunda Bus Stand) or board a train from Bhubaneswar Railway Station to Puri (approx 2 hours).",
+          "For international visitors, the nearest international airports are Netaji Subhas Chandra Bose International Airport in Kolkata (500 km) and Indira Gandhi International Airport in Delhi (1,800 km).",
+        ],
+      },
+      {
+        heading: "By Bus — Puri Bus Stand",
+        paragraphs: [
+          "Puri has a well-connected bus network. The main bus stand is located near the railway station. State-run Odisha State Road Transport Corporation (OSRTC) buses and private luxury coaches operate frequent services from Bhubaneswar, Cuttack, Kolkata, and other cities.",
+          "The journey from Bhubaneswar to Puri by bus takes approximately 2 hours and costs ₹100–₹300 depending on the type of bus. From Kolkata, overnight private AC buses take approximately 8–10 hours and cost ₹500–₹1,000.",
+        ],
+      },
+      {
+        heading: "By Road — Self-Drive or Taxi",
+        paragraphs: [
+          "Puri is well-connected by road to all major cities in Eastern India. The NH-316 highway connects Puri to Bhubaneswar (60 km). From Kolkata, take NH-16 via Kharagpur and Bhubaneswar (500 km, approx 9–10 hours).",
+          "From Chennai, take NH-16 via Visakhapatnam and Bhubaneswar (1,200 km, approx 20 hours). From Hyderabad, take NH-16 via Vijayawada and Bhubaneswar (1,000 km, approx 18 hours).",
+          "Puri city is relatively small and walkable near the temple area. Most local attractions are within 1–2 km of Sabitri Guest House. Auto-rickshaws and cycle-rickshaws are the primary modes of local transport.",
+        ],
+      },
+      {
+        heading: "Local Transportation in Puri",
+        paragraphs: [
+          "Once you arrive in Puri, getting around is easy. Auto-rickshaws are the most common mode of transport and charge approximately ₹50–₹200 for trips within the city. Cycle-rickshaws are available for shorter distances and are a more eco-friendly option.",
+          "Walking is the best way to explore the temple area. Sabitri Guest House's location on Shree Marg, just 200m from Jagannath Temple, means you can walk to the temple, Bada Danda (Grand Road), and local markets without needing any transport.",
+          "For day trips to Konark (35 km), Chilika Lake (50 km), or Bhubaneswar (60 km), we recommend hiring a private taxi for the day. Our reception desk at Sabitri Guest House can help arrange reliable transportation.",
+        ],
+      },
+      {
+        heading: "Where to Stay When You Arrive in Puri",
+        paragraphs: [
+          "After your journey to Puri, check into Sabitri Guest House for a comfortable and relaxing stay. Located just 200m from Jagannath Temple, our budget-friendly AC and non-AC rooms provide the perfect base for your Puri visit.",
+          "We offer free WiFi, clean attached bathrooms with geysers, daily housekeeping, 24-hour reception, and complimentary tea/coffee. With a 4.7-star rating from 227+ reviews, we are the preferred choice for pilgrims, families, and travelers visiting Puri. Book directly with us for the best rates.",
         ],
       },
     ],

@@ -19,10 +19,10 @@ export default function Contact() {
         eyebrow="We Are Here For You"
         title={
           <>
-            Begin Your<br /><span className="text-amber-400 italic">Journey</span>
+            Contact Your<br /><span className="text-amber-400 italic">Puri Guest House</span>
           </>
         }
-        subtitle="Available 24 hours a day, seven days a week, in every time zone"
+        subtitle="Available 24/7 — call, WhatsApp, or email to book your budget stay near Jagannath Temple"
         scrollIndicator={true}
         overlayGradient="bg-gradient-to-b from-black/45 via-black/25 to-black/85"
       />

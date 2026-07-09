@@ -55,6 +55,7 @@ export function Footer() {
             <ul className="space-y-3">
               {[
                 { label: "Rooms & Suites", path: "/rooms" },
+                { label: "Booking", path: "/booking" },
                 { label: "Experiences", path: "/experiences" },
                 { label: "About Us", path: "/about" },
                 { label: "Around Us", path: "/around" },
@@ -102,7 +103,6 @@ export function Footer() {
           </p>
           <div className="flex gap-6">
             <Link href="/privacy-policy" className="hover:text-amber-400 transition-colors">Privacy Policy</Link>
-            <Link href="/terms-of-service" className="hover:text-amber-400 transition-colors">Terms of Service</Link>
             <Link href="/terms-conditions" className="hover:text-amber-400 transition-colors">Terms &amp; Conditions</Link>
           </div>
         </div>

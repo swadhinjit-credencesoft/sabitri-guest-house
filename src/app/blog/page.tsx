@@ -14,7 +14,7 @@ export default function BlogPage() {
         eyebrow="Sabitri Guest House"
         title={
           <>
-            Travel Blog &amp;<br /><span className="text-amber-400 italic">Guides</span>
+            Puri Travel<br /><span className="text-amber-400 italic">Blog &amp; Guides</span>
           </>
         }
         subtitle="Expert travel guides, tips, and local insights to help you plan the perfect trip to Puri, Odisha."
@@ -29,7 +29,7 @@ export default function BlogPage() {
             Stay at Sabitri Guest House — Just 200m from <span className="text-amber-600 italic">Jagannath Temple</span>
           </h2>
           <p className="text-stone-600 max-w-2xl mx-auto mb-8 text-lg">
-            Clean AC & Non-AC rooms &bull; Free WiFi &bull; Complimentary Breakfast &bull; 4.7&starf; Rating &bull; From ₹1,500/night
+            Clean AC & Non-AC rooms &bull; Free WiFi &bull; 4.7&starf; Rating &bull; From ₹1,500/night
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

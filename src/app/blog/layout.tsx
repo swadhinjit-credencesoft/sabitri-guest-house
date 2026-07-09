@@ -1,10 +1,23 @@
 import type { Metadata } from "next";
 import { StickyBookingBar } from "@/components/blog/StickyBookingBar";
+import { WebPageJsonLd } from "@/components/shared/WebPageJsonLd";
 
 export const metadata: Metadata = {
-  title: "Travel Blog",
+  title: "Puri Travel Blog & Guides | Plan Your Stay Near Jagannath Temple",
   description:
-    "Discover expert travel guides, tips, and local insights about Puri, Odisha. Read about Jagannath Temple, Rath Yatra, Puri Beach, nearby attractions, and the best budget-friendly places to stay near the temple.",
+    "Expert Puri travel blog with guides on Jagannath Temple, Rath Yatra, Puri Beach, Konark, Chilika Lake. Find the best budget guest house near Jagannath Temple for your Puri trip.",
+  keywords: [
+    "Puri travel blog",
+    "Puri travel guide",
+    "Jagannath Temple guide",
+    "Rath Yatra information",
+    "Puri beach guide",
+    "Puri tourism blog",
+    "places to visit in Puri",
+    "Puri trip planning",
+    "Odisha travel blog",
+    "budget travel Puri",
+  ],
   alternates: {
     canonical: "/blog",
   },
@@ -34,6 +47,12 @@ export const metadata: Metadata = {
 export default function BlogLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
+      <WebPageJsonLd
+        url="https://sabitriguesthouse.in/blog"
+        name="Sabitri Guest House Travel Blog | Puri Travel Guides & Tips"
+        description="Discover expert travel guides, tips, and local insights about Puri, Odisha. Jagannath Temple, Rath Yatra, Puri Beach, and budget-friendly accommodation."
+        image="https://sabitriguesthouse.in/opengraph.jpg"
+      />
       {children}
       <StickyBookingBar />
     </>

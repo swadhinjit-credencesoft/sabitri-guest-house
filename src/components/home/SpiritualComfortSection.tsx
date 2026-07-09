@@ -32,14 +32,27 @@ export function SpiritualComfortSection() {
             warm Odia hospitality, pure vegetarian meals, and a serene atmosphere
             designed for pilgrims and families seeking comfort in Puri.
           </p>
-          <Link href="https://bookone.io/Sabitri-Guest-House?bookingEngine=true">
-            <Button
-              className="rounded-full px-10 py-6 bg-amber-500 text-white hover:bg-amber-600 uppercase tracking-widest text-xs shadow-lg"
-              data-testid="button-book-now"
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Link href="/booking">
+              <Button
+                className="rounded-full px-10 py-6 bg-amber-500 text-white hover:bg-amber-600 uppercase tracking-widest text-xs shadow-lg w-full sm:w-auto"
+              >
+                Book Direct
+              </Button>
+            </Link>
+            <a
+              href="https://bookone.io/Sabitri-Guest-House?bookingEngine=true"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Book Your Stay
-            </Button>
-          </Link>
+              <Button
+                variant="outline"
+                className="rounded-full px-10 py-6 border-white/40 text-white bg-white/10 hover:bg-white/20 uppercase tracking-widest text-xs backdrop-blur-sm w-full sm:w-auto"
+              >
+                Book via Engine
+              </Button>
+            </a>
+          </div>
         </motion.div>
       </div>
     </section>
