@@ -16,18 +16,22 @@ export function WhatsAppButton() {
   return (
     <>
       {visible && !open && (
-        <Tooltip delayDuration={0}>
-          <TooltipTrigger asChild>
-            <button
-              onClick={() => setOpen(true)}
-              className="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-green-500 text-white shadow-lg hover:bg-green-600 transition-all hover:scale-110 flex items-center justify-center animate-in fade-in zoom-in-95"
-              aria-label="Chat on WhatsApp"
-            >
-              <MessageCircle size={28} />
-            </button>
-          </TooltipTrigger>
-          <TooltipContent side="left">Chat with us on WhatsApp</TooltipContent>
-        </Tooltip>
+        <div className="fixed bottom-6 right-6 z-50">
+          <div className="animate-levitate">
+            <Tooltip delayDuration={0}>
+              <TooltipTrigger asChild>
+                <button
+                  onClick={() => setOpen(true)}
+                  className="w-14 h-14 rounded-full bg-green-500 text-white shadow-lg hover:bg-green-600 transition-all hover:scale-110 flex items-center justify-center animate-glow-ring-green"
+                  aria-label="Chat on WhatsApp"
+                >
+                  <MessageCircle size={28} />
+                </button>
+              </TooltipTrigger>
+              <TooltipContent side="left">Chat with us on WhatsApp</TooltipContent>
+            </Tooltip>
+          </div>
+        </div>
       )}
 
       {open && (

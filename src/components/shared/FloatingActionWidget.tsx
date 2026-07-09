@@ -54,22 +54,24 @@ export function FloatingActionWidget() {
           </Tooltip>
         </div>
       )}
-      <Tooltip delayDuration={0}>
-        <TooltipTrigger asChild>
-          <button
-            onClick={() => setExpanded(!expanded)}
-            className={`flex items-center justify-center w-14 h-14 rounded-full shadow-lg transition-all duration-200 ${
-              expanded
-                ? "bg-stone-800 text-white rotate-45"
-                : "bg-amber-500 text-white hover:bg-amber-600 animate-pulse"
-            }`}
-            aria-label={expanded ? "Close booking options" : "Quick booking options"}
-          >
-            {expanded ? <X size={20} /> : <Calendar size={20} />}
-          </button>
-        </TooltipTrigger>
-        <TooltipContent side="left">{expanded ? "Close" : "Book now"}</TooltipContent>
-      </Tooltip>
+      <div className={expanded ? "" : "animate-levitate"}>
+        <Tooltip delayDuration={0}>
+          <TooltipTrigger asChild>
+            <button
+              onClick={() => setExpanded(!expanded)}
+              className={`flex items-center justify-center w-14 h-14 rounded-full shadow-lg transition-all duration-200 ${
+                expanded
+                  ? "bg-stone-800 text-white rotate-45"
+                  : "bg-amber-500 text-white hover:bg-amber-600 animate-glow-ring"
+              }`}
+              aria-label={expanded ? "Close booking options" : "Quick booking options"}
+            >
+              {expanded ? <X size={20} /> : <Calendar size={20} />}
+            </button>
+          </TooltipTrigger>
+          <TooltipContent side="left">{expanded ? "Close" : "Book now"}</TooltipContent>
+        </Tooltip>
+      </div>
     </div>
   );
 }
