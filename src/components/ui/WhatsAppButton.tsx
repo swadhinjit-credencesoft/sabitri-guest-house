@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { MessageCircle, X } from "lucide-react";
 import { getWhatsAppBookingUrl } from "@/data/site";
+import { Tooltip, TooltipTrigger, TooltipContent } from "@/components/ui/tooltip";
 
 export function WhatsAppButton() {
   const [visible, setVisible] = useState(false);
@@ -15,13 +16,18 @@ export function WhatsAppButton() {
   return (
     <>
       {visible && !open && (
-        <button
-          onClick={() => setOpen(true)}
-          className="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-green-500 text-white shadow-lg hover:bg-green-600 transition-all hover:scale-110 flex items-center justify-center animate-bounce"
-          aria-label="Chat on WhatsApp"
-        >
-          <MessageCircle size={28} />
-        </button>
+        <Tooltip delayDuration={0}>
+          <TooltipTrigger asChild>
+            <button
+              onClick={() => setOpen(true)}
+              className="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-green-500 text-white shadow-lg hover:bg-green-600 transition-all hover:scale-110 flex items-center justify-center animate-in fade-in zoom-in-95"
+              aria-label="Chat on WhatsApp"
+            >
+              <MessageCircle size={28} />
+            </button>
+          </TooltipTrigger>
+          <TooltipContent side="left">Chat with us on WhatsApp</TooltipContent>
+        </Tooltip>
       )}
 
       {open && (
